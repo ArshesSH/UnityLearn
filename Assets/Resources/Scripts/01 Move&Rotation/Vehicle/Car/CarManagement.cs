@@ -11,9 +11,11 @@ public class CarManagement : MonoBehaviour
     }
 
     [SerializeField]
-    private Vector3 frontWheelAligmentCenter;
+    private GameObject frontLeftWheelPos;
     [SerializeField]
-    private Vector3 rearWheelAligmentCenter;
+    private GameObject frontRightWheelPos;
+    [SerializeField]
+    private GameObject rearAligment;
     [SerializeField]
     private float maxSpeed = 5.0f;
     [SerializeField]
@@ -44,10 +46,6 @@ public class CarManagement : MonoBehaviour
     private MoveMode curMoveMode = MoveMode.Forward;
     private bool isBraking;
     private float steeringAngle = 0.0f;
-    public float SteeringAngle
-    {
-        get { return steeringAngle; }
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +60,7 @@ public class CarManagement : MonoBehaviour
         CheckVelocity();
         CheckMoveMode();
         ControlCar();
+        steeringFrontWheel();
         Move();
     }
 
@@ -132,6 +131,11 @@ public class CarManagement : MonoBehaviour
 
     void Move()
     {
+        if(physicsSpeed > 0.0f)
+        {
+            RotateByRearAlignment();
+        }
+
         if ( physicsSpeed <= maxSpeed )
         {
             moveVel += curAccel * Time.deltaTime * moveDir;
@@ -186,7 +190,7 @@ public class CarManagement : MonoBehaviour
 
     void RotateControl()
     {
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.A))
         {
             if (steeringAngle >= -steeringAngleMax)
             {
@@ -197,7 +201,7 @@ public class CarManagement : MonoBehaviour
         {
             steeringAngle += steeringSpeed * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.D))
         {
             if( steeringAngle <= steeringAngleMax)
             {
@@ -214,11 +218,18 @@ public class CarManagement : MonoBehaviour
         {
             steeringAngle = 0.0f;
         }
+
     }
 
-    void RotateByRearAlignment( float speed)
+    void steeringFrontWheel()
     {
-        transform.Rotate( rearWheelAligmentCenter, speed, Space.World );
+        frontLeftWheelPos.transform.localEulerAngles = transform.up * steeringAngle;
+        frontRightWheelPos.transform.localEulerAngles = transform.up * steeringAngle;
+    }
+
+    void RotateByRearAlignment()
+    {
+        transform.RotateAround(rearAligment.transform.position, transform.up, steeringAngle * Time.deltaTime * physicsSpeed);
     }
 
     private void OnGUI()
@@ -231,10 +242,5 @@ public class CarManagement : MonoBehaviour
         GUI.Box( new Rect( 0.0f, 150.0f, 150.0f, 30.0f ), "SteeringAngle: " + steeringAngle );
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.blue;
-        var localPos = transform.localToWorldMatrix * rearWheelAligmentCenter;
-        Gizmos.DrawLine( localPos, localPos + new Vector4( 0, 2, 0 ) );
-    }
+ 
 }
