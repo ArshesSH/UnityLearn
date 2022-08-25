@@ -27,7 +27,11 @@ public class CarManagement : MonoBehaviour
     [SerializeField]
     private float aeroDynamicCoef = 0.001f;
     [SerializeField]
-    private float angularSpeed = 50.0f;
+    private float steeringSpeed = 50.0f;
+    [SerializeField]
+    private float steeringAngleMax = 30.0f;
+    [SerializeField]
+    private float steeringDeadZone = 0.02f;
 
 
     private Vector3 vel;
@@ -39,10 +43,10 @@ public class CarManagement : MonoBehaviour
     private Vector3 lastPos;
     private MoveMode curMoveMode = MoveMode.Forward;
     private bool isBraking;
-    private float curAngle;
-    public float CurAngle
+    private float steeringAngle = 0.0f;
+    public float SteeringAngle
     {
-        get { return curAngle; }
+        get { return steeringAngle; }
     }
 
     // Start is called before the first frame update
@@ -69,14 +73,7 @@ public class CarManagement : MonoBehaviour
             Decelerate();
         }
 
-        if( Input.GetKey(KeyCode.D))
-        {
-            RotateByRearAlignment( angularSpeed * Time.deltaTime);
-        }
-        if ( Input.GetKey( KeyCode.A ) )
-        {
-            RotateByRearAlignment( -angularSpeed * Time.deltaTime );
-        }
+        RotateControl();
 
         switch ( curMoveMode )
         {
@@ -174,7 +171,6 @@ public class CarManagement : MonoBehaviour
         float aero = (physicsSpeed * aeroDynamicCoef);
         curFriction = addedFriction * Time.deltaTime + aero;
 
-
         if ( physicsSpeed > 0.0f)
         {
             moveVel -= curFriction * Time.deltaTime * vel.normalized;
@@ -188,6 +184,37 @@ public class CarManagement : MonoBehaviour
 
     }
 
+    void RotateControl()
+    {
+        if (Input.GetKey(KeyCode.D))
+        {
+            if (steeringAngle >= -steeringAngleMax)
+            {
+                steeringAngle -= steeringSpeed * Time.deltaTime;
+            }
+        }
+        else if (steeringAngle < 0.0f)
+        {
+            steeringAngle += steeringSpeed * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            if( steeringAngle <= steeringAngleMax)
+            {
+                steeringAngle += steeringSpeed * Time.deltaTime;
+            }
+        }
+        else if (steeringAngle > 0.0f)
+        {
+            steeringAngle -= steeringSpeed * Time.deltaTime;
+        }
+
+
+        if(steeringAngle >= -steeringDeadZone && steeringAngle <= steeringDeadZone)
+        {
+            steeringAngle = 0.0f;
+        }
+    }
 
     void RotateByRearAlignment( float speed)
     {
@@ -201,7 +228,7 @@ public class CarManagement : MonoBehaviour
         GUI.Box( new Rect( 0.0f, 60.0f, 150.0f, 30.0f ), "Fric = " + curFriction );
         GUI.Box( new Rect( 0.0f, 90.0f, 150.0f, 30.0f ), "MoveMode: " + curMoveMode );
         GUI.Box( new Rect( 0.0f, 120.0f, 150.0f, 30.0f ), "Braking: " + isBraking );
-        GUI.Box( new Rect( 0.0f, 150.0f, 150.0f, 30.0f ), "Angle: " + transform.rotation.eulerAngles.y );
+        GUI.Box( new Rect( 0.0f, 150.0f, 150.0f, 30.0f ), "SteeringAngle: " + steeringAngle );
     }
 
     private void OnDrawGizmos()

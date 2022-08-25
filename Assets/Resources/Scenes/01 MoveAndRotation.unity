@@ -1441,7 +1441,8 @@ MonoBehaviour:
   brakePower: 5
   frictionPower: 0.01
   aeroDynamicCoef: 0.01
-  angularSpeed: 50
+  angularSpeed: 100
+  steeringAngleMax: 30
 --- !u!4 &2062831004
 Transform:
   m_ObjectHideFlags: 0
