@@ -6,6 +6,8 @@ public class Move : MonoBehaviour
 {
     [SerializeField]
     private float speed = 0.0f;
+    [SerializeField]
+    private Vector3 rotateRefAxis;
 
     // Start is called before the first frame update
     void Start()
@@ -31,5 +33,6 @@ public class Move : MonoBehaviour
             float vel = speed * Time.deltaTime;
             transform.position -= transform.forward * vel;
         }
+        
     }
 }

@@ -5,18 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-
-    private void Awake()
-    {
-        DontDestroyOnLoad( this.gameObject );
-    }
-
-    public void ChangeScene(string sceneName)
-    {
-        SceneManager.LoadScene( sceneName );
-    }
-
-
     // Signletone
     private static GameManager sInstance;
 
@@ -32,6 +20,18 @@ public class GameManager : MonoBehaviour
             return sInstance;
         }
     }
+    private void Awake()
+    {
+        DontDestroyOnLoad( this.gameObject );
+    }
+
+    public void ChangeScene(string sceneName)
+    {
+        SceneManager.LoadScene( sceneName );
+    }
+
+
+
 
     public int Score = 0;
     public string userID = "";

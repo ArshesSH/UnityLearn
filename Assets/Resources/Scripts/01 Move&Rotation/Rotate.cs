@@ -2,29 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotate : MonoBehaviour
+public class Rotate
 {
-    [SerializeField]
-    private Vector3 refLocalAxis;
-    [SerializeField]
-    private float speed = 0.0f;
-
-    // Start is called before the first frame update
-    void Start()
+    void RotateByAxis(GameObject gameObject, Vector3 refLocalAxis, float speed)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void RotateByAxis()
-    {
-        var locToWorldMat = transform.localToWorldMatrix;
+        var locToWorldMat = gameObject.transform.localToWorldMatrix;
         Vector3 refWorldAxis = locToWorldMat * refLocalAxis;
-        
+
+        float rot = speed * Time.deltaTime;
+        gameObject.transform.Rotate( refWorldAxis, rot );
     }
 }
