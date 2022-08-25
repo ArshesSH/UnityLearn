@@ -60,6 +60,7 @@ public class CarManagement : MonoBehaviour
         {
             case MoveMode.Forward:
             {
+                moveDir = transform.forward;
                 if ( Input.GetKey( KeyCode.S ) )
                 {
                     Braking();
@@ -77,7 +78,19 @@ public class CarManagement : MonoBehaviour
 
             case MoveMode.Backward:
             {
-
+                moveDir = -transform.forward;
+                if ( Input.GetKey( KeyCode.W ) )
+                {
+                    Braking();
+                }
+                if ( Input.GetKey( KeyCode.S ) )
+                {
+                    Accelerate();
+                }
+                else
+                {
+                    Decelerate();
+                }
             }
             break;
         }
