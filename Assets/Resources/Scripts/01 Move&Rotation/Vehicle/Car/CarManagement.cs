@@ -15,17 +15,19 @@ public class CarManagement : MonoBehaviour
     [SerializeField]
     private Vector3 rearWheelAligmentCenter;
     [SerializeField]
-    private float maxSpeed = 30.0f;
+    private float maxSpeed = 5.0f;
     [SerializeField]
     private float maxAccel = 1.0f;
     [SerializeField]
     private float accelPower = 1.0f;
     [SerializeField]
-    private float brakePower = 2.0f;
+    private float brakePower = 5.0f;
     [SerializeField]
-    private float frictionPower = 0.1f;
+    private float frictionPower = 0.01f;
     [SerializeField]
     private float aeroDynamicCoef = 0.001f;
+    [SerializeField]
+    private float wheelSpinMaxSpeed = 0.5f;
 
 
     private Vector3 vel;
@@ -37,12 +39,13 @@ public class CarManagement : MonoBehaviour
     private float angularSpeed;
     private Vector3 lastPos;
     private MoveMode curMoveMode = MoveMode.Forward;
-    private bool isBrake;
+    private bool isBraking;
 
     // Start is called before the first frame update
     void Start()
     {
         lastPos = transform.position;
+        moveDir = transform.forward;
     }
 
     // Update is called once per frame
@@ -56,15 +59,23 @@ public class CarManagement : MonoBehaviour
 
     void ControlCar()
     {
+        if( Input.GetKey( KeyCode.Space ) )
+        {
+            Braking( KeyCode.Space );
+            Decelerate();
+        }
+
+        if( Input.GetKey(KeyCode.D))
+        {
+
+        }
+
         switch ( curMoveMode )
         {
             case MoveMode.Forward:
             {
                 moveDir = transform.forward;
-                if ( Input.GetKey( KeyCode.S ) )
-                {
-                    Braking();
-                }
+                Braking( KeyCode.S );
                 if ( Input.GetKey( KeyCode.W ) )
                 {
                     Accelerate();
@@ -79,10 +90,7 @@ public class CarManagement : MonoBehaviour
             case MoveMode.Backward:
             {
                 moveDir = -transform.forward;
-                if ( Input.GetKey( KeyCode.W ) )
-                {
-                    Braking();
-                }
+                Braking( KeyCode.W );
                 if ( Input.GetKey( KeyCode.S ) )
                 {
                     Accelerate();
@@ -104,20 +112,21 @@ public class CarManagement : MonoBehaviour
     }
     void CheckMoveMode()
     {
-        if( Vector3.Dot( vel, transform.forward ) >= 0.0f )
+        if ( Mathf.Approximately( physicsSpeed, 0.0f ) )
         {
-            curMoveMode = MoveMode.Forward;
-        }
-        else
-        {
-            curMoveMode = MoveMode.Backward;
+            if ( Input.GetKey( KeyCode.W ) )
+            {
+                curMoveMode = MoveMode.Forward;
+            }
+            else
+            {
+                curMoveMode = MoveMode.Backward;
+            }
         }
     }
 
     void Move()
     {
-    
-
         if ( physicsSpeed <= maxSpeed )
         {
             moveVel += curAccel * Time.deltaTime * moveDir;
@@ -139,22 +148,21 @@ public class CarManagement : MonoBehaviour
         curAccel = 0.0f;
         ApplyFriction();
     }
-
-    void Braking()
+    void Braking(KeyCode key)
     {
-        if ( Input.GetKey( KeyCode.S ) )
+        if ( Input.GetKey( key ) )
         {
-            isBrake = true;
+            isBraking = true;
         }
         else
         {
-            isBrake = false;
+            isBraking = false;
         }
     }
 
     void ApplyFriction()
     {
-        float addedFriction = (isBrake) ? frictionPower + brakePower : frictionPower;
+        float addedFriction = (isBraking) ? frictionPower + brakePower : frictionPower;
         float aero = (physicsSpeed * aeroDynamicCoef);
         curFriction = addedFriction * Time.deltaTime + aero;
 
@@ -183,5 +191,7 @@ public class CarManagement : MonoBehaviour
         GUI.Box( new Rect( 0.0f, 0.0f, 150.0f, 30.0f ), "Vel = " + (physicsSpeed).ToString() );
         GUI.Box( new Rect( 0.0f, 30.0f, 150.0f, 30.0f ), "Acc = " + curAccel);
         GUI.Box( new Rect( 0.0f, 60.0f, 150.0f, 30.0f ), "Fric = " + curFriction );
+        GUI.Box( new Rect( 0.0f, 90.0f, 150.0f, 30.0f ), "MoveMode: " + curMoveMode );
+        GUI.Box( new Rect( 0.0f, 120.0f, 150.0f, 30.0f ), "Braking: " + isBraking );
     }
 }
