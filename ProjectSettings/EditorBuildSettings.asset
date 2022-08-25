@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Resources/Scenes/00 Start.unity
+    guid: 963d410d04f52b9499677edfde6b659d
+  - enabled: 1
     path: Assets/Resources/Scenes/01 MoveAndRotation.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Resources/Scenes/03 Game.unity
+    guid: eb2f6a685920df0409424ad02b97a7ce
+  - enabled: 1
+    path: Assets/Resources/Scenes/99 End.unity
+    guid: 060d885e88a7742489d737ab90b331d1
   m_configObjects: {}
