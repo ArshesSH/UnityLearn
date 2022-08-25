@@ -60,6 +60,7 @@ public class CarManagement : MonoBehaviour
         CheckVelocity();
         CheckMoveMode();
         ControlCar();
+        ApplyFriction2();
         steeringFrontWheel();
         Move();
     }
@@ -145,7 +146,7 @@ public class CarManagement : MonoBehaviour
 
     void Accelerate()
     {
-        curFriction = 0.0f;
+        //curFriction = 0.0f;
 
         if ( curAccel <= maxAccel )
         {
@@ -155,7 +156,7 @@ public class CarManagement : MonoBehaviour
     void Decelerate()
     {
         curAccel = 0.0f;
-        ApplyFriction();
+        //ApplyFriction();
     }
     void Braking(KeyCode key)
     {
@@ -177,9 +178,8 @@ public class CarManagement : MonoBehaviour
 
         if ( physicsSpeed > 0.0f)
         {
+            //moveVel -= curFriction * Time.deltaTime * vel.normalized;
             moveVel -= curFriction * Time.deltaTime * vel.normalized;
-
-
             if ( physicsSpeed < 0.1f )
             {
                 moveVel = new Vector3();
@@ -187,6 +187,45 @@ public class CarManagement : MonoBehaviour
         }
 
     }
+
+    void ApplyFriction2()
+    {
+        float addedFriction = (isBraking) ? frictionPower + brakePower : frictionPower;
+        float aero = (physicsSpeed * aeroDynamicCoef);
+        curFriction = addedFriction * Time.deltaTime;
+
+        var norVel = vel.normalized;
+        var aeroFrictionVec = aero * Time.deltaTime * norVel;
+        var moveFrictionVec = curFriction * Time.deltaTime * (norVel - transform.forward);
+
+        if (physicsSpeed > 0.0f)
+        {
+            moveVel -= curFriction * Time.deltaTime * vel.normalized;
+            if (physicsSpeed < 0.1f)
+            {
+                moveVel = new Vector3();
+            }
+        }
+
+    }
+    void ApplyFriction3()
+    {
+        float addedFriction = (isBraking) ? frictionPower + brakePower : frictionPower;
+        float aero = (physicsSpeed * aeroDynamicCoef);
+        curFriction = addedFriction * Time.deltaTime + aero;
+
+        if (physicsSpeed > 0.0f)
+        {
+            //moveVel -= curFriction * Time.deltaTime * vel.normalized;
+            moveVel -= curFriction * Time.deltaTime *  (vel.normalized);
+            if (physicsSpeed < 0.1f)
+            {
+                moveVel = new Vector3();
+            }
+        }
+
+    }
+
 
     void RotateControl()
     {
@@ -242,5 +281,19 @@ public class CarManagement : MonoBehaviour
         GUI.Box( new Rect( 0.0f, 150.0f, 150.0f, 30.0f ), "SteeringAngle: " + steeringAngle );
     }
 
- 
+    void RotateWheel(GameObject target, float targetVel)
+    {
+        target.transform.Rotate(target.transform.right * targetVel * Time.deltaTime);
+        target.transform.rotation.Set(GetRangedAngle(target.transform.eulerAngles.x), 0.0f, 0.0f, target.transform.rotation.w);
+    }
+    
+    float GetRangedAngle(float angle)
+    {
+        float rangedAngle = angle % 360.0f;
+        if (rangedAngle < 0.0f)
+        {
+            rangedAngle += 360.0f;
+        }
+        return rangedAngle;
+    }
 }

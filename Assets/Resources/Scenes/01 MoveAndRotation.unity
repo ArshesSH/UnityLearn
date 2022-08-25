@@ -1461,13 +1461,13 @@ MonoBehaviour:
   frontRightWheelPos: {fileID: 50650647}
   rearAligment: {fileID: 1334751505}
   maxSpeed: 5
-  maxAccel: 1
-  accelPower: 1
+  maxAccel: 0.5
+  accelPower: 0.2
   brakePower: 5
-  frictionPower: 0.01
+  frictionPower: 1
   aeroDynamicCoef: 0.01
   steeringSpeed: 50
-  steeringAngleMax: 30
+  steeringAngleMax: 10
   steeringDeadZone: 0.02
 --- !u!4 &2062831004
 Transform:
