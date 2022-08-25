@@ -27,7 +27,7 @@ public class CarManagement : MonoBehaviour
     [SerializeField]
     private float aeroDynamicCoef = 0.001f;
     [SerializeField]
-    private float wheelSpinMaxSpeed = 0.5f;
+    private float angularSpeed = 50.0f;
 
 
     private Vector3 vel;
@@ -36,10 +36,14 @@ public class CarManagement : MonoBehaviour
     private Vector3 moveVel;
     private float curAccel = 0.0f;
     private float curFriction = 0.0f;
-    private float angularSpeed;
     private Vector3 lastPos;
     private MoveMode curMoveMode = MoveMode.Forward;
     private bool isBraking;
+    private float curAngle;
+    public float CurAngle
+    {
+        get { return curAngle; }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -67,7 +71,11 @@ public class CarManagement : MonoBehaviour
 
         if( Input.GetKey(KeyCode.D))
         {
-
+            RotateByRearAlignment( angularSpeed * Time.deltaTime);
+        }
+        if ( Input.GetKey( KeyCode.A ) )
+        {
+            RotateByRearAlignment( -angularSpeed * Time.deltaTime );
         }
 
         switch ( curMoveMode )
@@ -181,9 +189,9 @@ public class CarManagement : MonoBehaviour
     }
 
 
-    void Rotate()
+    void RotateByRearAlignment( float speed)
     {
-        transform.Rotate( rearWheelAligmentCenter, angularSpeed * Time.deltaTime, Space.Self );
+        transform.Rotate( rearWheelAligmentCenter, speed, Space.World );
     }
 
     private void OnGUI()
@@ -193,5 +201,13 @@ public class CarManagement : MonoBehaviour
         GUI.Box( new Rect( 0.0f, 60.0f, 150.0f, 30.0f ), "Fric = " + curFriction );
         GUI.Box( new Rect( 0.0f, 90.0f, 150.0f, 30.0f ), "MoveMode: " + curMoveMode );
         GUI.Box( new Rect( 0.0f, 120.0f, 150.0f, 30.0f ), "Braking: " + isBraking );
+        GUI.Box( new Rect( 0.0f, 150.0f, 150.0f, 30.0f ), "Angle: " + transform.rotation.eulerAngles.y );
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        var localPos = transform.localToWorldMatrix * rearWheelAligmentCenter;
+        Gizmos.DrawLine( localPos, localPos + new Vector4( 0, 2, 0 ) );
     }
 }
