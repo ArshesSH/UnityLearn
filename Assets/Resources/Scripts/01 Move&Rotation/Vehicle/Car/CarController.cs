@@ -66,16 +66,31 @@ public class CarController : MonoBehaviour
     float wheelBaseDistance;
     float wheelDistFromBaseCenter;
 
+    MoveMode moveMode;
+
     // Start is called before the first frame update
     void Start()
     {
-        wheelBaseDistance = Mathf.Abs( frontLeftWheelPos.transform.position.z - rearAligment.transform.position.z);
+        wheelBaseDistance = Mathf.Abs( frontLeftWheelPos.transform.position.z - rearAligment.transform.position.z );
         wheelDistFromBaseCenter = Mathf.Abs( frontLeftWheelPos.transform.position.x - rearAligment.transform.position.x );
+        moveMode = MoveMode.Stop;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if ( thrust > thrustDeadzone )
+        {
+            moveMode = MoveMode.Forward;
+        }
+        else if( thrust < -thrustDeadzone)
+        {
+            moveMode = MoveMode.Backward;
+        }
+        else
+        {
+            moveMode = MoveMode.Stop;
+        }
     }
 
     private void FixedUpdate()
@@ -85,10 +100,7 @@ public class CarController : MonoBehaviour
         Move();
     }
 
-    private void LateUpdate()
-    {
-       
-    }
+
     void UserInput()
     {
         if(Input.GetKey(KeyCode.A))
@@ -108,6 +120,20 @@ public class CarController : MonoBehaviour
             isTurnRight = false;
         }
 
+        switch (moveMode)
+        {
+            case MoveMode.Stop:
+            {
+
+            }
+            break;
+
+            case MoveMode.Forward:
+            {
+
+            }
+            break;
+        }
 
         if ( Input.GetKey( KeyCode.W ) )
         {
@@ -276,5 +302,6 @@ public class CarController : MonoBehaviour
         GUI.Box( new Rect( 0.0f, 90.0f, 150.0f, 30.0f ), "Pedal: " + pedal );
         GUI.Box( new Rect( 0.0f, 120.0f, 150.0f, 30.0f ), "Friction: " + friction );
         GUI.Box( new Rect( 0.0f, 150.0f, 150.0f, 30.0f ), "SteeringAngle: " + steeringAngle );
+        GUI.Box( new Rect( 0.0f, 180.0f, 150.0f, 30.0f ), "MoveMode: " + moveMode );
     }
 }
