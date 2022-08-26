@@ -60,7 +60,7 @@ public class CarManagement : MonoBehaviour
         CheckVelocity();
         CheckMoveMode();
         ControlCar();
-        ApplyFriction2();
+        //ApplyFriction();
         steeringFrontWheel();
         Move();
     }
@@ -141,7 +141,7 @@ public class CarManagement : MonoBehaviour
         {
             moveVel += curAccel * Time.deltaTime * moveDir;
         }
-        transform.position += moveVel;
+        transform.position += Vector3.Dot( moveVel, transform.forward) * transform.forward ;
     }
 
     void Accelerate()
@@ -156,7 +156,7 @@ public class CarManagement : MonoBehaviour
     void Decelerate()
     {
         curAccel = 0.0f;
-        //ApplyFriction();
+        ApplyFriction2();
     }
     void Braking(KeyCode key)
     {
@@ -178,7 +178,6 @@ public class CarManagement : MonoBehaviour
 
         if ( physicsSpeed > 0.0f)
         {
-            //moveVel -= curFriction * Time.deltaTime * vel.normalized;
             moveVel -= curFriction * Time.deltaTime * vel.normalized;
             if ( physicsSpeed < 0.1f )
             {
@@ -187,28 +186,7 @@ public class CarManagement : MonoBehaviour
         }
 
     }
-
     void ApplyFriction2()
-    {
-        float addedFriction = (isBraking) ? frictionPower + brakePower : frictionPower;
-        float aero = (physicsSpeed * aeroDynamicCoef);
-        curFriction = addedFriction * Time.deltaTime;
-
-        var norVel = vel.normalized;
-        var aeroFrictionVec = aero * Time.deltaTime * norVel;
-        var moveFrictionVec = curFriction * Time.deltaTime * (norVel - transform.forward);
-
-        if (physicsSpeed > 0.0f)
-        {
-            moveVel -= curFriction * Time.deltaTime * vel.normalized;
-            if (physicsSpeed < 0.1f)
-            {
-                moveVel = new Vector3();
-            }
-        }
-
-    }
-    void ApplyFriction3()
     {
         float addedFriction = (isBraking) ? frictionPower + brakePower : frictionPower;
         float aero = (physicsSpeed * aeroDynamicCoef);
@@ -216,8 +194,7 @@ public class CarManagement : MonoBehaviour
 
         if (physicsSpeed > 0.0f)
         {
-            //moveVel -= curFriction * Time.deltaTime * vel.normalized;
-            moveVel -= curFriction * Time.deltaTime *  (vel.normalized);
+            moveVel -= curFriction * Time.deltaTime *  (transform.forward);
             if (physicsSpeed < 0.1f)
             {
                 moveVel = new Vector3();
