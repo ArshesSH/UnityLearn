@@ -46,6 +46,7 @@ public class CarManagement : MonoBehaviour
     private MoveMode curMoveMode = MoveMode.Forward;
     private bool isBraking;
     private float steeringAngle = 0.0f;
+    private float testSpeed = 0.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -60,7 +61,7 @@ public class CarManagement : MonoBehaviour
         CheckVelocity();
         CheckMoveMode();
         ControlCar();
-        //ApplyFriction();
+        ApplyFriction();
         steeringFrontWheel();
         Move();
     }
@@ -139,9 +140,13 @@ public class CarManagement : MonoBehaviour
 
         if ( physicsSpeed <= maxSpeed )
         {
-            moveVel += curAccel * Time.deltaTime * moveDir;
+            //moveVel += curAccel * Time.deltaTime * moveDir;
+
+            testSpeed += curAccel * Time.deltaTime;
         }
-        transform.position += Vector3.Dot( moveVel, transform.forward) * transform.forward ;
+        transform.Translate( moveDir * testSpeed );
+
+        //transform.position += moveVel;
     }
 
     void Accelerate()
@@ -156,7 +161,7 @@ public class CarManagement : MonoBehaviour
     void Decelerate()
     {
         curAccel = 0.0f;
-        ApplyFriction2();
+        ApplyFriction();
     }
     void Braking(KeyCode key)
     {
@@ -194,7 +199,7 @@ public class CarManagement : MonoBehaviour
 
         if (physicsSpeed > 0.0f)
         {
-            moveVel -= curFriction * Time.deltaTime *  (transform.forward);
+            moveVel -= curFriction * Time.deltaTime *  (moveDir);
             if (physicsSpeed < 0.1f)
             {
                 moveVel = new Vector3();
