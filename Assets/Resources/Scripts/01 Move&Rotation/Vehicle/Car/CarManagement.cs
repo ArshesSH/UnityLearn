@@ -46,7 +46,6 @@ public class CarManagement : MonoBehaviour
     private MoveMode curMoveMode = MoveMode.Forward;
     private bool isBraking;
     private float steeringAngle = 0.0f;
-    private float testSpeed = 0.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -60,10 +59,6 @@ public class CarManagement : MonoBehaviour
     {
         CheckVelocity();
         CheckMoveMode();
-        ControlCar();
-        ApplyFriction();
-        steeringFrontWheel();
-        Move();
     }
 
     void ControlCar()
@@ -133,20 +128,14 @@ public class CarManagement : MonoBehaviour
 
     void Move()
     {
-        if(physicsSpeed > 0.0f)
-        {
-            RotateByRearAlignment();
-        }
+        RotateByRearAlignment();
 
         if ( physicsSpeed <= maxSpeed )
         {
-            //moveVel += curAccel * Time.deltaTime * moveDir;
-
-            testSpeed += curAccel * Time.deltaTime;
+            moveVel += curAccel * Time.deltaTime * moveDir;
         }
-        transform.Translate( moveDir * testSpeed );
 
-        //transform.position += moveVel;
+        transform.position += moveVel;
     }
 
     void Accelerate()
@@ -191,23 +180,6 @@ public class CarManagement : MonoBehaviour
         }
 
     }
-    void ApplyFriction2()
-    {
-        float addedFriction = (isBraking) ? frictionPower + brakePower : frictionPower;
-        float aero = (physicsSpeed * aeroDynamicCoef);
-        curFriction = addedFriction * Time.deltaTime + aero;
-
-        if (physicsSpeed > 0.0f)
-        {
-            moveVel -= curFriction * Time.deltaTime *  (moveDir);
-            if (physicsSpeed < 0.1f)
-            {
-                moveVel = new Vector3();
-            }
-        }
-
-    }
-
 
     void RotateControl()
     {
@@ -242,7 +214,7 @@ public class CarManagement : MonoBehaviour
 
     }
 
-    void steeringFrontWheel()
+    void SteeringFrontWheel()
     {
         frontLeftWheelPos.transform.localEulerAngles = transform.up * steeringAngle;
         frontRightWheelPos.transform.localEulerAngles = transform.up * steeringAngle;
@@ -250,7 +222,7 @@ public class CarManagement : MonoBehaviour
 
     void RotateByRearAlignment()
     {
-        transform.RotateAround(rearAligment.transform.position, transform.up, steeringAngle * Time.deltaTime * physicsSpeed);
+        transform.RotateAround( rearAligment.transform.position, transform.up, steeringAngle * Time.deltaTime * physicsSpeed);
     }
 
     private void OnGUI()
@@ -278,4 +250,13 @@ public class CarManagement : MonoBehaviour
         }
         return rangedAngle;
     }
+
+    private void FixedUpdate()
+    {
+        ControlCar();
+        ApplyFriction();
+        SteeringFrontWheel();
+        Move();
+    }
 }
+
