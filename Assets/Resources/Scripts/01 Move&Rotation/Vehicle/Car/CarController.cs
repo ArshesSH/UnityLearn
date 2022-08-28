@@ -4,55 +4,55 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
-    public enum MoveMode
+    public enum GearState
     {
-        Stop,
-        Forward,
-        Backward
+        Neutral,
+        Front,
+        Reverse,
     }
 
     [SerializeField]
-    private GameObject rearAligment;
+    protected GameObject rearAligment;
     [SerializeField]
-    private GameObject frontLeftWheelPos;
+    protected GameObject frontLeftWheelPos;
     [SerializeField]
-    private GameObject frontRightWheelPos;
+    protected GameObject frontRightWheelPos;
 
     [SerializeField]
-    private GameObject frontLeftWheelCenter;
+    protected GameObject frontLeftWheelCenter;
     [SerializeField]
-    private GameObject frontRightWheelCenter;
+    protected GameObject frontRightWheelCenter;
     [SerializeField]
-    private GameObject rearLeftWheelCenter;
+    protected GameObject rearLeftWheelCenter;
     [SerializeField]
-    private GameObject rearRightWheelCenter;
+    protected GameObject rearRightWheelCenter;
 
     [SerializeField]
-    private float steeringSpeed = 50.0f;
+    protected float steeringSpeed = 50.0f;
     [SerializeField]
-    private float powerSteeringSpeed = 50.0f;
+    protected float powerSteeringSpeed = 50.0f;
     [SerializeField]
-    private float maxSteeringAngle = 30.0f;
+    protected float maxSteeringAngle = 30.0f;
     [SerializeField]
-    private float steeringDeadZone = 0.1f;
+    protected float steeringDeadZone = 0.1f;
 
     [SerializeField]
-    private float pedalPower = 0.1f;
+    protected float pedalPower = 0.1f;
     [SerializeField]
-    private float maxPedal = 0.5f;
+    protected float maxPedal = 0.5f;
 
 
     [SerializeField]
-    private float frictionPower = 0.05f;
+    protected float frictionPower = 0.05f;
     [SerializeField]
-    private float brakePower = 0.1f;
+    protected float brakePower = 0.1f;
 
     [SerializeField]
-    private float thrustDeadzone = 0.1f;
+    protected float thrustDeadzone = 0.1f;
     [SerializeField]
-    private float maxThrust = 5.0f;
+    protected float maxThrust = 5.0f;
     [SerializeField]
-    private float maxReverse = 3.0f;
+    protected float maxReverse = 3.0f;
 
     float steeringAngle = 0.0f;
     float pedal = 0.0f;
@@ -66,40 +66,62 @@ public class CarController : MonoBehaviour
     float wheelBaseDistance;
     float wheelDistFromBaseCenter;
 
-    MoveMode moveMode;
+    GearState curGear;
+    Vector3 moveDir;
 
     // Start is called before the first frame update
     void Start()
     {
         wheelBaseDistance = Mathf.Abs( frontLeftWheelPos.transform.position.z - rearAligment.transform.position.z );
         wheelDistFromBaseCenter = Mathf.Abs( frontLeftWheelPos.transform.position.x - rearAligment.transform.position.x );
-        moveMode = MoveMode.Stop;
+        curGear = GearState.Neutral;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if ( thrust > thrustDeadzone )
-        {
-            moveMode = MoveMode.Forward;
-        }
-        else if( thrust < -thrustDeadzone)
-        {
-            moveMode = MoveMode.Backward;
-        }
-        else
-        {
-            moveMode = MoveMode.Stop;
-        }
+      
     }
 
     private void FixedUpdate()
     {
+        SwitchGear();
         UserInput();
         CalcPhysics();
         Move();
     }
 
+    protected virtual void SwitchGear()
+    {
+        if( thrust < thrustDeadzone && thrust > -thrustDeadzone)
+        {
+            curGear = GearState.Neutral;
+        }
+
+        if( curGear == GearState.Neutral)
+        {
+            if(Input.GetKey(KeyCode.W))
+            {
+                curGear = GearState.Front;
+                
+                SetDirToFoward();
+            }
+            else if(Input.GetKey(KeyCode.S))
+            {
+                curGear = GearState.Reverse;
+                SetDirToBackward();
+            }
+        }
+    }
+
+    protected void SetDirToFoward()
+    {
+        moveDir = Vector3.forward;
+    }
+    protected void SetDirToBackward()
+    {
+        moveDir = Vector3.back;
+    }
 
     void UserInput()
     {
@@ -120,40 +142,55 @@ public class CarController : MonoBehaviour
             isTurnRight = false;
         }
 
-        switch (moveMode)
+        switch (curGear)
         {
-            case MoveMode.Stop:
+            case GearState.Front:
             {
-
+                if (Input.GetKey(KeyCode.W))
+                {
+                    isPedal = true;
+                }
+                else
+                {
+                    isPedal = false;
+                }
+                if (Input.GetKey(KeyCode.S))
+                {
+                    isBraking = true;
+                }
+                else
+                {
+                    isBraking = false;
+                }
             }
             break;
 
-            case MoveMode.Forward:
+            case GearState.Reverse:
             {
-
+                if (Input.GetKey(KeyCode.S))
+                {
+                    isPedal = true;
+                }
+                else
+                {
+                    isPedal = false;
+                }
+                if (Input.GetKey(KeyCode.W))
+                {
+                    isBraking = true;
+                }
+                else
+                {
+                    isBraking = false;
+                }
             }
             break;
         }
 
-        if ( Input.GetKey( KeyCode.W ) )
-        {
-            isPedal = true;
-        }
-        else
-        {
-            isPedal = false;
-        }
-        if ( Input.GetKey( KeyCode.S ) )
-        {
-            isBraking = true;
-        }
-        else
-        {
-            isBraking = false;
-        }
+
     }
 
-    void CalcPhysics()
+    protected void CalcPhysics()
     {
         SetSteeringAngle();
         RotateFrontWheel(); 
@@ -174,13 +211,13 @@ public class CarController : MonoBehaviour
     }
 
 
-    void Move()
+    protected void Move()
     {
         if( thrust > thrustDeadzone)
         {
             RotateByRearAlignment();
         }
-        transform.Translate( Vector3.forward * thrust * Time.deltaTime );
+        transform.Translate( moveDir * thrust * Time.deltaTime );
     }
 
     void Accelerate()
@@ -265,6 +302,8 @@ public class CarController : MonoBehaviour
         {
             steeringAngle = -maxSteeringAngle;
         }
+
+        
     }
 
     void RotateFrontWheel()
@@ -275,15 +314,16 @@ public class CarController : MonoBehaviour
 
     void RotateByRearAlignment()
     {
-        float rotCenterDist = 1 / Mathf.Tan( Mathf.Deg2Rad * steeringAngle ) * wheelBaseDistance + wheelDistFromBaseCenter;
-
+        float changedSteeringAngle = (curGear == GearState.Reverse) ? -steeringAngle : steeringAngle;
+        float rotCenterDist = 1 / Mathf.Tan( Mathf.Deg2Rad * changedSteeringAngle) * wheelBaseDistance + wheelDistFromBaseCenter;
+        
         if( steeringAngle < 0.0f)
         {
-            transform.RotateAround( rearAligment.transform.position - new Vector3(0, rotCenterDist,0), transform.up, steeringAngle * Time.deltaTime *2.0f );
+            transform.RotateAround( rearAligment.transform.position + (Vector3.up * rotCenterDist), transform.up, changedSteeringAngle * Time.deltaTime *2.0f );
         }
         if ( steeringAngle > 0.0f )
         {
-            transform.RotateAround( rearAligment.transform.position + new Vector3( 0, rotCenterDist, 0 ), transform.up, steeringAngle * Time.deltaTime * 2.0f  );
+            transform.RotateAround( rearAligment.transform.position + (Vector3.up * rotCenterDist), transform.up, changedSteeringAngle * Time.deltaTime * 2.0f  );
         }
     }
 
@@ -302,6 +342,6 @@ public class CarController : MonoBehaviour
         GUI.Box( new Rect( 0.0f, 90.0f, 150.0f, 30.0f ), "Pedal: " + pedal );
         GUI.Box( new Rect( 0.0f, 120.0f, 150.0f, 30.0f ), "Friction: " + friction );
         GUI.Box( new Rect( 0.0f, 150.0f, 150.0f, 30.0f ), "SteeringAngle: " + steeringAngle );
-        GUI.Box( new Rect( 0.0f, 180.0f, 150.0f, 30.0f ), "MoveMode: " + moveMode );
+        GUI.Box( new Rect( 0.0f, 180.0f, 150.0f, 30.0f ), "Gear: " + curGear );
     }
 }
