@@ -51,7 +51,7 @@ public class CarController : MonoBehaviour
     [SerializeField]
     protected float maxReverse = 3.0f;
     [SerializeField]
-    protected float thrustDeadzone = 0.5f;
+    protected float thrustDeadzone = 0.1f;
 
     [Header("Physics Settings")]
     [SerializeField]
@@ -63,28 +63,26 @@ public class CarController : MonoBehaviour
 
 
 
-    float steeringAngle = 0.0f;
-    float pedal = 0.0f;
-    float friction = 0.0f;
-    float accel = 0.0f;
-    float thrust = 0.0f;
-    bool isBraking = false;
-    bool isPedal = false;
-    bool isTurnLeft = false;
-    bool isTurnRight = false;
-    bool isCollision = false;
-    float wheelBaseDistance;
-    float wheelDistFromBaseCenter;
+    protected float steeringAngle = 0.0f;
+    protected float pedal = 0.0f;
+    protected float friction = 0.0f;
+    protected float accel = 0.0f;
+    protected float thrust = 0.0f;
+    protected bool isBraking = false;
+    protected bool isPedal = false;
+    protected bool isTurnLeft = false;
+    protected bool isTurnRight = false;
+    protected bool isCollision = false;
+    protected float wheelBaseDistance;
+    protected float wheelDistFromBaseCenter;
 
-    GearState curGear;
-    Vector3 moveDir = Vector3.forward;
+    protected GearState curGear;
+    protected Vector3 moveDir = Vector3.forward;
 
-    Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
         wheelBaseDistance = Mathf.Abs( frontLeftWheelPos.transform.position.z - rearAligment.transform.position.z );
         wheelDistFromBaseCenter = Mathf.Abs( frontLeftWheelPos.transform.position.x - rearAligment.transform.position.x );
         curGear = GearState.Neutral;
@@ -106,19 +104,6 @@ public class CarController : MonoBehaviour
 
     protected virtual void SwitchGear()
     {
-        //if (thrust > thrustDeadzone)
-        //{
-        //    curGear = GearState.Front;
-        //}
-        //else if (thrust < -thrustDeadzone)
-        //{
-        //    curGear = GearState.Reverse;
-        //}
-        //else
-        //{
-        //    curGear = GearState.Neutral;
-        //}
-
         if (thrust <= thrustDeadzone && thrust >= -thrustDeadzone)
         {
             curGear = GearState.Neutral;
@@ -429,7 +414,7 @@ public class CarController : MonoBehaviour
     }
 
 
-    private void OnGUI()
+    protected virtual void OnGUI()
     {
         GUI.Box( new Rect( 0.0f, 30.0f, 150.0f, 30.0f ), "Thrust: " + thrust );
         GUI.Box( new Rect( 0.0f, 60.0f, 150.0f, 30.0f ), "Acc: " + accel );

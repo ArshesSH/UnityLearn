@@ -1064,7 +1064,7 @@ GameObject:
   - component: {fileID: 8259060761001896819}
   - component: {fileID: 8259060761001896818}
   m_Layer: 0
-  m_Name: Car
+  m_Name: PlayerCar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1096,7 +1096,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8259060761001896831}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0cd3075fc752cc4781cdff40c444733, type: 3}
   m_Name: 
@@ -1109,13 +1109,15 @@ MonoBehaviour:
   rearLeftWheelCenter: {fileID: 2809798061185170303}
   rearRightWheelCenter: {fileID: 7672459822796471687}
   steeringSpeed: 30
-  powerSteeringSpeed: 50
+  reverseSteeringSpeed: 50
   maxSteeringAngle: 30
   steeringDeadZone: 0.1
   pedalPower: 0.1
   maxPedal: 0.5
-  frictionPower: 0.01
   brakePower: 0.1
-  thrustDeadzone: 0.1
   maxThrust: 20
   maxReverse: 3
+  thrustDeadzone: 0.1
+  frictionPower: 0.01
+  collisionFrictionPower: 0.5
+  collisionLimit: 0.5
