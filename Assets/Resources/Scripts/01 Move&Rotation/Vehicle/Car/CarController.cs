@@ -11,13 +11,13 @@ public class CarController : MonoBehaviour
         Reverse,
     }
 
+    [Header("Wheel Setting Objects")]
     [SerializeField]
     protected GameObject rearAligment;
     [SerializeField]
     protected GameObject frontLeftWheelPos;
     [SerializeField]
     protected GameObject frontRightWheelPos;
-
     [SerializeField]
     protected GameObject frontLeftWheelCenter;
     [SerializeField]
@@ -27,32 +27,41 @@ public class CarController : MonoBehaviour
     [SerializeField]
     protected GameObject rearRightWheelCenter;
 
+    [Header("Steering Settings")]
     [SerializeField]
     protected float steeringSpeed = 50.0f;
     [SerializeField]
-    protected float powerSteeringSpeed = 50.0f;
+    protected float reverseSteeringSpeed = 50.0f;
     [SerializeField]
     protected float maxSteeringAngle = 30.0f;
     [SerializeField]
     protected float steeringDeadZone = 0.1f;
 
+    [Header("Pedals Settings")]
     [SerializeField]
     protected float pedalPower = 0.1f;
     [SerializeField]
     protected float maxPedal = 0.5f;
+    [SerializeField]
+    protected float brakePower = 0.3f;
 
+    [Header("Engine Settings")]
+    [SerializeField]
+    protected float maxThrust = 20.0f;
+    [SerializeField]
+    protected float maxReverse = 3.0f;
+    [SerializeField]
+    protected float thrustDeadzone = 0.5f;
 
+    [Header("Physics Settings")]
     [SerializeField]
     protected float frictionPower = 0.05f;
     [SerializeField]
-    protected float brakePower = 0.1f;
+    protected float collisionFrictionPower = 0.5f;
+    [Range(0.0f, 1.0f)]
+    public float collisionLimit = 0.5f;
 
-    [SerializeField]
-    protected float thrustDeadzone = 0.1f;
-    [SerializeField]
-    protected float maxThrust = 5.0f;
-    [SerializeField]
-    protected float maxReverse = 3.0f;
+
 
     float steeringAngle = 0.0f;
     float pedal = 0.0f;
@@ -63,15 +72,19 @@ public class CarController : MonoBehaviour
     bool isPedal = false;
     bool isTurnLeft = false;
     bool isTurnRight = false;
+    bool isCollision = false;
     float wheelBaseDistance;
     float wheelDistFromBaseCenter;
 
     GearState curGear;
-    Vector3 moveDir;
+    Vector3 moveDir = Vector3.forward;
+
+    Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody>();
         wheelBaseDistance = Mathf.Abs( frontLeftWheelPos.transform.position.z - rearAligment.transform.position.z );
         wheelDistFromBaseCenter = Mathf.Abs( frontLeftWheelPos.transform.position.x - rearAligment.transform.position.x );
         curGear = GearState.Neutral;
@@ -93,33 +106,58 @@ public class CarController : MonoBehaviour
 
     protected virtual void SwitchGear()
     {
-        if( thrust < thrustDeadzone && thrust > -thrustDeadzone)
+        //if (thrust > thrustDeadzone)
+        //{
+        //    curGear = GearState.Front;
+        //}
+        //else if (thrust < -thrustDeadzone)
+        //{
+        //    curGear = GearState.Reverse;
+        //}
+        //else
+        //{
+        //    curGear = GearState.Neutral;
+        //}
+
+        if (thrust <= thrustDeadzone && thrust >= -thrustDeadzone)
         {
             curGear = GearState.Neutral;
         }
 
-        if( curGear == GearState.Neutral)
+        switch (curGear)
         {
-            if(Input.GetKey(KeyCode.W))
+            case GearState.Neutral:
             {
-                curGear = GearState.Front;
-                
-                SetDirToFoward();
+                if (Input.GetKey(KeyCode.W))
+                {
+                    SetGearStateFront();
+                }
+                else if (Input.GetKey(KeyCode.S))
+                {
+                    SetGearStateReverse();
+                }
             }
-            else if(Input.GetKey(KeyCode.S))
+            break;
+            case GearState.Front:
             {
-                curGear = GearState.Reverse;
-                SetDirToBackward();
             }
+            break;
+
+            case GearState.Reverse:
+            {
+            }
+            break;
         }
     }
 
-    protected void SetDirToFoward()
+    protected void SetGearStateFront()
     {
+        curGear = GearState.Front;
         moveDir = Vector3.forward;
     }
-    protected void SetDirToBackward()
+    protected void SetGearStateReverse()
     {
+        curGear = GearState.Reverse;
         moveDir = Vector3.back;
     }
 
@@ -235,13 +273,22 @@ public class CarController : MonoBehaviour
     void Decelerate()
     {
         float curFricPower = (isBraking) ? frictionPower + brakePower : frictionPower;
+        //if( isCollision)
+        //{
+        //    curFricPower = collisionFrictionPower;
+        //}
 
-        if (thrust > 0.0f)
+        if (thrust > thrustDeadzone)
         {
             friction = curFricPower;
         }
-        if ( thrust >= -thrustDeadzone && thrust <= thrustDeadzone )
+        else if( thrust < -thrustDeadzone)
         {
+            friction = -curFricPower;
+        }
+        if (thrust >= -thrustDeadzone && thrust <= thrustDeadzone)
+        {
+            curFricPower = 0.0f;
             friction = 0.0f;
         }
     }
@@ -255,19 +302,31 @@ public class CarController : MonoBehaviour
     {
         thrust += accel;
 
-        if( thrust >= -thrustDeadzone && thrust <= thrustDeadzone )
+        if (thrust >= -thrustDeadzone && thrust <= thrustDeadzone)
         {
             thrust = 0.0f;
         }
-
-        if ( thrust >= maxThrust)
+        if( thrust >= maxThrust)
         {
             thrust = maxThrust;
         }
-        else if( thrust <= -maxReverse)
+        else if (thrust <= -maxReverse)
         {
             thrust = -maxReverse;
         }
+
+        //float curMaxThrust = maxThrust;
+
+        //if( curGear == GearState.Reverse )
+        //{
+        //    curMaxThrust = maxReverse;
+        //}
+        //curMaxThrust = (isCollision) ? curMaxThrust * collisionLimit : curMaxThrust;
+
+        //if ( thrust >= curMaxThrust)
+        //{
+        //    thrust = curMaxThrust;
+        //}
     }
 
     void SetSteeringAngle()
@@ -283,7 +342,7 @@ public class CarController : MonoBehaviour
         }
         else if ( steeringAngle < 0.0f )
         {
-            steeringAngle += powerSteeringSpeed * Time.deltaTime;
+            steeringAngle += reverseSteeringSpeed * Time.deltaTime;
             if( steeringAngle >= 0.0f)
             {
                 steeringAngle = 0.0f;
@@ -295,7 +354,7 @@ public class CarController : MonoBehaviour
         }
         else if ( steeringAngle > 0.0f )
         {
-            steeringAngle -= powerSteeringSpeed * Time.deltaTime;
+            steeringAngle -= reverseSteeringSpeed * Time.deltaTime;
             if (steeringAngle <= 0.0f)
             {
                 steeringAngle = 0.0f;
@@ -348,6 +407,27 @@ public class CarController : MonoBehaviour
         rearLeftWheelCenter.transform.Rotate( Vector3.right * thrust );
         rearRightWheelCenter.transform.Rotate( Vector3.right * thrust );
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Obstacle"))
+        {
+            transform.Translate( thrust * Time.deltaTime * -moveDir);
+            thrust = 0.0f;
+            isCollision = true;
+            print("colison!");
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            isCollision = false;
+            print("colison out!");
+        }
+    }
+
 
     private void OnGUI()
     {
