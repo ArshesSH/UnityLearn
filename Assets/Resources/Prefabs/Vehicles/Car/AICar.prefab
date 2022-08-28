@@ -808,7 +808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8259060760175734190
 Transform:
   m_ObjectHideFlags: 0
@@ -1162,7 +1162,7 @@ GameObject:
   - component: {fileID: 2362531244660599530}
   m_Layer: 0
   m_Name: AICar
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1228,22 +1228,22 @@ MonoBehaviour:
   steeringDeadZone: 0.1
   pedalPower: 0.1
   maxPedal: 0.5
-  brakePower: 0.5
-  maxThrust: 50
+  brakePower: 1
+  maxThrust: 30
   maxReverse: 3
   thrustDeadzone: 0.1
   frictionPower: 0.05
   collisionFrictionPower: 0.5
-  collisionLimit: 0.5
+  collisionLimit: 0.2
   isCanMove: 0
   frontRayPos: {fileID: 509946821}
   rightRayPos: {fileID: 4167541218379526577}
   leftRayPos: {fileID: 8338329299308564186}
-  frontRayDistance: 40
+  frontRayDistance: 30
   sideRayDistance: 60
   sideRayAngle: 30
   correctionFactor: 3
-  turnSpeed: 15
+  turnSpeed: 20
   isDebugUI: 0
 --- !u!1 &8338329299308564186
 GameObject:

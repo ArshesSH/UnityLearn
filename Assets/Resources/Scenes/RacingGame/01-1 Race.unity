@@ -4216,31 +4216,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6908489561976126148, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 84
-      objectReference: {fileID: 0}
-    - target: {fileID: -6908489561976126148, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: maxThrust
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: collisionLimit
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060760175734191, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8259060761001896819, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
       propertyPath: m_RootOrder
@@ -4300,11 +4275,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AICar3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060761001896831, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_TagString
-      value: Car
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f14fcc8ff33c64e839fad5c9b2e660, type: 3}
@@ -6411,7 +6381,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1509455347, guid: 675f3f78173c7e541b7a6dba6f9bafd1, type: 3}
       propertyPath: m_Constraints
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8259060761001896818, guid: 675f3f78173c7e541b7a6dba6f9bafd1,
         type: 3}
@@ -7349,31 +7319,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6908489561976126148, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 84
-      objectReference: {fileID: 0}
-    - target: {fileID: -6908489561976126148, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: maxThrust
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: collisionLimit
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060760175734191, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8259060761001896819, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
       propertyPath: m_RootOrder
@@ -7433,11 +7378,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AICar4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060761001896831, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_TagString
-      value: Car
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f14fcc8ff33c64e839fad5c9b2e660, type: 3}
@@ -8923,31 +8863,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6908489561976126148, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 84
-      objectReference: {fileID: 0}
-    - target: {fileID: -6908489561976126148, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: maxThrust
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: collisionLimit
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060760175734191, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8259060761001896819, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
       propertyPath: m_RootOrder
@@ -9007,11 +8922,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AICar2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060761001896831, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_TagString
-      value: Car
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f14fcc8ff33c64e839fad5c9b2e660, type: 3}
@@ -12711,31 +12621,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6908489561976126148, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 84
-      objectReference: {fileID: 0}
-    - target: {fileID: -6908489561976126148, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: maxThrust
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: collisionLimit
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060760175734191, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8259060761001896819, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
       propertyPath: m_RootOrder
@@ -12795,11 +12680,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AICar1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060761001896831, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_TagString
-      value: Car
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f14fcc8ff33c64e839fad5c9b2e660, type: 3}

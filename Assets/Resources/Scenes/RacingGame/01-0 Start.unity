@@ -4164,30 +4164,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6908489561976126148, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1000
-      objectReference: {fileID: 0}
     - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
       propertyPath: isCanMove
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: isDebugUI
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: isStartCar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060760175734191, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8259060761001896819, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
@@ -4248,11 +4228,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AICar (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060761001896831, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_TagString
-      value: Car
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f14fcc8ff33c64e839fad5c9b2e660, type: 3}
@@ -7405,30 +7380,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6908489561976126148, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1000
-      objectReference: {fileID: 0}
     - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
       propertyPath: isCanMove
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: isDebugUI
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: isStartCar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060760175734191, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8259060761001896819, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
@@ -7489,11 +7444,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AICar (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060761001896831, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_TagString
-      value: Car
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f14fcc8ff33c64e839fad5c9b2e660, type: 3}
@@ -8919,30 +8869,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6908489561976126148, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1000
-      objectReference: {fileID: 0}
     - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
       propertyPath: isCanMove
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: isDebugUI
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: isStartCar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060760175734191, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8259060761001896819, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
@@ -9003,11 +8933,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AICar (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060761001896831, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_TagString
-      value: Car
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f14fcc8ff33c64e839fad5c9b2e660, type: 3}
@@ -12689,30 +12614,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6908489561976126148, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1000
-      objectReference: {fileID: 0}
     - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
       propertyPath: isCanMove
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: isDebugUI
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: isStartCar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060760175734191, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8259060761001896819, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
@@ -12773,11 +12678,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AICar
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259060761001896831, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: m_TagString
-      value: Car
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f14fcc8ff33c64e839fad5c9b2e660, type: 3}

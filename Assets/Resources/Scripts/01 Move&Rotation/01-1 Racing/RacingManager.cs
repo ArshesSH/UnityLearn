@@ -106,9 +106,13 @@ public class RacingManager : MonoBehaviour
                 {
                     if (aiCarControllers[i].RapCount == maxRapCount)
                     {
-                        totalRapTime[i] = aiCarControllers[i].GetTotalRapTime();
-                        rank[i] = curRank;
-                        curRank++;
+                        if(rank[i] == 0)
+                        {
+                            totalRapTime[i] = aiCarControllers[i].GetTotalRapTime();
+                            rank[i] = curRank;
+                            curRank++;
+                            print("RapCounted");
+                        }
                     }
                 }
             }
@@ -160,7 +164,7 @@ public class RacingManager : MonoBehaviour
             break;
             case RaceState.RaceEnd:
             {
-                GUI.Box(new Rect(750.0f, 30.0f, 300.0f, 30.0f), rank.ToString() + "등 입니다.");
+                GUI.Box(new Rect(750.0f, 30.0f, 300.0f, 30.0f), rank[4].ToString() + "등 입니다.");
                 if (GUI.Button(new Rect(500.0f, 30.0f, 150.0f, 30.0f), "게임 리셋"))
                 {
                     GameManager.Instance.ChangeScene("01-0 Start");

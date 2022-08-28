@@ -434,7 +434,7 @@ public class CarController : MonoBehaviour
             //transform.Translate( thrust * Time.deltaTime * -moveDir);
             //thrust = 0.0f;
             isCollision = true;
-            print("colison!");
+            //print("colison!");
         }
     }
 
@@ -461,7 +461,7 @@ public class CarController : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("Car"))
         {
             isCollision = false;
-            print("colison out!");
+            //print("colison out!");
         }
     }
 
