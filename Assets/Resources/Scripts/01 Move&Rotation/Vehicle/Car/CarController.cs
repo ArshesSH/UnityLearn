@@ -284,6 +284,10 @@ public class CarController : MonoBehaviour
         else if ( steeringAngle < 0.0f )
         {
             steeringAngle += powerSteeringSpeed * Time.deltaTime;
+            if( steeringAngle >= 0.0f)
+            {
+                steeringAngle = 0.0f;
+            }
         }
         if ( isTurnRight )
         {
@@ -292,6 +296,10 @@ public class CarController : MonoBehaviour
         else if ( steeringAngle > 0.0f )
         {
             steeringAngle -= powerSteeringSpeed * Time.deltaTime;
+            if (steeringAngle <= 0.0f)
+            {
+                steeringAngle = 0.0f;
+            }
         }
 
         if ( steeringAngle >= maxSteeringAngle )
@@ -319,11 +327,17 @@ public class CarController : MonoBehaviour
         
         if( steeringAngle < 0.0f)
         {
-            transform.RotateAround( rearAligment.transform.position + (Vector3.up * rotCenterDist), transform.up, changedSteeringAngle * Time.deltaTime *2.0f );
+            var rotateAxis = rearAligment.transform.position + (Vector3.up * rotCenterDist);
+            float rotateSpeed = changedSteeringAngle * Time.deltaTime * 2.0f;
+
+            transform.RotateAround(rotateAxis, transform.up, rotateSpeed);
         }
         if ( steeringAngle > 0.0f )
         {
-            transform.RotateAround( rearAligment.transform.position + (Vector3.up * rotCenterDist), transform.up, changedSteeringAngle * Time.deltaTime * 2.0f  );
+            var rotateAxis = rearAligment.transform.position + (Vector3.up * rotCenterDist);
+            float rotateSpeed = changedSteeringAngle * Time.deltaTime * 2.0f;
+
+            transform.RotateAround(rotateAxis, transform.up, rotateSpeed);
         }
     }
 
