@@ -21,8 +21,8 @@ public class CarControllerAI : CarController
     private float correctionFactor = 0.1f;
     [SerializeField]
     private float turnSpeed = 5.0f;
-
-    public bool isStartCar = false;
+    [SerializeField]
+    private bool isDebugUI = false;
 
     private Ray frontRay;
     private RaycastHit frontRayHit;
@@ -42,8 +42,6 @@ public class CarControllerAI : CarController
     // Start is called before the first frame update
     void Start()
     {
-        isStartCar = true;
-        isPedal = true;
         curGear = GearState.Front;
         frontRay = new Ray(frontRayPos.transform.position, transform.forward);
         rightRay = new Ray(rightRayPos.transform.position, Quaternion.Euler(0.0f, sideRayAngle, 0.0f) * transform.forward);
@@ -53,12 +51,14 @@ public class CarControllerAI : CarController
     // Update is called once per frame
     void Update()
     {
-        InputAI();
+        if( isCanMove )
+        {
+            InputAI();
+        }
     }
 
     private void FixedUpdate()
     {
-       
         UpdateRay();
         CalcPhysics();
         Move();
@@ -72,10 +72,6 @@ public class CarControllerAI : CarController
         rightRay.direction = Quaternion.Euler(0.0f, sideRayAngle, 0.0f) * transform.forward;
         leftRay.origin = rightRayPos.transform.position;
         leftRay.direction = Quaternion.Euler(0.0f, -sideRayAngle, 0.0f) * transform.forward;
-
-        //RayFindByTag(out frontRayHits, frontRay, "Obstacle", frontRayDistance);
-        //GetDistanceFrom(out rightRayHits, rightRay, "Obstacle", sideRayDistance);
-        //GetDistanceFrom(out leftRayHits, leftRay, "Obstacle", sideRayDistance);
     }
 
     void InputAI()
@@ -110,7 +106,9 @@ public class CarControllerAI : CarController
 
     void ThrottleAI()
     {
-        if(IsRayCollisionWithTag(out frontRayHits, frontRay, "Obstacle", frontRayDistance) && thrust >= turnSpeed)
+        if((IsRayCollisionWithTag(out frontRayHits, frontRay, "Obstacle", frontRayDistance) ||
+            IsRayCollisionWithTag(out frontRayHits, frontRay, "Car", frontRayDistance)) &&
+            thrust >= turnSpeed)
         {
             isPedal = false;
             isBraking = true;
@@ -121,40 +119,6 @@ public class CarControllerAI : CarController
             isPedal = true;
         }
     }
-
-    protected override void SwitchGear()
-    {
-        if (thrust <= thrustDeadzone && thrust >= -thrustDeadzone)
-        {
-            curGear = GearState.Neutral;
-        }
-
-        switch (curGear)
-        {
-            case GearState.Neutral:
-            {
-                if (Input.GetKey(KeyCode.W))
-                {
-                    SetGearStateFront();
-                }
-                else if (Input.GetKey(KeyCode.S))
-                {
-                    SetGearStateReverse();
-                }
-            }
-            break;
-            case GearState.Front:
-            {
-            }
-            break;
-
-            case GearState.Reverse:
-            {
-            }
-            break;
-        }
-    }
-    
     bool IsRayCollisionWithTag( out RaycastHit[] raycastHits, Ray ray, string tag, float distance)
     {
         raycastHits = Physics.RaycastAll(ray, distance);
@@ -221,13 +185,16 @@ public class CarControllerAI : CarController
 
     protected override void OnGUI()
     {
-        GUI.Box(new Rect(150.0f, 30.0f, 150.0f, 30.0f), "Thrust: " + thrust);
-        GUI.Box(new Rect(150.0f, 60.0f, 150.0f, 30.0f), "Acc: " + accel);
-        GUI.Box(new Rect(150.0f, 90.0f, 150.0f, 30.0f), "Pedal: " + pedal);
-        GUI.Box(new Rect(150.0f, 120.0f, 150.0f, 30.0f), "Friction: " + friction);
-        GUI.Box(new Rect(150.0f, 150.0f, 150.0f, 30.0f), "SteeringAngle: " + steeringAngle);
-        GUI.Box(new Rect(150.0f, 180.0f, 150.0f, 30.0f), "Gear: " + curGear);
-        GUI.Box(new Rect(150.0f, 210.0f, 150.0f, 30.0f), "LDist: " + leftDist);
-        GUI.Box(new Rect(150.0f, 240.0f, 150.0f, 30.0f), "RDist: " + rightDist);
+        if (isDebugUI)
+        {
+            GUI.Box(new Rect(150.0f, 30.0f, 150.0f, 30.0f), "Thrust: " + thrust);
+            GUI.Box(new Rect(150.0f, 60.0f, 150.0f, 30.0f), "Acc: " + accel);
+            GUI.Box(new Rect(150.0f, 90.0f, 150.0f, 30.0f), "Pedal: " + pedal);
+            GUI.Box(new Rect(150.0f, 120.0f, 150.0f, 30.0f), "Friction: " + friction);
+            GUI.Box(new Rect(150.0f, 150.0f, 150.0f, 30.0f), "SteeringAngle: " + steeringAngle);
+            GUI.Box(new Rect(150.0f, 180.0f, 150.0f, 30.0f), "Gear: " + curGear);
+            GUI.Box(new Rect(150.0f, 210.0f, 150.0f, 30.0f), "LDist: " + leftDist);
+            GUI.Box(new Rect(150.0f, 240.0f, 150.0f, 30.0f), "RDist: " + rightDist);
+        }
     }
 }

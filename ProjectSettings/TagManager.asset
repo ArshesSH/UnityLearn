@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - Car
+  - StartFlag
+  - MidFlag
   layers:
   - Default
   - TransparentFX

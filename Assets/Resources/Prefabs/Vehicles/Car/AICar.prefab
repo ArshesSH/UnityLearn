@@ -1235,6 +1235,7 @@ MonoBehaviour:
   frictionPower: 0.05
   collisionFrictionPower: 0.5
   collisionLimit: 0.5
+  isCanMove: 0
   frontRayPos: {fileID: 509946821}
   rightRayPos: {fileID: 4167541218379526577}
   leftRayPos: {fileID: 8338329299308564186}
@@ -1243,7 +1244,7 @@ MonoBehaviour:
   sideRayAngle: 30
   correctionFactor: 3
   turnSpeed: 15
-  isStartCar: 0
+  isDebugUI: 0
 --- !u!1 &8338329299308564186
 GameObject:
   m_ObjectHideFlags: 0

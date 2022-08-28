@@ -60,8 +60,8 @@ public class CarController : MonoBehaviour
     protected float collisionFrictionPower = 0.5f;
     [Range(0.0f, 1.0f)]
     public float collisionLimit = 0.5f;
-
-
+    [SerializeField]
+    protected bool isCanMove = false;
 
     protected float steeringAngle = 0.0f;
     protected float pedal = 0.0f;
@@ -78,6 +78,15 @@ public class CarController : MonoBehaviour
 
     protected GearState curGear;
     protected Vector3 moveDir = Vector3.forward;
+    protected int rapCount = 0;
+    public int RapCount
+    {
+        get { return rapCount; }
+    }
+    protected bool isMiddleFlagChecked;
+
+    protected float rapTimer = 0.0f;
+    protected float[] rapTime = new float[100];
 
 
     // Start is called before the first frame update
@@ -91,7 +100,10 @@ public class CarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+        if(isCanMove)
+        {
+            rapTimer += Time.deltaTime;
+        }
     }
 
     private void FixedUpdate()
@@ -100,6 +112,17 @@ public class CarController : MonoBehaviour
         UserInput();
         CalcPhysics();
         Move();
+    }
+
+    public void StartCar( bool flag = true)
+    {
+        isCanMove = flag;
+    }
+    public void StopCar(bool flag = false)
+    {
+        isCanMove = flag;
+        isPedal = false;
+        isBraking = true;
     }
 
     protected virtual void SwitchGear()
@@ -165,58 +188,61 @@ public class CarController : MonoBehaviour
             isTurnRight = false;
         }
 
-        switch (curGear)
+        if (isCanMove)
         {
-            case GearState.Front:
+            switch (curGear)
             {
-                if (Input.GetKey(KeyCode.W))
+                case GearState.Front:
                 {
-                    isPedal = true;
+                    if (Input.GetKey(KeyCode.W))
+                    {
+                        isPedal = true;
+                    }
+                    else
+                    {
+                        isPedal = false;
+                    }
+                    if (Input.GetKey(KeyCode.S))
+                    {
+                        isBraking = true;
+                    }
+                    else
+                    {
+                        isBraking = false;
+                    }
                 }
-                else
-                {
-                    isPedal = false;
-                }
-                if (Input.GetKey(KeyCode.S))
-                {
-                    isBraking = true;
-                }
-                else
-                {
-                    isBraking = false;
-                }
-            }
-            break;
+                break;
 
-            case GearState.Reverse:
-            {
-                if (Input.GetKey(KeyCode.S))
+                case GearState.Reverse:
                 {
-                    isPedal = true;
+                    if (Input.GetKey(KeyCode.S))
+                    {
+                        isPedal = true;
+                    }
+                    else
+                    {
+                        isPedal = false;
+                    }
+                    if (Input.GetKey(KeyCode.W))
+                    {
+                        isBraking = true;
+                    }
+                    else
+                    {
+                        isBraking = false;
+                    }
                 }
-                else
-                {
-                    isPedal = false;
-                }
-                if (Input.GetKey(KeyCode.W))
-                {
-                    isBraking = true;
-                }
-                else
-                {
-                    isBraking = false;
-                }
+                break;
             }
-            break;
         }
-
 
     }
 
     protected void CalcPhysics()
     {
         SetSteeringAngle();
-        RotateFrontWheel(); 
+        RotateFrontWheel();
+        RotateTire();
 
         if (isPedal)
         {
@@ -230,9 +256,7 @@ public class CarController : MonoBehaviour
         Decelerate();
         CalcAccel();
         CalcThrust();
-        RotateTire();
     }
-
 
     protected void Move()
     {
@@ -300,18 +324,18 @@ public class CarController : MonoBehaviour
             thrust = -maxReverse;
         }
 
-        //float curMaxThrust = maxThrust;
+        float curMaxThrust = maxThrust;
 
-        //if( curGear == GearState.Reverse )
-        //{
-        //    curMaxThrust = maxReverse;
-        //}
-        //curMaxThrust = (isCollision) ? curMaxThrust * collisionLimit : curMaxThrust;
+        if (curGear == GearState.Reverse)
+        {
+            curMaxThrust = maxReverse;
+        }
+        curMaxThrust = (isCollision) ? curMaxThrust * collisionLimit : curMaxThrust;
 
-        //if ( thrust >= curMaxThrust)
-        //{
-        //    thrust = curMaxThrust;
-        //}
+        if (thrust >= curMaxThrust)
+        {
+            thrust = curMaxThrust;
+        }
     }
 
     void SetSteeringAngle()
@@ -393,25 +417,54 @@ public class CarController : MonoBehaviour
         rearRightWheelCenter.transform.Rotate( Vector3.right * thrust );
     }
 
+    public float GetTotalRapTime()
+    {
+        float total = 0.0f;
+        for( int i = 0; i < rapCount; ++i)
+        {
+            total += rapTime[i];
+        }
+        return total;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Obstacle"))
+        if(collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("Car"))
         {
-            transform.Translate( thrust * Time.deltaTime * -moveDir);
-            thrust = 0.0f;
+            //transform.Translate( thrust * Time.deltaTime * -moveDir);
+            //thrust = 0.0f;
             isCollision = true;
             print("colison!");
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("MidFlag"))
+        {
+            isMiddleFlagChecked = true;
+        }
+        if(other.gameObject.CompareTag("StartFlag"))
+        {
+            if(isMiddleFlagChecked)
+            {
+                rapTime[rapCount] = rapTimer;
+                rapTimer = 0.0f;
+                rapCount++;
+                isMiddleFlagChecked = false;
+            }
+        }
+    }
+
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Obstacle"))
+        if (collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("Car"))
         {
             isCollision = false;
             print("colison out!");
         }
     }
+
 
 
     protected virtual void OnGUI()
@@ -422,5 +475,8 @@ public class CarController : MonoBehaviour
         GUI.Box( new Rect( 0.0f, 120.0f, 150.0f, 30.0f ), "Friction: " + friction );
         GUI.Box( new Rect( 0.0f, 150.0f, 150.0f, 30.0f ), "SteeringAngle: " + steeringAngle );
         GUI.Box( new Rect( 0.0f, 180.0f, 150.0f, 30.0f ), "Gear: " + curGear );
+        GUI.Box(new Rect(0.0f, 210.0f, 150.0f, 30.0f), "Rap: " + rapCount);
+        GUI.Box(new Rect(0.0f, 240.0f, 150.0f, 30.0f), "CurRapTime: " + rapTime[rapCount]);
+        GUI.Box(new Rect(0.0f, 270.0f, 150.0f, 30.0f), "Total: " + GetTotalRapTime());
     }
 }
