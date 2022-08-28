@@ -1222,14 +1222,14 @@ MonoBehaviour:
   frontRightWheelCenter: {fileID: 4538307318227488639}
   rearLeftWheelCenter: {fileID: 2809798061185170303}
   rearRightWheelCenter: {fileID: 7672459822796471687}
-  steeringSpeed: 50
-  reverseSteeringSpeed: 50
-  maxSteeringAngle: 30
+  steeringSpeed: 25
+  reverseSteeringSpeed: 100
+  maxSteeringAngle: 25
   steeringDeadZone: 0.1
   pedalPower: 0.1
   maxPedal: 0.5
-  brakePower: 0.3
-  maxThrust: 20
+  brakePower: 0.5
+  maxThrust: 50
   maxReverse: 3
   thrustDeadzone: 0.1
   frictionPower: 0.05
@@ -1238,9 +1238,11 @@ MonoBehaviour:
   frontRayPos: {fileID: 509946821}
   rightRayPos: {fileID: 4167541218379526577}
   leftRayPos: {fileID: 8338329299308564186}
-  frontRayDistance: 50
-  sideRayDistance: 50
-  sideRayAngle: 60
+  frontRayDistance: 40
+  sideRayDistance: 60
+  sideRayAngle: 30
+  correctionFactor: 3
+  turnSpeed: 15
   isStartCar: 0
 --- !u!1 &8338329299308564186
 GameObject:

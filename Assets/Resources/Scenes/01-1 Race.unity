@@ -8196,8 +8196,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4440454460049131357, guid: fa5a8f0488da5e0438a40cfda76f7349,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 81.64913
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440454460049131357, guid: fa5a8f0488da5e0438a40cfda76f7349,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: -80.64
+      value: -89.87
       objectReference: {fileID: 0}
     - target: {fileID: 4440454460049131357, guid: fa5a8f0488da5e0438a40cfda76f7349,
         type: 3}
@@ -12173,47 +12178,37 @@ PrefabInstance:
     - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
       propertyPath: maxThrust
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: turnSpeed
-      value: 15
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
       propertyPath: brakePower
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: sideRayAngle
-      value: 30
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
       propertyPath: steeringSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: sideRayDistance
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: correctionFactor
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
-        type: 3}
-      propertyPath: frontRayDistance
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
+      propertyPath: frontRayDistance
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
+        type: 3}
       propertyPath: maxSteeringAngle
-      value: 15
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362531244660599530, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
+        type: 3}
+      propertyPath: reverseSteeringSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259060760175734191, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8259060761001896819, guid: d8f14fcc8ff33c64e839fad5c9b2e660,
         type: 3}
