@@ -4099,7 +4099,7 @@ MonoBehaviour:
   - {fileID: 1922694269}
   - {fileID: 2118053674}
   playerCar: {fileID: 1509455346}
-  maxRapCount: 1
+  maxRapCount: 3
 --- !u!4 &590015094
 Transform:
   m_ObjectHideFlags: 0
