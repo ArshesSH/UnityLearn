@@ -9,6 +9,8 @@ TagManager:
   - StartFlag
   - MidFlag
   - FireAttack
+  - Weapon
+  - Character
   layers:
   - Default
   - TransparentFX
