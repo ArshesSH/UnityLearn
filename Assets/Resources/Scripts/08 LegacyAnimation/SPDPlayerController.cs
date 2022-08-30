@@ -21,6 +21,8 @@ public class SPDPlayerController : MonoBehaviour
 
     [Header("Character Settings")]
     [SerializeField]
+    protected GameObject cameraObject;
+    [SerializeField]
     protected int maxHP = 3;
     protected int curHP;
 
@@ -39,8 +41,8 @@ public class SPDPlayerController : MonoBehaviour
 
     void Start()
     {
-        cam = GetComponentInChildren<Camera>();
-        controller = GetComponent<CharacterController>();
+        cam = cameraObject.GetComponent<Camera>();
+        controller = GetComponentInParent<CharacterController>();
     }
 
     void Update()
@@ -81,6 +83,7 @@ public class SPDPlayerController : MonoBehaviour
         float horizon = Input.GetAxis( "Horizontal" );
         float vertical = Input.GetAxis( "Vertical" );
 
+        direction = horizon * cam.transform.right + vertical * new Vector3(cam.transform.forward.x , 0.0f, cam.transform.forward.z);
     }
 
     protected void RotateCharacter()
@@ -91,12 +94,12 @@ public class SPDPlayerController : MonoBehaviour
                     rotateSpeed * Time.deltaTime / Vector3.Angle( transform.forward, direction ) );
             transform.LookAt( transform.forward + forward );
         }
-        //controller.Move( direction * moveSpeed * Time.deltaTime );
+        controller.Move( direction * moveSpeed * Time.deltaTime );
     }
 
 
     private void OnGUI()
     {
-
+        //GUI.Box(new Rect(0.0f, 30.0f, 300.0f, 30.0f), "Thrust: " + thrust);
     }
 }
