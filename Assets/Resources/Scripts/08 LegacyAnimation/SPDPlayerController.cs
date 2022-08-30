@@ -33,11 +33,14 @@ public class SPDPlayerController : MonoBehaviour
 
 
     private Camera cam;
+    protected CharacterController controller;
     protected State state;
+    protected Vector3 direction;
 
     void Start()
     {
         cam = GetComponentInChildren<Camera>();
+        controller = GetComponent<CharacterController>();
     }
 
     void Update()
@@ -49,6 +52,8 @@ public class SPDPlayerController : MonoBehaviour
     {
         ZoomCamera();
         RotateCamera();
+        SetDirection();
+        RotateCharacter();
     }
 
 
@@ -70,10 +75,28 @@ public class SPDPlayerController : MonoBehaviour
             cam.fieldOfView = 80;
         }
     }
+    virtual protected void SetDirection()
+    {
+        // direction = new Vector3( -Input.GetAxis( "Horizontal" ), 0.0f, Input.GetAxis( "Vertical" ) );
+        float horizon = Input.GetAxis( "Horizontal" );
+        float vertical = Input.GetAxis( "Vertical" );
+
+    }
+
+    protected void RotateCharacter()
+    {
+        if ( direction.sqrMagnitude > 0.01f )
+        {
+            Vector3 forward = Vector3.Slerp( transform.forward, direction,
+                    rotateSpeed * Time.deltaTime / Vector3.Angle( transform.forward, direction ) );
+            transform.LookAt( transform.forward + forward );
+        }
+        //controller.Move( direction * moveSpeed * Time.deltaTime );
+    }
+
 
     private void OnGUI()
     {
 
     }
-
 }
