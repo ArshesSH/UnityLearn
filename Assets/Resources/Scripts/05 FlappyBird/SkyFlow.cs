@@ -18,6 +18,11 @@ public class SkyFlow : MonoBehaviour
     void Start()
     {
         mat = render.material;
+
+        // 2022.08.30 texture 불러와서 변경하기
+        //Texture baseTexture = Resources.Load( "Textures/Sky4" ) as Texture; //Resources 디렉토리 밑의 경로에서 호출 후 texture로 변경
+        //mat.SetTexture( "_BaseMap", baseTexture );
+        // mat.color = Color.red;
     }
 
     // Update is called once per frame

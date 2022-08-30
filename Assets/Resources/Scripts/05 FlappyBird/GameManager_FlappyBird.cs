@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameManager_FlappyBird : MonoBehaviour
 {
     private int score = 0;
+    bool isAttackNow = false;
+    public bool IsAttackNow
+    {
+        get { return isAttackNow; }
+    }
     public int Score
     {
         get { return score; }
@@ -73,5 +78,10 @@ public class GameManager_FlappyBird : MonoBehaviour
     public void ChangeScene( string sceneName )
     {
         SceneManager.LoadScene( sceneName );
+    }
+
+    public void SetIsAttackNow(bool flag = true)
+    {
+        isAttackNow = flag;
     }
 }

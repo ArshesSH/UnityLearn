@@ -30,7 +30,7 @@ public class Bird : MonoBehaviour
     [SerializeField]
     private float fireAttackCoolTimeMax = 5.0f;
     [SerializeField]
-    private float attackTimeMax = 1.0f;
+    private float attackTimeMax = 3.0f;
 
     public int scorePoint = 100;
     Rigidbody rb;
@@ -75,12 +75,14 @@ public class Bird : MonoBehaviour
             {
                 case AttackState.CanNotAttack:
                 {
+                    fireParticleSys.Stop();
                     if ( fireTimer < fireAttackCoolTimeMax )
                     {
                         fireTimer += Time.deltaTime;
                     }
                     else
                     {
+                        fireTimer = 0.0f;
                         attackState = AttackState.CanAttack;
                     }
                 }
@@ -88,7 +90,7 @@ public class Bird : MonoBehaviour
 
                 case AttackState.CanAttack:
                 {
-                    if(Input.GetKey(KeyCode.F))
+                    if(Input.GetKey(KeyCode.LeftShift))
                     {
                         attackState = AttackState.AttackNow;
                     }
@@ -102,6 +104,7 @@ public class Bird : MonoBehaviour
                     if(attackTimer >= attackTimeMax )
                     {
                         fireParticleSys.Stop();
+                        attackTimer = 0.0f;
                         attackState = AttackState.CanNotAttack;
                     }
                 }

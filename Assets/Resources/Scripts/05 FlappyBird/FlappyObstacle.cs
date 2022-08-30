@@ -11,6 +11,11 @@ public class FlappyObstacle : MonoBehaviour
     [SerializeField]
     private float posRange = 4.0f;
 
+    [SerializeField]
+    private GameObject topObstacle;
+    [SerializeField]
+    private GameObject bottomObstacle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +33,14 @@ public class FlappyObstacle : MonoBehaviour
             {
                 Destroy( gameObject );
             }
+        }
+    }
+
+    private void OnTriggerEnter( Collider other )
+    {
+        if(other.gameObject.CompareTag("FireAttack"))
+        {
+            
         }
     }
 
