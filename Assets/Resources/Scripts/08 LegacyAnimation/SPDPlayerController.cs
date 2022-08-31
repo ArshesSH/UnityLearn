@@ -2,145 +2,129 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SPDPlayerController : MonoBehaviour
+public class SPDPlayerController : SPDCharacterController
 {
-    public enum State
-    {
-        Idle,
-        Walk,
-        Run,
-        Sprint,
-        Attack,
-        Die
-    }
-
-    [Header( "Weapon Settings" )]
-    [SerializeField]
-    protected GameObject weaponObject;
-    protected Collider weaponCollider;
-
-    [Header("Character Settings")]
-    [SerializeField]
-    protected GameObject cameraObject;
-    [SerializeField]
-    protected int maxHP = 3;
-    protected int curHP;
-    [SerializeField]
-    protected float walkSpeed = 4.0f;
-    [SerializeField]
-    protected float runSpeed = 8.0f;
-    [SerializeField]
-    protected float sprintSpeed = 12.0f;
-    [SerializeField]
-    protected float rotateSpeed = 360.0f;
-    [SerializeField]
-    protected float attackDelay = 1.0f;
-    protected float attackHitDelay = 0.3f;
 
     [Header( "Camera Settings" )]
     [SerializeField]
-    protected GameObject cameraTargetObject;
+    protected GameObject cameraTarget;
+    [SerializeField]
+    protected GameObject camObjectTPV;
+    [SerializeField]
+    protected GameObject camObjectFPV;
+    private Camera camTPV;
+    private Camera camFPV;
+    [SerializeField]
+    private float defaultTPVAngle = 20.0f;
+    [SerializeField]
+    private float defaultFPVAngle = 0.0f;
     [SerializeField]
     protected float camZoomFactor = 20.0f;
     [SerializeField]
     protected float camMaxAngle = 60.0f;
     [SerializeField]
     protected float camMinAngle = -60.0f;
-    private float curCamAngleX;
-
-
-    private Camera cam;
-    protected CharacterController controller;
-    protected Animation spartaAnim;
-    protected State state;
-    protected Vector3 direction;
-
-
-    protected float moveSpeed;
+    private float curCamTPVAngleX;
+    private float curCamFPVAngleX;
 
     void Start()
     {
-        cam = cameraObject.GetComponent<Camera>();
-        controller = GetComponentInParent<CharacterController>();
-        spartaAnim = GetComponent<Animation>();
-        weaponCollider = weaponObject.GetComponent<BoxCollider>();
-        weaponCollider.enabled = false;
-
-        curCamAngleX = cam.transform.eulerAngles.x;
+        InitSettings();
+        camTPV = camObjectTPV.GetComponent<Camera>();
+        camFPV = camObjectFPV.GetComponent<Camera>();
+        curCamTPVAngleX = camTPV.transform.eulerAngles.x;
     }
 
     void Update()
     {
-        PlayerInput();
-        PlayAnimations();
-    }
+        if( Input.GetKeyDown(KeyCode.F) )
+        {
+            SwitchingCamera();
+        }
 
-    private void PlayerInput()
-    {
-        ZoomCamera();
+        if ( camObjectTPV.activeInHierarchy )
+        {
+            ZoomCamera();
+        }
         RotateCamera();
         SetDirection();
-
-        if ( Input.GetButtonDown("Fire1") )
-        {
-            transform.LookAt( transform.position + Vector3.ProjectOnPlane( cameraObject.transform.forward, Vector3.up ) );
-            state = State.Attack;
-        }
-        if (state != State.Attack)
-        {
-            RotateCharacter();
-        }
-
+        SetState();
+        PlayAnimations();
     }
-
+    private void SwitchingCamera()
+    {
+        if( camObjectTPV.activeInHierarchy )
+        {
+            curCamFPVAngleX = defaultFPVAngle;
+            camObjectTPV.SetActive( false );
+            camObjectFPV.SetActive( true );
+        }
+        else if ( camObjectFPV.activeInHierarchy )
+        {
+            curCamTPVAngleX = defaultTPVAngle;
+            camObjectFPV.SetActive( false );
+            camObjectTPV.SetActive( true );
+        }
+    }
     private void RotateCamera()
     {
-        cam.transform.RotateAround( cameraTargetObject.transform.position, Vector3.up, Input.GetAxisRaw( "Mouse X" ) );
+        if( camObjectTPV.activeInHierarchy )
+        {
+            camObjectTPV.transform.RotateAround( cameraTarget.transform.position, Vector3.up, Input.GetAxisRaw( "Mouse X" ) );
 
-        float verticalInput = -Input.GetAxisRaw( "Mouse Y" );
-        curCamAngleX += verticalInput;
-        if ( curCamAngleX <= camMaxAngle && curCamAngleX >= camMinAngle )
-        {
-            cam.transform.RotateAround( cameraTargetObject.transform.position, cam.transform.right, verticalInput );
+            float verticalInput = -Input.GetAxisRaw( "Mouse Y" );
+            curCamTPVAngleX += verticalInput;
+            if ( curCamTPVAngleX <= camMaxAngle && curCamTPVAngleX >= camMinAngle )
+            {
+                camObjectTPV.transform.RotateAround( cameraTarget.transform.position, camTPV.transform.right, verticalInput );
+            }
+            else
+            {
+                curCamTPVAngleX -= verticalInput;
+            }
         }
-        else
+        else if( camObjectFPV.activeInHierarchy)
         {
-            curCamAngleX -= verticalInput;
+            camObjectFPV.transform.RotateAround( cameraTarget.transform.position, Vector3.up, Input.GetAxisRaw( "Mouse X" ) );
+
+            float verticalInput = -Input.GetAxisRaw( "Mouse Y" );
+            curCamFPVAngleX += verticalInput;
+            if ( curCamFPVAngleX <= camMaxAngle && curCamFPVAngleX >= camMinAngle )
+            {
+                camObjectFPV.transform.RotateAround( cameraTarget.transform.position, camFPV.transform.right, verticalInput );
+            }
+            else
+            {
+                curCamFPVAngleX -= verticalInput;
+            }
         }
+
     }
 
     private void ZoomCamera()
     {
-        cam.fieldOfView -= (camZoomFactor * Input.GetAxis( "Mouse ScrollWheel" ));
+        camTPV.fieldOfView -= (camZoomFactor * Input.GetAxis( "Mouse ScrollWheel" ));
         // °¢Á¦ÇÑ
-        if ( cam.fieldOfView < 20 )
+        if ( camTPV.fieldOfView < 20 )
         {
-            cam.fieldOfView = 20;
+            camTPV.fieldOfView = 20;
         }
-        if ( cam.fieldOfView > 80 )
+        if ( camTPV.fieldOfView > 80 )
         {
-            cam.fieldOfView = 80;
+            camTPV.fieldOfView = 80;
         }
     }
-    virtual protected void SetDirection()
+    protected override void SetState()
     {
-        float horizon = Input.GetAxis( "Horizontal" );
-        float vertical = Input.GetAxis( "Vertical" );
-
-        direction = (horizon * cameraObject.transform.right + vertical * Vector3.ProjectOnPlane( cameraObject.transform.forward, Vector3.up )).normalized;
-    }
-
-    protected void RotateCharacter()
-    {
-
-        if ( direction.sqrMagnitude > 0.01f )
+        base.SetState();
+        if ( Input.GetButtonDown( "Fire1" ) )
         {
-            Vector3 forward = Vector3.Slerp( transform.forward, direction,
-                    rotateSpeed * Time.deltaTime / Vector3.Angle( transform.forward, direction ) );
-            transform.LookAt( transform.position + forward );
-
-
-            if ( state != State.Attack && Input.GetKey( KeyCode.LeftAlt ) )
+            transform.LookAt( transform.position + Vector3.ProjectOnPlane( cameraTarget.transform.forward, Vector3.up ) );
+            state = State.Attack;
+        }
+        if ( state != State.Attack )
+        {
+            if ( Input.GetKey( KeyCode.LeftAlt ) )
             {
                 state = State.Walk;
             }
@@ -152,114 +136,20 @@ public class SPDPlayerController : MonoBehaviour
             {
                 state = State.Run;
             }
-            MoveCharacter();
-        }
-        else
-        {
-            state = State.Idle;
+            RotateCharacter();
         }
     }
-
-    protected void MoveCharacter()
+    protected override void SetDirection()
     {
-        switch ( state )
-        {
-            case State.Walk:
-            {
-                moveSpeed = walkSpeed;
-            }
-            break;
-            case State.Run:
-            {
-                moveSpeed = runSpeed;
-            }
-            break;
-            case State.Sprint:
-            {
-                moveSpeed = sprintSpeed;
-            }
-            break;
-        }
-        controller.Move( moveSpeed * Time.deltaTime * direction );
-    }
+        float horizon = Input.GetAxis( "Horizontal" );
+        float vertical = Input.GetAxis( "Vertical" );
 
-
-    protected void PlayAnimations()
-    {
-        switch (state)
-        {
-            case State.Idle:
-            {
-                PlayIdle();
-            }
-            break;
-            case State.Walk:
-            {
-                PlayWalk();
-            }
-            break;
-            case State.Run:
-            {
-                PlayRun();
-            }
-            break;
-            case State.Sprint:
-            {
-                PlaySprint();
-            }
-            break;
-            case State.Attack:
-            {
-                StartCoroutine( "PlayAttack" );
-            }
-            break;
-
-        }
-    }
-
-    protected void PlayIdle()
-    {
-        spartaAnim.wrapMode = WrapMode.Loop;
-        spartaAnim.CrossFade( "idle", 0.3f );
-    }
-    protected void PlayWalk()
-    {
-        spartaAnim.wrapMode = WrapMode.Loop;
-        spartaAnim.CrossFade( "walk", 0.3f );
-    }
-    protected void PlayRun()
-    {
-        spartaAnim.wrapMode = WrapMode.Loop;
-        spartaAnim.CrossFade( "run", 0.3f );
-    }
-    protected void PlaySprint()
-    {
-        spartaAnim.wrapMode = WrapMode.Loop;
-        spartaAnim.CrossFade( "charge", 0.3f );
-    }
-
-    IEnumerator PlayAttack()
-    {
-        if ( !spartaAnim.IsPlaying( "attack" ) )
-        {
-            spartaAnim.wrapMode = WrapMode.Once;
-            spartaAnim.CrossFade( "attack", 0.3f );
-
-            float delayTime = spartaAnim.GetClip( "attack" ).length - 0.3f; // playtime - crossfadetime
-
-            yield return new WaitForSeconds( attackHitDelay );
-            weaponCollider.enabled = true;
-            yield return new WaitForSeconds( attackDelay - attackHitDelay );
-            weaponCollider.enabled = false;
-            state = State.Idle;
-            spartaAnim.wrapMode = WrapMode.Loop;
-            spartaAnim.CrossFade( "idle", 0.3f );
-        }
+        direction = (horizon * cameraTarget.transform.right + vertical * Vector3.ProjectOnPlane( cameraTarget.transform.forward, Vector3.up )).normalized;
     }
 
 
     private void OnGUI()
     {
-        GUI.Box(new Rect(30.0f, 30.0f, 150.0f, 30.0f), "State: " + state.ToString());
+        GUI.Box(new Rect(30.0f, 400.0f, 150.0f, 30.0f), "State: " + state.ToString());
     }
 }
