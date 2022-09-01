@@ -119,7 +119,7 @@ public class SPDPlayerController : SPDCharacterController
         base.SetState();
         if ( Input.GetButtonDown( "Fire1" ) )
         {
-            transform.LookAt( transform.position + Vector3.ProjectOnPlane( cameraTarget.transform.forward, Vector3.up ) );
+            transform.LookAt( transform.position + Vector3.ProjectOnPlane(camObjectTPV.transform.forward, Vector3.up ) );
             state = State.Attack;
         }
         if ( state != State.Attack )
@@ -162,7 +162,6 @@ public class SPDPlayerController : SPDCharacterController
             direction = (horizon * rightVec + vertical * Vector3.ProjectOnPlane(fowardVec, Vector3.up)).normalized;
         }
     }
-
 
     private void OnGUI()
     {

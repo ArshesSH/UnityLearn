@@ -12,6 +12,7 @@ TagManager:
   - Weapon
   - Character
   - Tower
+  - Enemy
   layers:
   - Default
   - TransparentFX
