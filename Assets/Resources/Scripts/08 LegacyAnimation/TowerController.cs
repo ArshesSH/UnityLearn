@@ -22,6 +22,7 @@ public class TowerController : MonoBehaviour
     {
         if(curHP <= 0)
         {
+            SPDGameManager.Instance.towerCount--;
             Destroy(gameObject);
         }
     }
@@ -36,7 +37,7 @@ public class TowerController : MonoBehaviour
 
     private void OnGUI()
     {
-        GUI.Box(new Rect(150.0f + towerNumber * 50.0f, 400.0f, 50.0f, 30.0f), "HP:" + maxHP );
+        GUI.Box(new Rect(350.0f + towerNumber * 100.0f, 0.0f, 100.0f, 30.0f), "Tower" + towerNumber+": " + curHP );
     }
 
 }

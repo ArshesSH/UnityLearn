@@ -29,6 +29,6 @@ public class SPDGameManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-    
+    public int towerCount = 8;
 
 }

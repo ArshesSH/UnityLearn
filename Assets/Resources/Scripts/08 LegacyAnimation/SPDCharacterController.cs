@@ -11,7 +11,8 @@ public abstract class SPDCharacterController : MonoBehaviour
         Run,
         Sprint,
         Attack,
-        Die
+        Die,
+        Victory
     }
 
     [Header( "Weapon Settings" )]
@@ -142,6 +143,11 @@ public abstract class SPDCharacterController : MonoBehaviour
                 PlayDead();
             }
             break;
+            case State.Victory:
+            {
+                PlayVictory();
+            }
+            break;
         }
     }
     protected void PlayIdle()
@@ -169,6 +175,13 @@ public abstract class SPDCharacterController : MonoBehaviour
         spartaAnim.wrapMode = WrapMode.Once;
         spartaAnim.CrossFade( "die", 0.3f );
     }
+
+    protected void PlayVictory()
+    {
+        spartaAnim.wrapMode = WrapMode.Loop;
+        spartaAnim.CrossFade("victory", 0.3f);
+    }
+
     IEnumerator PlayAttack()
     {
         if ( !spartaAnim.IsPlaying( "attack" ) )
