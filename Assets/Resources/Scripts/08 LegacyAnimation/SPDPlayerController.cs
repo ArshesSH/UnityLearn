@@ -144,7 +144,23 @@ public class SPDPlayerController : SPDCharacterController
         float horizon = Input.GetAxis( "Horizontal" );
         float vertical = Input.GetAxis( "Vertical" );
 
-        direction = (horizon * cameraTarget.transform.right + vertical * Vector3.ProjectOnPlane( cameraTarget.transform.forward, Vector3.up )).normalized;
+        Vector3 rightVec;
+        Vector3 fowardVec;
+
+        if(camObjectFPV.activeInHierarchy)
+        {
+            rightVec = camObjectFPV.transform.right;
+            fowardVec = camObjectFPV.transform.forward;
+
+            direction = (horizon * rightVec + vertical * Vector3.ProjectOnPlane(fowardVec, Vector3.up)).normalized;
+        }
+        else if(camObjectTPV.activeInHierarchy)
+        {
+            rightVec = camObjectTPV.transform.right;
+            fowardVec = camObjectTPV.transform.forward;
+
+            direction = (horizon * rightVec + vertical * Vector3.ProjectOnPlane(fowardVec, Vector3.up)).normalized;
+        }
     }
 
 
