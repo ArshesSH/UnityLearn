@@ -30,9 +30,6 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene( sceneName );
     }
 
-
-
-
     public int Score = 0;
     public string userID = "";
     

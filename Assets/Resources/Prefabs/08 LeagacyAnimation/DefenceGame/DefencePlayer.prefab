@@ -155,7 +155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2892108729835393874}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.64, z: 0.87999725}
+  m_LocalPosition: {x: 0, y: 4.016, z: 0.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -255,7 +255,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3351610283766394612}
-  - component: {fileID: 3351610283766394378}
+  - component: {fileID: 1436300231780737003}
+  - component: {fileID: 2557269099975146305}
   m_Layer: 0
   m_Name: DefencePlayer
   m_TagString: Player
@@ -283,7 +284,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!143 &3351610283766394378
+--- !u!143 &1436300231780737003
 CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -301,6 +302,35 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &2557269099975146305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3351610283766394615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110e3e3402896cc43a2041b6917d6c8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponObject: {fileID: 3785406827541875925}
+  enemyTag: Tower
+  characterObj: {fileID: 533239355364138099}
+  maxHP: 3
+  walkSpeed: 4
+  runSpeed: 8
+  sprintSpeed: 12
+  rotateSpeed: 360
+  attackDelay: 1
+  cameraTarget: {fileID: 106992362}
+  camObjectTPV: {fileID: 3749087558970569334}
+  camObjectFPV: {fileID: 2892108729835393874}
+  defaultTPVAngle: 20
+  defaultFPVAngle: 0
+  camZoomFactor: 20
+  camMaxAngle: 60
+  camMinAngle: -60
 --- !u!1 &3749087558970569334
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,12 +576,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 533239355364138099}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 110e3e3402896cc43a2041b6917d6c8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weaponObject: {fileID: 3785406827541875925}
+  enemyTag: 
+  characterObj: {fileID: 0}
   maxHP: 3
   walkSpeed: 4
   runSpeed: 8

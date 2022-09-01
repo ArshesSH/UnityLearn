@@ -106,7 +106,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3351610283766394612}
-  - component: {fileID: 3351610283766394378}
+  - component: {fileID: 4055503434457304172}
+  - component: {fileID: 912176934556471350}
   m_Layer: 0
   m_Name: CloneGuys
   m_TagString: Enemy
@@ -132,7 +133,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!143 &3351610283766394378
+--- !u!143 &4055503434457304172
 CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,6 +151,33 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &912176934556471350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3351610283766394615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b3dbbf0ed09ea6418eb225cef47360b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponObject: {fileID: 3785406827541875925}
+  enemyTag: Player
+  characterObj: {fileID: 533239355364138099}
+  maxHP: 1
+  walkSpeed: 4
+  runSpeed: 6
+  sprintSpeed: 8
+  rotateSpeed: 360
+  attackDelay: 1
+  point: 1
+  targetName: Tower
+  targetCounts: 8
+  targetDetectionRayDistance: 3
+  targetDetectionRayPos: {fileID: 7959993740329060709}
+  isStartMove: 1
 --- !u!1 &3785406827541875925
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,22 +341,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 533239355364138099}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b3dbbf0ed09ea6418eb225cef47360b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weaponObject: {fileID: 3785406827541875925}
+  enemyTag: 
+  characterObj: {fileID: 0}
   maxHP: 1
   walkSpeed: 4
-  runSpeed: 8
-  sprintSpeed: 12
+  runSpeed: 5
+  sprintSpeed: 6
   rotateSpeed: 360
   attackDelay: 1
+  point: 1
+  targetName: Tower
   targetCounts: 8
   targetDetectionRayDistance: 3
   targetDetectionRayPos: {fileID: 7959993740329060709}
-  isStartMove: 1
+  isStartMove: 0
 --- !u!4 &648376303583914398 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8987181100129709284, guid: 12253fd501350f640a427f8fa34470dc,
