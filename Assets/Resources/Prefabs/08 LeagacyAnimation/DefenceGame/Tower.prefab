@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21b9398d658bed749932f9007505c840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 1
+  maxHP: 10
   enemyTag: Enemy
   damagedTag: Weapon
   towerNumber: 0
