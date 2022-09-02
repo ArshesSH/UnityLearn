@@ -15,6 +15,10 @@ public class Player2D : MonoBehaviour
 
     void Update()
     {
+       
+    }
+    private void FixedUpdate()
+    {
         Move2D();
     }
 
