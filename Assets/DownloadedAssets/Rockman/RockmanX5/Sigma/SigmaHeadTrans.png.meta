@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: e4633a1fe37a46a47a2876ca3fdd8063
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SigmaHeadTrans_28
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 541
+        width: 158
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854ad5d1338736142b2d717f29e7c3e8
+      internalID: -356080437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_29
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 541
+        width: 158
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b39e811292aa84b970019a5686ca16
+      internalID: -1076500044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_30
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 541
+        width: 156
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8646c167df3854199ecf8765313a10
+      internalID: -665628125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_31
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 541
+        width: 158
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d161e5ca09c0fb4ba6a1011e5e5b478
+      internalID: 1083667668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_32
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 364
+        width: 158
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90457b53b575b094e8370e074be0b883
+      internalID: 1927126732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_33
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 364
+        width: 158
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9186bba4f5a7a2b46bb42b2126faf0b1
+      internalID: -1894174858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_34
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 364
+        width: 158
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6140716a8578049a771ae9006dbfec
+      internalID: -508859302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_35
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 364
+        width: 158
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5e4ad6236fb394bb0317a6e60e2d7d
+      internalID: 821686106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_39
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 277
+        width: 128
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7baeea62385ccd34c85b54585df3b6a8
+      internalID: -555500031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_40
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 277
+        width: 27
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa677d31b018be0419736e81cf5f31fc
+      internalID: -1908309944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_41
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 255
+        width: 128
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903911d056dfb0f458dd47403f644486
+      internalID: -1073051230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_42
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 255
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634b28141b7d9ed488359567cb0060ae
+      internalID: 590827123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_43
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 168
+        width: 60
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372c5dba1ba34694582bd04465da019b
+      internalID: 1911144441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_44
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 171
+        width: 71
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694231eb6cf9d5c4fb4d39afc60841ab
+      internalID: 1740018679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_45
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 171
+        width: 61
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46830ffcb1c9744990f4681919c00dd
+      internalID: -1889079546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_46
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 220
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01fefc64f5ae264eb60c8ddc052c988
+      internalID: 1011293042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_47
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 220
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd958e5926562d4688e88b407f160a2
+      internalID: -1372775883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_48
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 155
+        width: 128
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a4f5f538e87ea4a95f505dd2bbd04d
+      internalID: -604738224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_49
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 155
+        width: 27
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac80f6b9833b7e458fe0e9657b3c7da
+      internalID: -1780272178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_50
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 55
+        width: 128
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a7f24d468ba834e8e796902f20a9a7
+      internalID: -460142850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_51
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 55
+        width: 128
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe3588dbcfc3cb4e82ff6a922139621
+      internalID: -575029615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_52
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 55
+        width: 128
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3db5b86fe0e1f48ad63a09715b414e
+      internalID: -540663775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_53
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 55
+        width: 128
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4905d71d01e9104ca6e2b2452fa7fc8
+      internalID: 1928855031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_54
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 55
+        width: 128
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c77f8d77389b0d45a0607fbd156e074
+      internalID: -694114132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_55
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 17
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30921701d3755594c81f953e7a4621d8
+      internalID: 1578223201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_56
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 18
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d78be711a0194e48a3f80da6b7132cf
+      internalID: 2095991143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_57
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 17
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4196b80a65034674e943e5e35f8aa296
+      internalID: 149461713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_58
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 20
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f58748af0b7c4499a127d74548b973
+      internalID: -1644855951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_59
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 26
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9d637b7f1777849af89de9d6d476a7
+      internalID: 1622008897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_60
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 25
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4797062310bdc4e4295a5a192eebc754
+      internalID: -99465611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_61
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 25
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8a03a561c5d814b9fb7f27041c3477
+      internalID: 1880752214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_62
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 25
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79349981681852941a622eb36e00819f
+      internalID: 1286494510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SigmaHeadTrans_63
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 25
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8555f1a34ae044d862a648f12d8ef2
+      internalID: -458142007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: de39fb6433100864badf7cc1d1d38816
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SigmaHeadTrans_42: 590827123
+      SigmaHeadTrans_37: -333484379
+      SigmaHeadTrans_29: -1076500044
+      SigmaHeadTrans_40: -1908309944
+      SigmaHeadTrans_19: 1839765262
+      SigmaHeadTrans_59: 1622008897
+      SigmaHeadTrans_64: 565709543
+      SigmaHeadTrans_62: 1286494510
+      SigmaHeadTrans_63: -458142007
+      SigmaHeadTrans_31: 1083667668
+      SigmaHeadTrans_35: 821686106
+      SigmaHeadTrans_20: -888245765
+      SigmaHeadTrans_24: 1207312691
+      SigmaHeadTrans_39: -555500031
+      SigmaHeadTrans_26: -750432474
+      SigmaHeadTrans_14: 772156537
+      SigmaHeadTrans_1: -1395884090
+      SigmaHeadTrans_53: 1928855031
+      SigmaHeadTrans_61: 1880752214
+      SigmaHeadTrans_4: -1549833115
+      SigmaHeadTrans_10: -1465793201
+      SigmaHeadTrans_28: -356080437
+      SigmaHeadTrans_43: 1911144441
+      SigmaHeadTrans_45: -1889079546
+      SigmaHeadTrans_50: -460142850
+      SigmaHeadTrans_0: 415638809
+      SigmaHeadTrans_55: 1578223201
+      SigmaHeadTrans_2: -270787405
+      SigmaHeadTrans_21: -904426976
+      SigmaHeadTrans_25: -1869695407
+      SigmaHeadTrans_12: 2046745925
+      SigmaHeadTrans_18: -1769162101
+      SigmaHeadTrans_15: 178474194
+      SigmaHeadTrans_5: -359844204
+      SigmaHeadTrans_41: -1073051230
+      SigmaHeadTrans_11: -80983968
+      SigmaHeadTrans_58: -1644855951
+      SigmaHeadTrans_16: 1919223512
+      SigmaHeadTrans_6: -224516229
+      SigmaHeadTrans_33: -1894174858
+      SigmaHeadTrans_17: -749056601
+      SigmaHeadTrans_56: 2095991143
+      SigmaHeadTrans_8: -15413999
+      SigmaHeadTrans_52: -540663775
+      SigmaHeadTrans_47: -1372775883
+      SigmaHeadTrans_46: 1011293042
+      SigmaHeadTrans_44: 1740018679
+      SigmaHeadTrans_57: 149461713
+      SigmaHeadTrans_48: -604738224
+      SigmaHeadTrans_54: -694114132
+      SigmaHeadTrans_27: -1146712463
+      SigmaHeadTrans_51: -575029615
+      SigmaHeadTrans_38: 911691012
+      SigmaHeadTrans_32: 1927126732
+      SigmaHeadTrans_22: -1118127864
+      SigmaHeadTrans_30: -665628125
+      SigmaHeadTrans_65: -857258928
+      SigmaHeadTrans_3: -730298808
+      SigmaHeadTrans_9: 99062641
+      SigmaHeadTrans_13: 906256376
+      SigmaHeadTrans_36: -900499403
+      SigmaHeadTrans_23: -1529102443
+      SigmaHeadTrans_34: -508859302
+      SigmaHeadTrans_7: -1414903851
+      SigmaHeadTrans_60: -99465611
+      SigmaHeadTrans_49: -1780272178
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

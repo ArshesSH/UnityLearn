@@ -4424,10 +4424,10 @@ TextureImporter:
       name: 4Trans 1_245
       rect:
         serializedVersion: 2
-        x: 465
-        y: 225
-        width: 6
-        height: 6
+        x: 426
+        y: 196
+        width: 46
+        height: 70
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5319,8 +5319,8 @@ TextureImporter:
       4Trans 1_27: -779062232
       4Trans 1_107: -648865811
       4Trans 1_117: -730734958
-      4Trans 1_4: 81826976
       4Trans 1_78: 1954452847
+      4Trans 1_4: 81826976
       4Trans 1_132: -478844720
       4Trans 1_198: 88171536
       4Trans 1_189: 305790269
