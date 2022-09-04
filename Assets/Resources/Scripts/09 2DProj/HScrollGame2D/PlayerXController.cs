@@ -15,8 +15,7 @@ public class PlayerXController : MonoBehaviour
     }
 
     [Header("Player Settings")]
-    [SerializeField]
-    private float maxHP = 15.0f;
+    public float maxHP = 15.0f;
     public float curHP;
     [SerializeField]
     private float moveSpeed = 200.0f;

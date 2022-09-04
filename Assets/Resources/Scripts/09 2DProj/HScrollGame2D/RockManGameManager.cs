@@ -20,7 +20,44 @@ public class RockManGameManager : MonoBehaviour
     }
 
     GameObject playerX;
+    public GameObject PlayerX
+    {
+        get { return playerX; }
+    }
+
+    GameObject sigma;
+    public GameObject Sigma
+    {
+        get
+        {
+            if(sigma == null)
+            {
+                sigma = GameObject.Find("SigamHead");
+            }
+            return sigma;
+        }
+    }
+    SigmaBehaviour sigmaBehaviour;
+    public SigmaBehaviour SigmaBv
+    {
+        get
+        {
+            if(sigmaBehaviour == null)
+            {
+                sigmaBehaviour = Sigma.GetComponent<SigmaBehaviour>();
+            }
+            return sigmaBehaviour;
+        }
+    }
+
     PlayerXController xController;
+    public PlayerXController XController
+    {
+        get
+        {
+            return xController;
+        }
+    }
 
     private void Awake()
     {
@@ -37,6 +74,11 @@ public class RockManGameManager : MonoBehaviour
     public bool IsPlayerFacingRight()
     {
         return xController.IsFacingRight();
+    }
+
+    public bool CanAttackSigma()
+    {
+        return SigmaBv.canDamaged;
     }
 
 

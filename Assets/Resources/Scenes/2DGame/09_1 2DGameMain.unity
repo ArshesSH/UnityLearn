@@ -317,10 +317,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 8fa1a49fe518174428b9a95ea7440768, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 1
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -1272,10 +1272,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 8fa1a49fe518174428b9a95ea7440768, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 1
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -2206,6 +2206,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 969643928974169891, guid: 35df6edd3d94652419f6cfe66b9b0db7,
+        type: 3}
+      propertyPath: sigmaSpawnPos
+      value: 
+      objectReference: {fileID: 739463123}
     - target: {fileID: 9217753596391349953, guid: 35df6edd3d94652419f6cfe66b9b0db7,
         type: 3}
       propertyPath: m_RootOrder

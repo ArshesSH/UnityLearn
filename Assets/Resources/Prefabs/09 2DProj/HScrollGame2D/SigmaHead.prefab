@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2126822777087440409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7637623799991418260}
+  m_Layer: 0
+  m_Name: ElectricBallPos2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7637623799991418260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126822777087440409}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -104.4, y: 60.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9217753596391349953}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5008751134884958207
 GameObject:
   m_ObjectHideFlags: 0
@@ -31,6 +62,37 @@ Transform:
   m_Father: {fileID: 9217753596391349953}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5011584939924097385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6339085659253731393}
+  m_Layer: 0
+  m_Name: ElectricBallPos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6339085659253731393
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5011584939924097385}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -80.8, y: 34, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9217753596391349953}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9217753596391349981
 GameObject:
   m_ObjectHideFlags: 0
@@ -41,8 +103,10 @@ GameObject:
   m_Component:
   - component: {fileID: 9217753596391349953}
   - component: {fileID: 9217753596391349952}
+  - component: {fileID: 4397919774485208794}
   - component: {fileID: 9217753596391349983}
   - component: {fileID: 9217753596391349982}
+  - component: {fileID: 969643928974169891}
   m_Layer: 0
   m_Name: SigmaHead
   m_TagString: Enemy
@@ -63,6 +127,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8893704678226937720}
+  - {fileID: 6339085659253731393}
+  - {fileID: 7637623799991418260}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -118,6 +184,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4397919774485208794
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9217753596391349981}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9148248bf228c2946b795e08ec10f062, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &9217753596391349983
 Rigidbody2D:
   serializedVersion: 4
@@ -155,3 +241,29 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 68.52
+--- !u!114 &969643928974169891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9217753596391349981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a55e946fa0cb7b478af514f8a87bc5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 30
+  curHP: 30
+  moveSpeed: 200
+  trackingDistance: 300
+  decideTime: 3
+  moveWaitTime: 3
+  mouthOpenTime: 2
+  trackingOffset: {x: 0, y: 80, z: 0}
+  sigmaSpawnPos: {fileID: 0}
+  electricBallSpawnPos1: {fileID: 5011584939924097385}
+  electricBallSpawnPos2: {fileID: 2126822777087440409}
+  electricBall: {fileID: 476370756888084484, guid: 818bee883d9344345b3725b6b60663a8,
+    type: 3}
+  canDamaged: 0
