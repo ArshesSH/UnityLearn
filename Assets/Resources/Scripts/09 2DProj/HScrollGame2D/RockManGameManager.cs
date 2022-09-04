@@ -22,7 +22,14 @@ public class RockManGameManager : MonoBehaviour
     GameObject playerX;
     public GameObject PlayerX
     {
-        get { return playerX; }
+        get
+        {
+            if(playerX == null)
+            {
+                playerX = GameObject.Find("PlayerX");
+            }
+            return playerX;
+        }
     }
 
     GameObject sigma;
@@ -55,15 +62,24 @@ public class RockManGameManager : MonoBehaviour
     {
         get
         {
+            if(xController == null)
+            {
+                xController = playerX.GetComponent<PlayerXController>();
+            }
             return xController;
         }
     }
 
+    public string userID;
+    public int Score = 3000;
+    public bool isGameOver = false;
+    public bool isSigmaStartDestroy = false;
+    public bool isSigmaDestroy = false;
+    public bool isVictory = false;
+
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-        playerX = GameObject.Find("PlayerX");
-        xController = playerX.GetComponent<PlayerXController>();
     }
 
     public void ChangeScene(string sceneName)
@@ -81,5 +97,21 @@ public class RockManGameManager : MonoBehaviour
         return SigmaBv.canDamaged;
     }
 
+
+    public void GameOver()
+    {
+        Time.timeScale = 0.0f;
+        isGameOver = true;
+    }
+
+    public void ResetGame()
+    {
+        Time.timeScale = 1.0f;
+        isGameOver = false;
+        sigma = null;
+        playerX = null;
+        xController = null;
+        sigmaBehaviour = null;
+    }
 
 }

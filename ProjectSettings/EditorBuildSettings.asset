@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/SpartaDefence/08_1 SpartaMain.unity
     guid: db46e0569fccbc9468b7f3bec6ccd575
   - enabled: 1
+    path: Assets/Resources/Scenes/2DGame/09_0 RockmanStart.unity
+    guid: 28b7c71ee302cec4ea0a22b0e803bd53
+  - enabled: 1
+    path: Assets/Resources/Scenes/2DGame/09_1 RockmanMain.unity
+    guid: 0fbd56cd93358c54a9ea23b6146bf4d6
+  - enabled: 1
     path: Assets/Resources/Scenes/01 MoveAndRotation.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1

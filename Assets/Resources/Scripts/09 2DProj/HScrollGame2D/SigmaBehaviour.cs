@@ -12,6 +12,7 @@ public class SigmaBehaviour : MonoBehaviour
         OpenMouth,
         Damaged,
         FadeOut,
+        Die
     }
 
     [Header("Status")]
@@ -32,12 +33,18 @@ public class SigmaBehaviour : MonoBehaviour
     public GameObject electricBallSpawnPos2;
     public GameObject electricBall;
 
+
+    public GameObject explosionObj;
+    public float explosionDistance;
+
+
     public bool canDamaged = false;
 
     Rigidbody2D rb;
     Animator animator;
     Behaviours bv = Behaviours.Decide;
     float time = 0.0f;
+    bool dieFlag = false;
 
     GameObject playerX;
 
@@ -55,6 +62,16 @@ public class SigmaBehaviour : MonoBehaviour
 
     void Update()
     {
+        if( curHP <= 0.0f && !dieFlag)
+        {
+            RockManGameManager.Instance.isSigmaStartDestroy = true;
+            Destroy(gameObject, 2.0f);
+            StartCoroutine("SpawnExplosion");
+            bv = Behaviours.Die;
+            time = 0.0f;
+            dieFlag = true;
+        }
+
         switch (bv)
         {
             case Behaviours.Decide:
@@ -75,6 +92,11 @@ public class SigmaBehaviour : MonoBehaviour
             case Behaviours.FadeOut:
             {
                 FadeOut();
+            }
+            break;
+            case Behaviours.Die:
+            {
+                Die();
             }
             break;
         }
@@ -159,6 +181,10 @@ public class SigmaBehaviour : MonoBehaviour
         }
     }
 
+    void Die()
+    {
+        animator.SetTrigger("Damaged");
+    }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -174,10 +200,34 @@ public class SigmaBehaviour : MonoBehaviour
         }
     }
 
+    IEnumerator SpawnExplosion()
+    {
+        time += Time.deltaTime;
+        while(time <= 2.0f)
+        {
+            GameObject explosion = null;
+            if(explosionObj != null)
+            {
+                float randomX = Random.Range(transform.position.x - explosionDistance, transform.position.x + explosionDistance);
+                float randomY = Random.Range(transform.position.y - explosionDistance, transform.position.y + explosionDistance);
+                int randomNum = Random.Range(0, 2);
+
+                explosion = Instantiate(explosionObj, new Vector3(randomX, randomY), transform.rotation);
+                explosion.GetComponent<Animator>().SetInteger("AnimationNum", randomNum);
+            }
+
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+    private void OnDestroy()
+    {
+
+        RockManGameManager.Instance.isSigmaDestroy = true;
+    }
 
     private void OnGUI()
     {
-        GUI.Box(new Rect(500.0f, 0.0f, 150.0f, 30.0f), "Behaviour: " + bv);
-        GUI.Box(new Rect(500.0f, 30.0f, 150.0f, 30.0f), "CanDamaged: " + canDamaged);
+        //GUI.Box(new Rect(500.0f, 0.0f, 150.0f, 30.0f), "Behaviour: " + bv);
+        //GUI.Box(new Rect(500.0f, 30.0f, 150.0f, 30.0f), "CanDamaged: " + canDamaged);
     }
 }

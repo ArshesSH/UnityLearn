@@ -11,18 +11,16 @@ public class UI_SigmaHPBar : MonoBehaviour
 
     void Start()
     {
-        
+        sigmaBv = GameObject.Find("SigmaHead").GetComponent<SigmaBehaviour>();
     }
 
     void Update()
     {
-
-        if(sigmaBv == null)
+        if(sigmaBv != null)
         {
-            sigmaBv = GameObject.Find("SigmaHead").GetComponent<SigmaBehaviour>();
+            SigmaHP.fillAmount = sigmaBv.curHP / sigmaBv.maxHP;
         }
 
-        SigmaHP.fillAmount = sigmaBv.curHP / sigmaBv.maxHP;
     }
 
 

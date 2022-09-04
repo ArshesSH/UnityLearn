@@ -13,6 +13,7 @@ public class PlayerXController : MonoBehaviour
         Dash,
         WallCling,
         Hurt,
+        Victory
     }
 
     [Header("Player Settings")]
@@ -76,6 +77,8 @@ public class PlayerXController : MonoBehaviour
     public PlayerState curState;
     bool isDashKeyDown = false;
     bool canDamaged = true;
+    bool isVictoryStarted = false;
+    float victoryTimer = 0.0f;
 
 
     private void Awake()
@@ -94,7 +97,28 @@ public class PlayerXController : MonoBehaviour
 
     void Update()
     {
-        if (!IsCurState("X_Intro") && curState != PlayerState.Hurt)
+        if(curHP <= 0.0f)
+        {
+            RockManGameManager.Instance.isGameOver = true;
+        }
+
+        if( RockManGameManager.Instance.isSigmaDestroy)
+        {
+            victoryTimer += Time.deltaTime;
+            if (!isVictoryStarted)
+            {
+                curState = PlayerState.Victory;
+                animator.SetTrigger("Victory");
+                isVictoryStarted = true;
+            }
+            if (victoryTimer >= 3.0f)
+            {
+                victoryTimer = 0.0f;
+                RockManGameManager.Instance.isVictory = true;
+            }
+        }
+
+        if (!IsCurState("X_Intro") && curState != PlayerState.Hurt && curState != PlayerState.Victory)
         {
             PlayerInput();
             isOnGround = CheckGround();
@@ -121,11 +145,22 @@ public class PlayerXController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        ApplyGravity();
-        if (!IsCurState("X_Intro"))
+        if(curState == PlayerState.Victory)
         {
-            MovePlayerX();
+            if(victoryTimer >= 2.0f)
+            {
+                rb.MovePosition(rb.position + jumpSpeed * Time.deltaTime * Vector2.up);
+            }
         }
+        else if (!RockManGameManager.Instance.isSigmaStartDestroy)
+        {
+            ApplyGravity();
+            if (!IsCurState("X_Intro"))
+            {
+                MovePlayerX();
+            }
+        }
+
     }
 
     bool IsCurState(string stateName)
@@ -258,6 +293,7 @@ public class PlayerXController : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
     }
 
+
     void Attack()
     {
         StartCoroutine("SpawnBuster");
@@ -311,6 +347,7 @@ public class PlayerXController : MonoBehaviour
     IEnumerator DoHurt()
     {
         curHP -= 3.0f;
+        RockManGameManager.Instance.Score -= 100;
         canDamaged = false;
         curState = PlayerState.Hurt;
         animator.SetTrigger("Hurt");
@@ -323,12 +360,12 @@ public class PlayerXController : MonoBehaviour
 
     private void OnGUI()
     {
-        GUI.Box(new Rect(0.0f, 0.0f, 150.0f, 30.0f), "OnGround: " + isOnGround.ToString());
-        GUI.Box(new Rect(0.0f, 30.0f, 150.0f, 30.0f), "State: " + curState);
-        GUI.Box(new Rect(0.0f, 60.0f, 150.0f, 30.0f), "dashTime: " + dashTimer.ToString());
-        GUI.Box(new Rect(0.0f, 90.0f, 150.0f, 30.0f), "IsWallSide: " + isOnWallSide.ToString());
-        GUI.Box(new Rect(0.0f, 120.0f, 150.0f, 30.0f), "Vel X: " + rb.velocity.x);
-        GUI.Box(new Rect(150.0f, 120.0f, 150.0f, 30.0f), "Vel Y: " + rb.velocity.y);
+        //GUI.Box(new Rect(0.0f, 0.0f, 150.0f, 30.0f), "OnGround: " + isOnGround.ToString());
+        //GUI.Box(new Rect(0.0f, 30.0f, 150.0f, 30.0f), "State: " + curState);
+        //GUI.Box(new Rect(0.0f, 60.0f, 150.0f, 30.0f), "dashTime: " + dashTimer.ToString());
+        //GUI.Box(new Rect(0.0f, 90.0f, 150.0f, 30.0f), "IsWallSide: " + isOnWallSide.ToString());
+        //GUI.Box(new Rect(0.0f, 120.0f, 150.0f, 30.0f), "Vel X: " + rb.velocity.x);
+        //GUI.Box(new Rect(150.0f, 120.0f, 150.0f, 30.0f), "Vel Y: " + rb.velocity.y);
     }
 
 

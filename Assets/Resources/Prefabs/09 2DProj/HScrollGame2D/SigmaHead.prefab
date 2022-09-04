@@ -253,17 +253,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a55e946fa0cb7b478af514f8a87bc5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 30
-  curHP: 30
+  maxHP: 10
+  curHP: 10
   moveSpeed: 200
   trackingDistance: 300
   decideTime: 3
   moveWaitTime: 3
   mouthOpenTime: 2
+  fadeWaitTime: 1
   trackingOffset: {x: 0, y: 80, z: 0}
   sigmaSpawnPos: {fileID: 0}
   electricBallSpawnPos1: {fileID: 5011584939924097385}
   electricBallSpawnPos2: {fileID: 2126822777087440409}
   electricBall: {fileID: 476370756888084484, guid: 818bee883d9344345b3725b6b60663a8,
     type: 3}
+  explosionObj: {fileID: 1936740389969269940, guid: c21df29944fc64845b3b6afa57d9ac20,
+    type: 3}
+  explosionDistance: 150
   canDamaged: 0
