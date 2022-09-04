@@ -126,6 +126,7 @@ public class SigmaBehaviour : MonoBehaviour
             else
             {
                 time = 0.0f;
+                canDamaged = true;
                 animator.SetTrigger("Open");
                 bv = Behaviours.OpenMouth;
             }
@@ -135,10 +136,6 @@ public class SigmaBehaviour : MonoBehaviour
     void OpenMouth()
     {
         time += Time.deltaTime;
-        if(time >= 0.5f)
-        {
-            canDamaged = true;
-        }
         if(time>= mouthOpenTime)
         {
             time = 0.0f;

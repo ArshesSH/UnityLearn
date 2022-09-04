@@ -12,6 +12,7 @@ public class PlayerXController : MonoBehaviour
         Airbone,
         Dash,
         WallCling,
+        Hurt,
     }
 
     [Header("Player Settings")]
@@ -31,6 +32,8 @@ public class PlayerXController : MonoBehaviour
     private float gravity = 9.8f;
     [SerializeField]
     private float maxGravitySpeed = 400.0f;
+    [SerializeField]
+    private float invincibleTime = 1.0f;
 
     [SerializeField]
     private GameObject busterPosLeft;
@@ -72,6 +75,7 @@ public class PlayerXController : MonoBehaviour
 
     public PlayerState curState;
     bool isDashKeyDown = false;
+    bool canDamaged = true;
 
 
     private void Awake()
@@ -90,9 +94,8 @@ public class PlayerXController : MonoBehaviour
 
     void Update()
     {
-        if (!IsCurState("X_Intro"))
+        if (!IsCurState("X_Intro") && curState != PlayerState.Hurt)
         {
-
             PlayerInput();
             isOnGround = CheckGround();
             UpdateWallCheck();
@@ -110,14 +113,10 @@ public class PlayerXController : MonoBehaviour
                 }
             }
 
-
-
-
             animator.SetBool("IsOnGround", isOnGround);
             animator.SetBool("IsDashNow", curState == PlayerState.Dash);
             animator.SetBool("IsWallCling", !isOnGround && isOnWallSide);
         }
-
     }
 
     private void FixedUpdate()
@@ -297,9 +296,30 @@ public class PlayerXController : MonoBehaviour
     {
         return spriteRenderer.flipX;
     }
-    private void OnDrawGizmos()
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.CompareTag("EnemyBullet"))
+        {
+            if(canDamaged)
+            {
+                StartCoroutine("DoHurt");
+            }
+        }
     }
+
+    IEnumerator DoHurt()
+    {
+        curHP -= 3.0f;
+        canDamaged = false;
+        curState = PlayerState.Hurt;
+        animator.SetTrigger("Hurt");
+        yield return new WaitForSeconds(0.05f);
+        curState = PlayerState.Idle;
+        yield return new WaitForSeconds(invincibleTime);
+        canDamaged = true;
+    }
+
 
     private void OnGUI()
     {
