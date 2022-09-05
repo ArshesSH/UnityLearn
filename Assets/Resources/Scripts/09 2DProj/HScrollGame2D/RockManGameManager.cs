@@ -131,6 +131,10 @@ public class RockManGameManager : MonoBehaviour
         return SigmaBv.canDamaged;
     }
 
+    public void StopPlayerMove(bool flag)
+    {
+        XController.StopMovement = flag;
+    }
 
     public void GameOver()
     {

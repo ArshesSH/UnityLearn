@@ -28,11 +28,11 @@ public class UI_TitleScreen : MonoBehaviour
 
     TitleState titleState = TitleState.FadeIn;
     bool isUIShowed = false;
+    bool isBGMPlayed = false;
 
     void Start()
     {
         titleImg = titleImageObj.GetComponent<Image>();
-        RockManGameManager.Instance.PlayBGM( 0 );
     }
 
     void Update()
@@ -41,6 +41,12 @@ public class UI_TitleScreen : MonoBehaviour
         {
             case TitleState.FadeIn:
             {
+                if(!isBGMPlayed)
+                {
+                    RockManGameManager.Instance.PlayBGM( 0 );
+                    isBGMPlayed = true;
+                }
+
                 FadeIn();
             }
             break;
@@ -50,11 +56,13 @@ public class UI_TitleScreen : MonoBehaviour
                 ShowUI();
             }
             break;
+
             case TitleState.FadeOut:
             {
                 FadeOut();
             }
             break;
+
             case TitleState.Load:
             {
                 RockManGameManager.Instance.ChangeScene( "09_1 RockmanMain" );

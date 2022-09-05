@@ -6,6 +6,7 @@ public class PlayerXController : MonoBehaviour
 {
     public enum PlayerState
     {
+        WaitForGame,
         Intro,
         Idle,
         Walk,
@@ -79,7 +80,8 @@ public class PlayerXController : MonoBehaviour
     bool canDamaged = true;
     bool isVictoryStarted = false;
     float victoryTimer = 0.0f;
-
+    bool isIntroStarted = false;
+    public bool StopMovement = false;
 
     private void Awake()
     {
@@ -91,76 +93,89 @@ public class PlayerXController : MonoBehaviour
     void Start()
     {
         curHP = maxHP;
-        curState = PlayerState.Intro;
+        curState = PlayerState.WaitForGame;
         wallRayPos = wallCheckRight.transform;
     }
 
     void Update()
     {
-        if(curHP <= 0.0f)
+        if( RockManGameManager.Instance.IsPlaying())
         {
-            RockManGameManager.Instance.SetGameOver();
-        }
-
-        if( RockManGameManager.Instance.isSigmaDestroy)
-        {
-            victoryTimer += Time.deltaTime;
-            if (!isVictoryStarted)
+            if(!isIntroStarted )
             {
-                curState = PlayerState.Victory;
-                animator.SetTrigger("Victory");
-                isVictoryStarted = true;
+                curState = PlayerState.Intro;
+                isIntroStarted = true;
+                animator.SetTrigger( "Start" );
             }
-            if (victoryTimer >= 3.0f)
+
+
+            if ( curHP <= 0.0f )
             {
-                victoryTimer = 0.0f;
-                RockManGameManager.Instance.SetVictory();
+                RockManGameManager.Instance.SetGameOver();
             }
-        }
 
-        if (!IsCurState("X_Intro") && curState != PlayerState.Hurt && curState != PlayerState.Victory)
-        {
-            PlayerInput();
-            isOnGround = CheckGround();
-            UpdateWallCheck();
-            isOnWallSide = CheckWall();
-
-            if (!isOnGround)
+            if ( RockManGameManager.Instance.isSigmaDestroy )
             {
-                if (isOnWallSide && rb.velocity.y <= 0.0f)
+                victoryTimer += Time.deltaTime;
+                if ( !isVictoryStarted )
                 {
-                    curState = PlayerState.WallCling;
+                    curState = PlayerState.Victory;
+                    animator.SetTrigger( "Victory" );
+                    isVictoryStarted = true;
                 }
-                else
+                if ( victoryTimer >= 3.0f )
                 {
-                    curState = PlayerState.Airbone;
+                    victoryTimer = 0.0f;
+                    RockManGameManager.Instance.SetVictory();
                 }
             }
 
-            animator.SetBool("IsOnGround", isOnGround);
-            animator.SetBool("IsDashNow", curState == PlayerState.Dash);
-            animator.SetBool("IsWallCling", !isOnGround && isOnWallSide);
+            if ( !IsCurState( "X_Intro" ) && curState != PlayerState.Hurt && curState != PlayerState.Victory )
+            {
+                PlayerInput();
+                isOnGround = CheckGround();
+                UpdateWallCheck();
+                isOnWallSide = CheckWall();
+
+                if ( !isOnGround )
+                {
+                    if ( isOnWallSide && rb.velocity.y <= 0.0f )
+                    {
+                        curState = PlayerState.WallCling;
+                    }
+                    else
+                    {
+                        curState = PlayerState.Airbone;
+                    }
+                }
+
+                animator.SetBool( "IsOnGround", isOnGround );
+                animator.SetBool( "IsDashNow", curState == PlayerState.Dash );
+                animator.SetBool( "IsWallCling", !isOnGround && isOnWallSide );
+            }
         }
     }
 
     private void FixedUpdate()
     {
-        if(curState == PlayerState.Victory)
+        if(RockManGameManager.Instance.IsPlaying())
         {
-            if(victoryTimer >= 2.0f)
+            if ( curState == PlayerState.Victory )
             {
-                rb.MovePosition(rb.position + jumpSpeed * Time.deltaTime * Vector2.up);
+                if ( victoryTimer >= 2.0f )
+                {
+                    rb.MovePosition( rb.position + jumpSpeed * Time.deltaTime * Vector2.up );
+                }
+            }
+            else if ( !RockManGameManager.Instance.isSigmaStartDestroy )
+            {
+                ApplyGravity();
+                if ( !IsCurState( "X_Intro" ) && !StopMovement )
+                {
+                    MovePlayerX();
+                }
             }
         }
-        else if (!RockManGameManager.Instance.isSigmaStartDestroy)
-        {
-            ApplyGravity();
-            if (!IsCurState("X_Intro"))
-            {
-                MovePlayerX();
-            }
-        }
-
     }
 
     bool IsCurState(string stateName)
@@ -170,34 +185,37 @@ public class PlayerXController : MonoBehaviour
 
     void PlayerInput()
     {
-        if (Input.GetKeyDown(KeyCode.X))
+        if( !StopMovement)
         {
-            JumpPlayerX();
-        }
-
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            Attack();
-        }
-
-        if (Input.GetButton("Dash"))
-        {
-            isDashKeyDown = true;
-            dashTimer += Time.deltaTime;
-            if (dashTimer <= dashMaxTime)
+            if ( Input.GetKeyDown( KeyCode.X ) )
             {
-                curState = PlayerState.Dash;
+                JumpPlayerX();
             }
-            else
+
+            if ( Input.GetKeyDown( KeyCode.C ) )
             {
+                Attack();
+            }
+
+            if ( Input.GetButton( "Dash" ) )
+            {
+                isDashKeyDown = true;
+                dashTimer += Time.deltaTime;
+                if ( dashTimer <= dashMaxTime )
+                {
+                    curState = PlayerState.Dash;
+                }
+                else
+                {
+                    curState = PlayerState.Idle;
+                }
+            }
+            if ( Input.GetButtonUp( "Dash" ) )
+            {
+                isDashKeyDown = false;
                 curState = PlayerState.Idle;
+                dashTimer = 0.0f;
             }
-        }
-        if (Input.GetButtonUp("Dash"))
-        {
-            isDashKeyDown = false;
-            curState = PlayerState.Idle;
-            dashTimer = 0.0f;
         }
     }
 
