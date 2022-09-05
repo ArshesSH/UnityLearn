@@ -10,6 +10,7 @@ public class UI_MMX5_MainGame : MonoBehaviour
     public GameObject gameOverUI;
     public GameObject victoryUI;
     public GameObject menuObject;
+    public GameObject sigmaHPUI;
 
     public Text userIDText;
     public Text userScoreText;
@@ -24,33 +25,36 @@ public class UI_MMX5_MainGame : MonoBehaviour
     {
         PlayerScoreText.text = RockManGameManager.Instance.Score.ToString();
 
-        if(RockManGameManager.Instance.isGameOver)
+        if ( RockManGameManager.Instance.IsPlaying() )
         {
-            gameOverUI.SetActive(true);
+            sigmaHPUI.SetActive( true );
+        }
+        if ( RockManGameManager.Instance.IsGameOver() )
+        {
+            gameOverUI.SetActive( true );
             Time.timeScale = 0.0f;
         }
-        if(RockManGameManager.Instance.isVictory)
+        if ( RockManGameManager.Instance.IsVictory() )
         {
-            victoryUI.SetActive(true);
+            victoryUI.SetActive( true );
             Time.timeScale = 0.0f;
             userIDText.text = RockManGameManager.Instance.userID;
             userScoreText.text = RockManGameManager.Instance.Score.ToString();
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if ( Input.GetKeyDown( KeyCode.Escape ) )
         {
-            if(menuObject.activeInHierarchy)
+            if ( menuObject.activeInHierarchy )
             {
-                menuObject.SetActive(false);
+                menuObject.SetActive( false );
                 Time.timeScale = 1.0f;
             }
             else
             {
-                menuObject.SetActive(true);
+                menuObject.SetActive( true );
                 Time.timeScale = 0.0f;
             }
-
         }
     }
 
@@ -58,12 +62,18 @@ public class UI_MMX5_MainGame : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         RockManGameManager.Instance.ResetGame();
-        gameOverUI.SetActive(false);
-        RockManGameManager.Instance.ChangeScene("09_0 RockmanStart");
+        gameOverUI.SetActive( false );
+        RockManGameManager.Instance.ChangeScene( "09_0 RockmanStart" );
     }
     void onClickContinue()
     {
-        menuObject.SetActive(false);
+        menuObject.SetActive( false );
         Time.timeScale = 1.0f;
     }
+
+    void PlayReady()
+    {
+
+    }
+
 }

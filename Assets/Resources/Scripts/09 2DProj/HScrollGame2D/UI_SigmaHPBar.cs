@@ -11,16 +11,21 @@ public class UI_SigmaHPBar : MonoBehaviour
 
     void Start()
     {
-        sigmaBv = GameObject.Find("SigmaHead").GetComponent<SigmaBehaviour>();
     }
 
     void Update()
     {
-        if(sigmaBv != null)
+        if(RockManGameManager.Instance.IsPlaying())
         {
-            SigmaHP.fillAmount = sigmaBv.curHP / sigmaBv.maxHP;
+            if(sigmaBv == null)
+            {
+                sigmaBv = GameObject.Find( "SigmaHead" ).GetComponent<SigmaBehaviour>();
+            }
+            else
+            {
+                SigmaHP.fillAmount = sigmaBv.curHP / sigmaBv.maxHP;
+            }
         }
-
     }
 
 

@@ -11,12 +11,19 @@ public class UI_PlayerXHPBar : MonoBehaviour
 
     void Start()
     {
-        xController = RockManGameManager.Instance.XController;
     }
 
     void Update()
     {
-        PlayerXHP.fillAmount = xController.curHP / xController.maxHP;
+        if( xController == null)
+        {
+            xController = RockManGameManager.Instance.XController;
+        }
+        else
+        {
+            PlayerXHP.fillAmount = xController.curHP / xController.maxHP;
+        }
+
     }
 
 }

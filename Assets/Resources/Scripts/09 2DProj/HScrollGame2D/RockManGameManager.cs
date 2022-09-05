@@ -32,6 +32,19 @@ public class RockManGameManager : MonoBehaviour
         }
     }
 
+    PlayerXController xController;
+    public PlayerXController XController
+    {
+        get
+        {
+            if ( xController == null )
+            {
+                xController = PlayerX.GetComponent<PlayerXController>();
+            }
+            return xController;
+        }
+    }
+
     GameObject sigma;
     public GameObject Sigma
     {
@@ -57,30 +70,26 @@ public class RockManGameManager : MonoBehaviour
         }
     }
 
-    PlayerXController xController;
-    public PlayerXController XController
+
+    public enum GameState
     {
-        get
-        {
-            if(xController == null)
-            {
-                xController = playerX.GetComponent<PlayerXController>();
-            }
-            return xController;
-        }
+        Ready,
+        Playing,
+        GameOver,
+        Victory
     }
 
     public string userID;
     public int Score = 3000;
-    public bool isGameOver = false;
     public bool isSigmaStartDestroy = false;
     public bool isSigmaDestroy = false;
-    public bool isVictory = false;
+
+    GameState gameState = GameState.Ready;
 
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-    }
+    }   
 
     public void ChangeScene(string sceneName)
     {
@@ -101,17 +110,41 @@ public class RockManGameManager : MonoBehaviour
     public void GameOver()
     {
         Time.timeScale = 0.0f;
-        isGameOver = true;
+        gameState = GameState.GameOver;
     }
 
     public void ResetGame()
     {
         Time.timeScale = 1.0f;
-        isGameOver = false;
+        gameState = GameState.Ready;
         sigma = null;
         playerX = null;
         xController = null;
         sigmaBehaviour = null;
     }
 
+    public bool IsPlaying()
+    {
+        return gameState == GameState.Playing;
+    }
+    public bool IsGameOver()
+    {
+        return gameState == GameState.GameOver;
+    }
+    public bool IsVictory()
+    {
+        return gameState == GameState.Victory;
+    }
+    public void SetPlaying()
+    {
+        gameState = GameState.Playing;
+    }
+    public void SetGameOver()
+    {
+        gameState = GameState.GameOver;
+    }
+    public void SetVictory()
+    {
+        gameState = GameState.Victory;
+    }
 }

@@ -99,7 +99,7 @@ public class PlayerXController : MonoBehaviour
     {
         if(curHP <= 0.0f)
         {
-            RockManGameManager.Instance.isGameOver = true;
+            RockManGameManager.Instance.SetGameOver();
         }
 
         if( RockManGameManager.Instance.isSigmaDestroy)
@@ -114,7 +114,7 @@ public class PlayerXController : MonoBehaviour
             if (victoryTimer >= 3.0f)
             {
                 victoryTimer = 0.0f;
-                RockManGameManager.Instance.isVictory = true;
+                RockManGameManager.Instance.SetVictory();
             }
         }
 
