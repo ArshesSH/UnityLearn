@@ -17,6 +17,9 @@ public class SpartaPlayerController : MonoBehaviour
     protected Animation spartanKingAnim;
     protected BoxCollider weaponCollider;
 
+    public AudioClip[] audioClips;
+    private AudioSource audioSource;
+
     CharacterController pcControl;
     Vector3 velocity;
 
@@ -29,10 +32,12 @@ public class SpartaPlayerController : MonoBehaviour
         pcControl = GetComponent<CharacterController>();
         weaponCollider = weapon.GetComponent<BoxCollider>();
         weaponCollider.enabled = false;
+
+        audioSource = GetComponent<AudioSource>();
     }
     void Update()
     {
-        //PlayAnimation_1();
+        PlayAnimation_1();
         //PlayAnimation_2();
         //PlayAnimation_3();
         ControlPlayer();
@@ -44,13 +49,14 @@ public class SpartaPlayerController : MonoBehaviour
     void PlayAnimation_1()
     {
         //if(Input.GetKeyDown(KeyCode.F))
-        if ( Input.GetMouseButton( 0 ) )
+        //if ( Input.GetMouseButton( 0 ) )
         {
-            spartanKingAnim.Play( "attack" );
+            //spartanKingAnim.Play( "attack" );
         }
-        else if ( Input.GetMouseButton( 1 ) )
+        if ( Input.GetMouseButton( 1 ) )
         {
             spartanKingAnim.Play( "resist" );
+            StopAndPlay( audioClips[1] );
         }
         if ( Input.GetKeyDown( KeyCode.Alpha0 ) )
         {
@@ -87,6 +93,7 @@ public class SpartaPlayerController : MonoBehaviour
         if ( Input.GetKeyDown( KeyCode.Alpha8 ) )
         {
             spartanKingAnim.Play( "die" );
+            StopAndPlay( audioClips[2] );
         }
         if ( Input.GetKeyDown( KeyCode.Alpha9 ) )
         {
@@ -189,6 +196,7 @@ public class SpartaPlayerController : MonoBehaviour
     {
         if ( Input.GetKey( KeyCode.F ) )
         {
+            StopAndPlay( audioClips[0] );
             StartCoroutine( "AttackToIdle" );
         }
         else if (!isAttackNow)
@@ -216,10 +224,12 @@ public class SpartaPlayerController : MonoBehaviour
                     rotateSpeed * Time.deltaTime / Vector3.Angle( transform.forward, direction ) );
 
                 transform.LookAt( transform.position + forward );
+                PlaySoundLoop( audioClips[1] );
             }
             else
             {
                 spartanKingAnim.CrossFade( "idle", 0.3f );
+                StopSound();
             }
 
             pcControl.Move( direction * runSpeed * Time.deltaTime + Physics.gravity * 0.01f );
@@ -267,5 +277,37 @@ public class SpartaPlayerController : MonoBehaviour
         }
     }
 
+    void StopAndPlay(AudioClip clip)
+    {
+        StopSound();
+        PlaySound( clip );
+    }
+
+    void StopSound()
+    {
+        audioSource.Stop();
+    }
+
+    void PlaySound(AudioClip clip)
+    {
+        audioSource.clip = clip;
+        audioSource.Play();
+    }
+
+    float timer = 0.0f;
+
+    void PlaySoundLoop(AudioClip clip)
+    {
+        if(!audioSource.isPlaying)
+        {
+            timer += Time.deltaTime;
+            if(timer>= 0.5f)
+            {
+                PlaySound( clip );
+                timer = 0.0f;
+            }
+
+        }
+    }
 
 }
