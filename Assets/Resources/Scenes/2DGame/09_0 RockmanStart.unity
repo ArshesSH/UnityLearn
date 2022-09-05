@@ -578,7 +578,8 @@ MonoBehaviour:
   AudioClips:
   - {fileID: 8300000, guid: 555d0a2193a9c654691765c259ea275d, type: 3}
   - {fileID: 8300000, guid: 4d5bfd737eea70345b6a0d7d86762547, type: 3}
-  FadeDelay: 0.01
+  FadeInDelay: 0.01
+  FadeOutDelay: 0.005
 --- !u!1 &739463123
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,6 +691,57 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0.5}
   m_SizeDelta: {x: -20, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &938195149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 938195151}
+  - component: {fileID: 938195150}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &938195150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938195149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa6fe7e6eddca464687fffbc41522b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BGM_Obj: {fileID: 1868091589}
+  SFX_Obj: {fileID: 1440006810}
+  BGM_Clips:
+  - {fileID: 8300000, guid: 8a4c3541cfffa114a9c057242db1d572, type: 3}
+  SFX_Clips:
+  - {fileID: 8300000, guid: 555d0a2193a9c654691765c259ea275d, type: 3}
+  - {fileID: 8300000, guid: 4d5bfd737eea70345b6a0d7d86762547, type: 3}
+--- !u!4 &938195151
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938195149}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &996600603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,7 +1700,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8a4c3541cfffa114a9c057242db1d572, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1

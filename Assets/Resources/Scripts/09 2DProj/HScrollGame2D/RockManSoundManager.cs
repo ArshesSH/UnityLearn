@@ -28,6 +28,18 @@ public class RockManSoundManager : MonoBehaviour
         PlaySound( bgmSource, BGM_Clips[index] );
         return true;
     }
+    public bool PlayBGM( string name )
+    {
+        foreach ( var clip in BGM_Clips )
+        {
+            if(clip.name.Equals(name))
+            {
+                PlaySound( bgmSource, clip );
+                return true;
+            }
+        }
+        return false;
+    }
     public bool PlaySFX( int index )
     {
         if ( index >= SFX_Clips.Length )
@@ -36,6 +48,18 @@ public class RockManSoundManager : MonoBehaviour
         }
         PlaySound( sfxSource, SFX_Clips[index] );
         return true;
+    }
+    public bool PlaySFX( string name )
+    {
+        foreach ( var clip in SFX_Clips )
+        {
+            if ( clip.name.Equals( name ) )
+            {
+                PlaySound( sfxSource, clip );
+                return true;
+            }
+        }
+        return false;
     }
 
     void PlaySound( AudioSource targetSrc, AudioClip clip )

@@ -18,10 +18,6 @@ public class UI_TitleScreen : MonoBehaviour
     public GameObject titleImageObj;
     public GameObject titleUI;
 
-    public GameObject SFXObj;
-    AudioSource sfxSource;
-
-    public AudioClip[] AudioClips;
 
     public float FadeInDelay = 0.01f;
     public float FadeOutDelay = 0.005f;
@@ -36,7 +32,7 @@ public class UI_TitleScreen : MonoBehaviour
     void Start()
     {
         titleImg = titleImageObj.GetComponent<Image>();
-        sfxSource = SFXObj.GetComponent<AudioSource>();
+        RockManGameManager.Instance.PlayBGM( 0 );
     }
 
     void Update()
@@ -135,7 +131,7 @@ public class UI_TitleScreen : MonoBehaviour
         {
             titleUI.SetActive( false );
             titleState = TitleState.FadeOut;
-            PlaySound( AudioClips[1] );
+            RockManGameManager.Instance.PlaySFX( 1 );
         }
     }
 
@@ -145,18 +141,11 @@ public class UI_TitleScreen : MonoBehaviour
     void onTextChanged()
     {
         RockManGameManager.Instance.userID = inputField.text.ToString();
-        PlaySound( AudioClips[0] );
+        RockManGameManager.Instance.PlaySFX( 0 );
     }
     void onTextEndEdit()
     {
         RockManGameManager.Instance.userID = inputField.text.ToString();
-    }
-
-    void PlaySound( AudioClip clip)
-    {
-        sfxSource.Stop();
-        sfxSource.clip = clip;
-        sfxSource.Play();
     }
 
 }

@@ -70,6 +70,31 @@ public class RockManGameManager : MonoBehaviour
         }
     }
 
+    GameObject soundManagerObj;
+    public GameObject SoundMangerObj
+    {
+        get
+        {
+            if(soundManagerObj == null)
+            {
+                soundManagerObj = GameObject.Find( "SoundManager" );
+            }
+            return soundManagerObj;
+        }
+    }
+
+    RockManSoundManager soundManager;
+    public RockManSoundManager SoundManager
+    {
+        get
+        {
+            if(soundManager == null)
+            {
+                soundManager = SoundMangerObj.GetComponent<RockManSoundManager>();
+            }
+            return soundManager;
+        }
+    }
 
     public enum GameState
     {
@@ -147,4 +172,23 @@ public class RockManGameManager : MonoBehaviour
     {
         gameState = GameState.Victory;
     }
+
+    public bool PlayBGM(int index)
+    {
+        return SoundManager.PlayBGM( index );
+    }
+    public bool PlaySFX(int index)
+    {
+        return SoundManager.PlaySFX( index );
+    }
+
+    public bool PlayBGM( string name )
+    {
+        return SoundManager.PlayBGM( name );
+    }
+    public bool PlaySFX(string name)
+    {
+        return SoundManager.PlaySFX( name );
+    }
+
 }
