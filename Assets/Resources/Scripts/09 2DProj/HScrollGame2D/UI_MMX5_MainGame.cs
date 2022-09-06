@@ -83,7 +83,11 @@ public class UI_MMX5_MainGame : MonoBehaviour
             break;
             case State.Warning:
             {
+                timer += Time.deltaTime;
+                if(timer >= 1.0f)
+                {
 
+                }
             }
             break;
             case State.Playing:
@@ -179,6 +183,11 @@ public class UI_MMX5_MainGame : MonoBehaviour
             RockManGameManager.Instance.StopPlayerMove( true );
             curState = State.Warning;
         }
+    }
+
+    void WarningAnimation()
+    {
+        
     }
 
 }

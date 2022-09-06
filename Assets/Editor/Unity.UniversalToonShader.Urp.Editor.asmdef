@@ -1,0 +1,19 @@
+{
+    "name": "Unity.UniversalToonShader.Urp.Editor",
+    "references": [
+        "com.unity.animations.springbone",
+        "Unity.UniversalToonShader.Urp"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "optionalUnityReferences": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
