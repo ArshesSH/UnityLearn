@@ -11,6 +11,10 @@ public class UCSSU_Controller : MonoBehaviour
     }
 
     [Header("Object Setting")]
+    [SerializeField]
+    GameObject playerModel;
+    [SerializeField]
+    GameObject camObj;
 
     [Header( "Status Setting" )]
     [SerializeField]
@@ -19,37 +23,54 @@ public class UCSSU_Controller : MonoBehaviour
     float runSpeed = 6.0f;
 
     CharacterController controller;
-    Cinemachine.CinemachineFreeLook cmFreeLook;
+    Camera cam;
     Vector3 direction;
+
+    float horizontal;
+    float vertical;
 
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        cam = camObj.GetComponent<Camera>();
     }
 
     void Update()
     {
+        PlayerInput();
         SetDirection();
         RotateToDirection();
-        MoveCharacter();
 
+        if(direction.sqrMagnitude > 0.01f)
+        {
+            MoveCharacter();
+        }
     }
 
     void SetDirection()
     {
+        Vector3 rightVec = cam.transform.right;
+        Vector3 fowardVec = cam.transform.forward;
+        direction = (horizontal * rightVec +  vertical * Vector3.ProjectOnPlane( fowardVec, Vector3.up )).normalized;
     }
 
     void RotateToDirection()
     {
-        Vector3 forward = Vector3.Slerp( transform.forward, direction,
-                rotateSpeed * Time.deltaTime / Vector3.Angle( transform.forward, direction ) );
-        transform.LookAt( transform.position + forward );
+        Vector3 forward = Vector3.Slerp( playerModel.transform.forward, direction,
+                rotateSpeed * Time.deltaTime / Vector3.Angle( playerModel.transform.forward, direction ) );
+        transform.LookAt( playerModel.transform.position + forward );
     }
 
     void MoveCharacter()
     {
-        controller.Move( direction * runSpeed * Time.deltaTime );
+        controller.Move( playerModel.transform.forward * runSpeed * Time.deltaTime );
+    }
+
+    void PlayerInput()
+    {
+        horizontal = Input.GetAxis( "Horizontal" );
+        vertical = Input.GetAxis( "Vertical" );
     }
 
     private void OnGUI()

@@ -159,5 +159,8 @@ public class MecanimControl : MonoBehaviour
         }
     }
 
-
+    void onSlideKick()
+    {
+        print( "called onSlideKick()" );
+    }
 }
