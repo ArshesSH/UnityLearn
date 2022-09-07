@@ -12,19 +12,14 @@ public class CameraController : MonoBehaviour
     public bool InvertX;
     public bool InvertY;
 
-
     float xAxis;
     float yAxis;
-
     float horizon;
     float vertical;
     float curVerticalAngle;
 
-    Vector3 temp;
-
     void Start()
     {
-        
     }
 
     void Update()
@@ -39,6 +34,8 @@ public class CameraController : MonoBehaviour
         yAxis = (InvertY ? -Input.GetAxisRaw( "Mouse Y" ) : Input.GetAxisRaw( "Mouse Y" )) * MouseSpeed;
         horizon = Mathf.SmoothStep( horizon, xAxis, MouseAccelerationTime );
         vertical = Mathf.SmoothStep( vertical, yAxis, MouseAccelerationTime );
+        //horizon = Input.GetAxis( "Mouse X" );
+        //vertical = Input.GetAxis( "Mouse Y" );
     }
 
     void RotateHorizon()

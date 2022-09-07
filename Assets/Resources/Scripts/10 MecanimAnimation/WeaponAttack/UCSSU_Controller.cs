@@ -23,8 +23,8 @@ public class UCSSU_Controller : MonoBehaviour
     float runSpeed = 6.0f;
 
     CharacterController controller;
-    Camera cam;
     Vector3 direction;
+    Vector3 forward;
 
     float horizontal;
     float vertical;
@@ -33,7 +33,6 @@ public class UCSSU_Controller : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        cam = camObj.GetComponent<Camera>();
     }
 
     void Update()
@@ -50,21 +49,21 @@ public class UCSSU_Controller : MonoBehaviour
 
     void SetDirection()
     {
-        Vector3 rightVec = cam.transform.right;
-        Vector3 fowardVec = cam.transform.forward;
+        Vector3 rightVec = camObj.transform.right;
+        Vector3 fowardVec = camObj.transform.forward;
         direction = (horizontal * rightVec +  vertical * Vector3.ProjectOnPlane( fowardVec, Vector3.up )).normalized;
     }
 
     void RotateToDirection()
     {
-        Vector3 forward = Vector3.Slerp( playerModel.transform.forward, direction,
+        forward = Vector3.Slerp( playerModel.transform.forward, direction,
                 rotateSpeed * Time.deltaTime / Vector3.Angle( playerModel.transform.forward, direction ) );
-        transform.LookAt( playerModel.transform.position + forward );
+        playerModel.transform.LookAt( playerModel.transform.position + forward );
     }
 
     void MoveCharacter()
     {
-        controller.Move( playerModel.transform.forward * runSpeed * Time.deltaTime );
+        controller.Move( runSpeed * Time.deltaTime * direction );
     }
 
     void PlayerInput()
@@ -75,6 +74,7 @@ public class UCSSU_Controller : MonoBehaviour
 
     private void OnGUI()
     {
+        GUI.Box( new Rect( 0, 0, 200, 30 ), direction.ToString() );
     }
 
 }
