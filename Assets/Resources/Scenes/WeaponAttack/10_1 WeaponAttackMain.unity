@@ -455,6 +455,7 @@ MonoBehaviour:
   camObj: {fileID: 861971392}
   rotateSpeed: 600
   runSpeed: 6
+  turnCharcterByCam: 0
 --- !u!143 &474988100
 CharacterController:
   m_ObjectHideFlags: 0
@@ -643,13 +644,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d19e95a0d6b93ee4b98b85f88b26a99e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mode: 0
+  canZoom: 1
   Target: {fileID: 1550150734}
+  MouseSpeed: 1.5
+  MouseAccelerationTime: 0.15
+  ZoomSpeed: 20
+  ZoomAccelerationTime: 0.15
   MinAngleY: -40
   MaxAngleY: 60
-  MouseAccelerationTime: 0.15
-  MouseSpeed: 1.5
   InvertX: 0
   InvertY: 1
+  InvertZoom: 0
 --- !u!1001 &864726828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -773,8 +779,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1021918364}
   - component: {fileID: 1021918366}
-  - component: {fileID: 1021918369}
-  - component: {fileID: 1021918368}
   m_Layer: 0
   m_Name: CharacterModels
   m_TagString: Untagged
@@ -808,8 +812,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021918363}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 8f0565f23a2b58541a475bd3c1393052, type: 3}
-  m_Controller: {fileID: 9100000, guid: 3ae4ae8af8dac574786f07c40d425395, type: 2}
+  m_Avatar: {fileID: 9000000, guid: f2c836f3e5c029140a0cc913d7df766a, type: 3}
+  m_Controller: {fileID: 9100000, guid: 8eaa0cbec1c710c44a31fedd39f53dd3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -819,40 +823,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1021918368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1021918363}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df7e3c015c8ee964b8d8ca1558525f95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerModel: {fileID: 1021918363}
-  camObj: {fileID: 861971392}
-  rotateSpeed: 600
-  runSpeed: 6
---- !u!143 &1021918369
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1021918363}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Height: 1.6
-  m_Radius: 0.1
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.01
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.8, z: 0}
 --- !u!1 &1550150734
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,6 +21,7 @@ public class UCSSU_Controller : MonoBehaviour
     float rotateSpeed = 600.0f;
     [SerializeField]
     float runSpeed = 6.0f;
+    public bool turnCharcterByCam = true;
 
     CharacterController controller;
     Vector3 direction;
@@ -39,7 +40,11 @@ public class UCSSU_Controller : MonoBehaviour
     {
         PlayerInput();
         SetDirection();
-        RotateToDirection();
+
+        if(turnCharcterByCam)
+        {
+            RotateToDirection();
+        }
 
         if(direction.sqrMagnitude > 0.01f)
         {
@@ -74,7 +79,6 @@ public class UCSSU_Controller : MonoBehaviour
 
     private void OnGUI()
     {
-        GUI.Box( new Rect( 0, 0, 200, 30 ), direction.ToString() );
     }
 
 }
