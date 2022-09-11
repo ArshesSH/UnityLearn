@@ -9,7 +9,7 @@ public class UCSSU_Controller : MonoBehaviour
         Rifle,
     }
 
-    [Header("Object Setting")]
+    [Header("Character Object Setting")]
     [SerializeField]
     GameObject controllerObj;
     [SerializeField]
@@ -23,9 +23,19 @@ public class UCSSU_Controller : MonoBehaviour
     Quaternion mainSpineInitRot;
     [SerializeField]
     Transform bowAim;
+
+    [Header("Weapon Object Setting")]
     [SerializeField]
     GameObject[] weapons;
     GameObject curWeapon;
+    [SerializeField]
+    GameObject arrowObj;
+    [SerializeField]
+    GameObject bulletObj;
+    [SerializeField]
+    Transform arrowSpawnPos;
+    [SerializeField]
+    Transform bulletSpawnPos;
 
     [Header("Status Setting")]
     [SerializeField]
@@ -54,6 +64,7 @@ public class UCSSU_Controller : MonoBehaviour
     bool isArmed = false;
     bool isAiming = false;
     bool isFire = false;
+    bool isCrouching = false;
 
 
     void Start()
@@ -117,9 +128,13 @@ public class UCSSU_Controller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             isArmed = !isArmed;
-            //curWeapon.SetActive(isArmed);
+            animator.SetBool("IsArmed", isArmed);
         }
-
+        if(Input.GetButtonDown("Crouch"))
+        {
+            isCrouching = !isCrouching;
+            animator.SetBool("IsCrouching", isCrouching);
+        }
     }
 
     void AimToCamera()
@@ -136,11 +151,11 @@ public class UCSSU_Controller : MonoBehaviour
                 {
                     mainSpine.LookAt(mainSpine.position + camRight);
                     float curAngle = mainSpine.localRotation.eulerAngles.y;
-                    if (curAngle >= maxAimRotateAngle && curAngle <= 90.0f)
+                    if (curAngle >= maxAimRotateAngle && curAngle <= 180.0f)
                     {
                         playerModel.transform.LookAt(playerModel.transform.position + camProjToPlane);
                     }
-                    else if (curAngle <= 360.0f - maxAimRotateAngle && curAngle >= 90.0f)
+                    else if (curAngle <= 360.0f - maxAimRotateAngle && curAngle >= 180.0f)  
                     {
                         playerModel.transform.LookAt(playerModel.transform.position + camProjToPlane);
                     }
@@ -156,7 +171,19 @@ public class UCSSU_Controller : MonoBehaviour
             break;
             case WeaponState.Rifle:
             {
-
+                if (isArmed)
+                {
+                    mainSpine.LookAt(mainSpine.position + camRight);
+                    float curAngle = mainSpine.localRotation.eulerAngles.y;
+                    if (curAngle >= maxAimRotateAngle && curAngle <= 180.0f)
+                    {
+                        playerModel.transform.LookAt(playerModel.transform.position + camProjToPlane);
+                    }
+                    else if (curAngle <= 360.0f - maxAimRotateAngle && curAngle >= 180.0f)
+                    {
+                        playerModel.transform.LookAt(playerModel.transform.position + camProjToPlane);
+                    }
+                }
             }
             break;
         }
@@ -194,14 +221,17 @@ public class UCSSU_Controller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             weaponState = WeaponState.GreatSword;
+            animator.SetInteger("WeaponState", (int)weaponState);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             weaponState = WeaponState.Bow;
+            animator.SetInteger("WeaponState", (int)weaponState);
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             weaponState = WeaponState.Rifle;
+            animator.SetInteger("WeaponState", (int)weaponState);
         }
     }
 
@@ -213,8 +243,6 @@ public class UCSSU_Controller : MonoBehaviour
             {
                 animator.SetFloat("Speed", controller.velocity.magnitude);
             }
-            animator.SetBool("IsArmed", isArmed);
-            animator.SetInteger("WeaponState", (int)weaponState);
         }
 
         UpdateAttackAnimation();
@@ -231,28 +259,34 @@ public class UCSSU_Controller : MonoBehaviour
 
     void onFireRifle()
     {
-        print("fire");
+        GameObject obj = null;
+        if (bulletObj != null && bulletSpawnPos != null)
+        {
+            obj = Instantiate(bulletObj, bulletSpawnPos.position, bulletSpawnPos.rotation);
+        }
     }
+
+    void onFireArrow()
+    {
+        GameObject obj = null;
+        if(arrowObj != null)
+        {
+            obj = Instantiate(arrowObj, arrowSpawnPos.position, arrowSpawnPos.rotation);
+        }
+    }
+
     void onWeaponCheck()
     {
         if(curWeapon.activeInHierarchy)
         {
             curWeapon.SetActive(false);
+            curWeapon = weapons[(int)weaponState];
         }
         else
         {
+            curWeapon = weapons[(int)weaponState];
             curWeapon.SetActive(true);
         }
-    }
-
-    void ChangeWeapon()
-    {
-        if (isArmed)
-        {
-            curWeapon.SetActive(false);
-        }
-        curWeapon = weapons[(int)weaponState];
-        curWeapon.SetActive(true);
     }
 
 
