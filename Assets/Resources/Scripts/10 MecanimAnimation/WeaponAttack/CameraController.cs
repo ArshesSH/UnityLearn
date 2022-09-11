@@ -15,6 +15,7 @@ public class CameraController : MonoBehaviour
 
     [Header( "Object Setting" )]
     public GameObject Target;
+    public GameObject AimTargetTransform;
 
     [Header( "Speed Setting" )]
     public float MouseSpeed = 1.5f;
@@ -39,6 +40,7 @@ public class CameraController : MonoBehaviour
     float horizon;
     float vertical;
     float curVerticalAngle;
+    bool isAiming = false;
 
     Camera cam;
     void Start()
