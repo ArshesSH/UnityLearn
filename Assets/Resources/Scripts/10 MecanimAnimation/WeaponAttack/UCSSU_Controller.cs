@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class UCSSU_Controller : MonoBehaviour
@@ -16,6 +14,7 @@ public class UCSSU_Controller : MonoBehaviour
     [SerializeField]
     GameObject camObj;
 
+
     [Header( "Status Setting" )]
     [SerializeField]
     float rotateSpeed = 600.0f;
@@ -24,9 +23,14 @@ public class UCSSU_Controller : MonoBehaviour
     public bool turnCharcterByCam = true;
 
     CharacterController controller;
+    Animator animator;
+
     Vector3 direction;
     Vector3 forward;
-
+    Vector3 camForward;
+    Vector3 camRight;
+    float curSpeed;
+     
     float horizontal;
     float vertical;
 
@@ -34,41 +38,43 @@ public class UCSSU_Controller : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        animator = playerModel.GetComponent<Animator>();
     }
 
     void Update()
     {
         PlayerInput();
         SetDirection();
-
-        if(turnCharcterByCam)
+        if (turnCharcterByCam)
         {
             RotateToDirection();
         }
 
-        if(direction.sqrMagnitude > 0.01f)
-        {
-            MoveCharacter();
-        }
+        MoveCharacter();
+        UpdateAnimation();
     }
 
     void SetDirection()
     {
-        Vector3 rightVec = camObj.transform.right;
-        Vector3 fowardVec = camObj.transform.forward;
-        direction = (horizontal * rightVec +  vertical * Vector3.ProjectOnPlane( fowardVec, Vector3.up )).normalized;
+        camForward = Vector3.ProjectOnPlane(camObj.transform.forward, Vector3.up);
+        camRight = camObj.transform.right;
+        direction = (horizontal * camRight + vertical * camForward).normalized;
     }
 
     void RotateToDirection()
     {
-        forward = Vector3.Slerp( playerModel.transform.forward, direction,
-                rotateSpeed * Time.deltaTime / Vector3.Angle( playerModel.transform.forward, direction ) );
-        playerModel.transform.LookAt( playerModel.transform.position + forward );
+        if (direction.sqrMagnitude > 0.01f)
+        {
+            forward = Vector3.Slerp(playerModel.transform.forward, direction,
+                rotateSpeed * Time.deltaTime / Vector3.Angle(playerModel.transform.forward, direction));
+            playerModel.transform.LookAt(playerModel.transform.position + forward);
+        }
     }
 
     void MoveCharacter()
     {
-        controller.Move( runSpeed * Time.deltaTime * direction );
+        //curSpeed = Mathf.Lerp()
+        controller.Move(runSpeed * Time.deltaTime * direction );
     }
 
     void PlayerInput()
@@ -77,8 +83,20 @@ public class UCSSU_Controller : MonoBehaviour
         vertical = Input.GetAxis( "Vertical" );
     }
 
+    void UpdateAnimation()
+    {
+        if(animator != null)
+        {
+            if(controller != null)
+            {
+                animator.SetFloat("Speed", controller.velocity.magnitude);
+            }
+        }
+    }
+
     private void OnGUI()
     {
+        //GUI.Box(new Rect(0, 0, 150, 30), runSpeed.ToString());
     }
 
 }
