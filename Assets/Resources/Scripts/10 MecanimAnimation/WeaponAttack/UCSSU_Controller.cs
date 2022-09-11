@@ -6,7 +6,7 @@ public class UCSSU_Controller : MonoBehaviour
     {
         GreatSword,
         Bow,
-        Riffle,
+        Rifle,
     }
 
     [Header("Object Setting")]
@@ -23,9 +23,11 @@ public class UCSSU_Controller : MonoBehaviour
     Quaternion mainSpineInitRot;
     [SerializeField]
     Transform bowAim;
+    [SerializeField]
+    GameObject[] weapons;
+    GameObject curWeapon;
 
-
-    [Header( "Status Setting" )]
+    [Header("Status Setting")]
     [SerializeField]
     float rotateSpeed = 600.0f;
     [SerializeField]
@@ -51,16 +53,15 @@ public class UCSSU_Controller : MonoBehaviour
     WeaponState weaponState = WeaponState.GreatSword;
     bool isArmed = false;
     bool isAiming = false;
+    bool isFire = false;
 
-    private void Awake()
-    {
-    }
 
     void Start()
     {
         controller = controllerObj.GetComponent<CharacterController>();
         animator = playerModel.GetComponent<Animator>();
         mainSpineInitRot = mainSpine.localRotation;
+        curWeapon = weapons[0];
     }
 
     void Update()
@@ -73,6 +74,7 @@ public class UCSSU_Controller : MonoBehaviour
             RotateToDirection();
         }
         MoveCharacter();
+
 
         UpdateAnimation();
     }
@@ -102,7 +104,7 @@ public class UCSSU_Controller : MonoBehaviour
 
     void MoveCharacter()
     {
-        controller.Move(runSpeed * Time.deltaTime * direction );
+        controller.Move(runSpeed * Time.deltaTime * direction);
     }
 
     void PlayerInput()
@@ -115,7 +117,9 @@ public class UCSSU_Controller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             isArmed = !isArmed;
+            //curWeapon.SetActive(isArmed);
         }
+
     }
 
     void AimToCamera()
@@ -132,25 +136,25 @@ public class UCSSU_Controller : MonoBehaviour
                 {
                     mainSpine.LookAt(mainSpine.position + camRight);
                     float curAngle = mainSpine.localRotation.eulerAngles.y;
-                    if (curAngle >= maxAimRotateAngle&& curAngle <= 90.0f)
+                    if (curAngle >= maxAimRotateAngle && curAngle <= 90.0f)
                     {
                         playerModel.transform.LookAt(playerModel.transform.position + camProjToPlane);
                     }
-                    else if (curAngle <= 360.0f - maxAimRotateAngle&& curAngle >= 90.0f)
+                    else if (curAngle <= 360.0f - maxAimRotateAngle && curAngle >= 90.0f)
                     {
                         playerModel.transform.LookAt(playerModel.transform.position + camProjToPlane);
                     }
                 }
                 else
                 {
-                    if(mainSpine.localRotation != mainSpineInitRot)
+                    if (mainSpine.localRotation != mainSpineInitRot)
                     {
                         mainSpine.localRotation = Quaternion.RotateTowards(mainSpine.localRotation, mainSpineInitRot, 10.0f);
                     }
                 }
             }
             break;
-            case WeaponState.Riffle:
+            case WeaponState.Rifle:
             {
 
             }
@@ -160,8 +164,7 @@ public class UCSSU_Controller : MonoBehaviour
 
     void UpdateAttackAnimation()
     {
-
-        switch(weaponState)
+        switch (weaponState)
         {
             case WeaponState.GreatSword:
             {
@@ -177,9 +180,10 @@ public class UCSSU_Controller : MonoBehaviour
                 animator.SetBool("IsDraw", isAiming);
             }
             break;
-            case WeaponState.Riffle:
+            case WeaponState.Rifle:
             {
-
+                isFire = Input.GetButton("Fire1");
+                animator.SetBool("IsFire", isFire);
             }
             break;
         }
@@ -187,10 +191,6 @@ public class UCSSU_Controller : MonoBehaviour
 
     void UpdateWeaponState()
     {
-        //if(Input.GetKeyDown(KeyCode.Alpha1))
-        //{
-        //    weaponState = WeaponState.NoWeapon;
-        //}
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             weaponState = WeaponState.GreatSword;
@@ -201,15 +201,15 @@ public class UCSSU_Controller : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            weaponState = WeaponState.Riffle;
+            weaponState = WeaponState.Rifle;
         }
     }
 
     void UpdateAnimation()
     {
-        if(animator != null)
+        if (animator != null)
         {
-            if(controller != null)
+            if (controller != null)
             {
                 animator.SetFloat("Speed", controller.velocity.magnitude);
             }
@@ -222,12 +222,39 @@ public class UCSSU_Controller : MonoBehaviour
 
     private void OnAnimatorIK(int layerIndex)
     {
-        if(isAiming)
+        if (isAiming)
         {
             animator.SetLookAtWeight(1.0f);
             animator.SetLookAtPosition(bowAim.position);
         }
     }
+
+    void onFireRifle()
+    {
+        print("fire");
+    }
+    void onWeaponCheck()
+    {
+        if(curWeapon.activeInHierarchy)
+        {
+            curWeapon.SetActive(false);
+        }
+        else
+        {
+            curWeapon.SetActive(true);
+        }
+    }
+
+    void ChangeWeapon()
+    {
+        if (isArmed)
+        {
+            curWeapon.SetActive(false);
+        }
+        curWeapon = weapons[(int)weaponState];
+        curWeapon.SetActive(true);
+    }
+
 
     private void OnGUI()
     {
