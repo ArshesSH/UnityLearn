@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class UCSSU_Controller : MonoBehaviour
 {
-    public enum UC_State
+    public enum WeaponState
     {
-        Wait,
-
+        GreatSword,
+        Bow,
+        Riffle,
     }
 
     [Header("Object Setting")]
@@ -22,18 +23,21 @@ public class UCSSU_Controller : MonoBehaviour
     float runSpeed = 6.0f;
     public bool turnCharcterByCam = true;
 
+    // Components
     CharacterController controller;
     Animator animator;
 
+    // Move Variables
     Vector3 direction;
     Vector3 forward;
     Vector3 camForward;
     Vector3 camRight;
-    float curSpeed;
-     
     float horizontal;
     float vertical;
 
+    // Character Status
+    WeaponState weaponState = WeaponState.GreatSword;
+    bool isArmed = false;
 
     void Start()
     {
@@ -44,13 +48,14 @@ public class UCSSU_Controller : MonoBehaviour
     void Update()
     {
         PlayerInput();
+
         SetDirection();
         if (turnCharcterByCam)
         {
             RotateToDirection();
         }
-
         MoveCharacter();
+
         UpdateAnimation();
     }
 
@@ -73,7 +78,6 @@ public class UCSSU_Controller : MonoBehaviour
 
     void MoveCharacter()
     {
-        //curSpeed = Mathf.Lerp()
         controller.Move(runSpeed * Time.deltaTime * direction );
     }
 
@@ -81,6 +85,33 @@ public class UCSSU_Controller : MonoBehaviour
     {
         horizontal = Input.GetAxis( "Horizontal" );
         vertical = Input.GetAxis( "Vertical" );
+
+        UpdateWeaponState();
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            isArmed = !isArmed;
+        }
+    }
+
+    void UpdateWeaponState()
+    {
+        //if(Input.GetKeyDown(KeyCode.Alpha1))
+        //{
+        //    weaponState = WeaponState.NoWeapon;
+        //}
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            weaponState = WeaponState.GreatSword;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            weaponState = WeaponState.Bow;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            weaponState = WeaponState.Riffle;
+        }
     }
 
     void UpdateAnimation()
@@ -91,12 +122,14 @@ public class UCSSU_Controller : MonoBehaviour
             {
                 animator.SetFloat("Speed", controller.velocity.magnitude);
             }
+            animator.SetBool("IsArmed", isArmed);
+            animator.SetInteger("WeaponState", (int)weaponState);
         }
     }
 
     private void OnGUI()
     {
-        //GUI.Box(new Rect(0, 0, 150, 30), runSpeed.ToString());
+        GUI.Box(new Rect(0, 0, 150, 30), weaponState.ToString());
     }
 
 }
