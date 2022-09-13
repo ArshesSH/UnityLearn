@@ -66,17 +66,13 @@ public class UCSSU_Controller : MonoBehaviour
     bool isFire = false;
     bool isCrouching = false;
 
-    protected void InitController()
+    protected virtual void Start()
     {
+
         controller = controllerObj.GetComponent<CharacterController>();
         animator = playerModel.GetComponent<Animator>();
         mainSpineInitRot = mainSpine.localRotation;
         curWeapon = weapons[0];
-    }
-
-    void Start()
-    {
-        InitController();
     }
 
     protected virtual void Update()
@@ -261,7 +257,7 @@ public class UCSSU_Controller : MonoBehaviour
         }
     }
 
-    void onFireRifle()
+    public void onFireRifle()
     {
         GameObject obj = null;
         if (bulletObj != null && bulletSpawnPos != null)
@@ -270,7 +266,7 @@ public class UCSSU_Controller : MonoBehaviour
         }
     }
 
-    void onFireArrow()
+    public void onFireArrow()
     {
         GameObject obj = null;
         if(arrowObj != null)
@@ -279,7 +275,7 @@ public class UCSSU_Controller : MonoBehaviour
         }
     }
 
-    void onWeaponCheck()
+    public void onWeaponCheck()
     {
         if(curWeapon.activeInHierarchy)
         {

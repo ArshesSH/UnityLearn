@@ -20,11 +20,11 @@ public class RunnerController : UCSSU_Controller
 
 
     #region MonoBehaviour Methods
-    private void Start()
+    protected override void Start()
     {
-        InitController();
-        
-        if(scoreSliderPrefab != null)
+        base.Start();
+
+        if ( scoreSliderPrefab != null )
         {
             GameObject _uiGo = Instantiate( scoreSliderPrefab );
             _uiGo.SendMessage( "SetTarget", this, SendMessageOptions.RequireReceiver );
@@ -43,6 +43,7 @@ public class RunnerController : UCSSU_Controller
     {
         base.LateUpdate();
     }
+
 
     #endregion
 

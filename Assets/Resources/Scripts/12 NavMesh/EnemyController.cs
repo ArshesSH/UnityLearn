@@ -8,12 +8,17 @@ public class EnemyController : MonoBehaviour
 {
     #region Public Fields
     public GameObject Target;
+    public float Damage = 1.0f;
+    public float ConstantDamage = 0.5f;
+    public float StopTime = 3.0f;
     #endregion
 
 
     #region Private Fields
     NavMeshAgent agent;
     Animator animator;
+    float timer = 0.0f;
+    bool isStun = false;
     #endregion
 
     
@@ -41,10 +46,33 @@ public class EnemyController : MonoBehaviour
         }
 
         agent.destination = Target.transform.position;
-
+        if(isStun)
+        {
+            StopMove();
+        }
 
         UpdateAnimations();
     }
+    private void OnTriggerEnter( Collider other )
+    {
+        if ( other.gameObject.CompareTag( "Player" ) )
+        {
+            GameManager_MazeRunner.Instance._MazeManager.AddPlayerScore( -Damage );
+        }
+        if ( other.gameObject.CompareTag( "Weapon" ) )
+        {
+            print( "hello" );
+            isStun = true;
+        }
+    }
+    private void OnTriggerStay( Collider other )
+    {
+        if ( other.gameObject.CompareTag( "Player" ) )
+        {
+            GameManager_MazeRunner.Instance._MazeManager.AddPlayerScore( -ConstantDamage * Time.deltaTime );
+        }
+    }
+
     #endregion
 
 
@@ -58,6 +86,22 @@ public class EnemyController : MonoBehaviour
 
         animator.SetFloat( "Speed", agent.velocity.magnitude );
     }
+
+    void StopMove()
+    {
+        timer += Time.deltaTime;
+        if(timer <= StopTime)
+        {
+            agent.isStopped = true;
+        }
+        else
+        {
+            agent.isStopped = false;
+            timer = 0.0f;
+            isStun = false;
+        }
+    }
+
     #endregion
 
 }

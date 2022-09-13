@@ -81,6 +81,11 @@ public class GameManager_MazeRunner : MonoBehaviour
         SceneManager.LoadScene( sceneName );
     }
 
+    public void GameEnd()
+    {
+
+    }
+
     #endregion
 
 

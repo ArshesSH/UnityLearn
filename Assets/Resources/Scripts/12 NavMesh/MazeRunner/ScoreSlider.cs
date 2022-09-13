@@ -63,12 +63,13 @@ public class ScoreSlider : MonoBehaviour
 
     private void LateUpdate()
     {
-        if ( playerObj.transform != null )
-        {
-            targetPosition = playerObj.transform.localPosition;
-            targetPosition.y += controllerHeight;
-            transform.position = cam.WorldToScreenPoint( targetPosition ) + screenOffset;
-        }
+        //if ( playerObj != null )
+        //{
+        //    targetPosition = playerObj.transform.localPosition;
+        //    targetPosition.y += controllerHeight;
+
+        //    transform.position = cam.ScreenToViewportPoint( targetPosition ) + screenOffset;
+        //}
     }
 
     #endregion

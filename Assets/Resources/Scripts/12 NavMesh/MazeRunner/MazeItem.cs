@@ -5,7 +5,7 @@ using UnityEngine;
 public class MazeItem : MonoBehaviour
 {
     #region Public Fields
-    public float Point = 5.0f;
+    public float Point = 1.0f;
     public string PlayerTagName = "Player";
     public string EnemyTagName = "Enemy";
 

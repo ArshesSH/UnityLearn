@@ -110,6 +110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e00c15b2b2ac6ae4cb0d6e0ba61fd85a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Point: 5
+  Point: 1
   PlayerTagName: Player
   EnemyTagName: Enemy

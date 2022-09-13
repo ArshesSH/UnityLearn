@@ -39,6 +39,11 @@ public class MazeManager : MonoBehaviour
         {
             SpawnItem();
         }
+
+        if(IsDead())
+        {
+            GameManager_MazeRunner.Instance.GameEnd();
+        }
     }
 
     #endregion
@@ -60,11 +65,17 @@ public class MazeManager : MonoBehaviour
     {
         PlayerScore += score;
     }
+    public bool IsDead()
+    {
+        return PlayerScore <= 0.0f;
+    }
 
     #endregion
 
 
     #region Private Methods
+
+
 
     #endregion
 

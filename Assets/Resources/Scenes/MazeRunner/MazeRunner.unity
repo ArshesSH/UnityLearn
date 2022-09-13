@@ -1422,6 +1422,7 @@ GameObject:
   - component: {fileID: 344208208}
   - component: {fileID: 344208210}
   - component: {fileID: 344208211}
+  - component: {fileID: 344208212}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -1459,7 +1460,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 5
+  m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -1500,6 +1501,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 474988097}
+  Damage: 1
+  ConstantDamage: 0.5
+  StopTime: 3
 --- !u!136 &344208211
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1508,12 +1512,28 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344208206}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.3
   m_Height: 1.65
   m_Direction: 1
   m_Center: {x: 0, y: 0.82, z: 0}
+--- !u!54 &344208212
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344208206}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &405847660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,6 +1765,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 362112841145248566}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &474988101
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474988097}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &521334925
 GameObject:
   m_ObjectHideFlags: 0
@@ -3144,6 +3180,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914129026}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &919903715 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 704552087634409959, guid: 284f69536db39154f8e6d1c1977112d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 362112841145248566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &919903717
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919903715}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.054583848, y: 0.980288, z: 0.020938035}
+  m_Center: {x: -0.00029395302, y: 0.28268734, z: 0.000000101898}
 --- !u!1 &957070764
 GameObject:
   m_ObjectHideFlags: 0
@@ -6372,6 +6427,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 704552087634409959, guid: 284f69536db39154f8e6d1c1977112d4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 704552087634409959, guid: 284f69536db39154f8e6d1c1977112d4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714331409853887046, guid: 284f69536db39154f8e6d1c1977112d4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Weapon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 284f69536db39154f8e6d1c1977112d4, type: 3}
