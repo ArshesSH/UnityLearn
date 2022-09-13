@@ -51,6 +51,17 @@ public class GameManager_MazeRunner : MonoBehaviour
         }
     }
 
+    public GameObject Item
+    {
+        get
+        {
+            if(item == null)
+            {
+                item = GameObject.FindWithTag("Item");
+            }
+            return item;
+        }
+    }
 
     #endregion
 
@@ -60,6 +71,7 @@ public class GameManager_MazeRunner : MonoBehaviour
 
     GameObject mazeManagerObj;
     MazeManager mazeManager;
+    GameObject item;
 
     #endregion
 
@@ -81,10 +93,6 @@ public class GameManager_MazeRunner : MonoBehaviour
         SceneManager.LoadScene( sceneName );
     }
 
-    public void GameEnd()
-    {
-
-    }
 
     #endregion
 

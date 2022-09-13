@@ -5,7 +5,7 @@ using UnityEngine;
 public class MazeManager : MonoBehaviour
 {
     #region Public Fields
-    [Header( "Item Setting" )]
+    [Header("Item Setting")]
     [SerializeField]
     private GameObject itemObj;
 
@@ -28,22 +28,18 @@ public class MazeManager : MonoBehaviour
 
     private void Start()
     {
-        if ( itemObj == null )
+        if (itemObj == null)
         {
-            Debug.LogError( "MazeManager: No Item Object set!" );
+            Debug.LogError("MazeManager: No Item Object set!");
         }
     }
     private void Update()
     {
-        if(!IsItemExist)
+        if (!IsItemExist)
         {
             SpawnItem();
         }
 
-        if(IsDead())
-        {
-            GameManager_MazeRunner.Instance.GameEnd();
-        }
     }
 
     #endregion
@@ -53,21 +49,26 @@ public class MazeManager : MonoBehaviour
 
     public void SpawnItem()
     {
-        if ( itemObj == null )
+        if (itemObj == null)
         {
             return;
         }
-        int posIdx = Random.Range( 0, itemSpawnPoints.Length );
-        GameObject obj = Instantiate( itemObj, itemSpawnPoints[posIdx] );
+        int posIdx = Random.Range(0, itemSpawnPoints.Length);
+        GameObject obj = Instantiate(itemObj, itemSpawnPoints[posIdx]);
         IsItemExist = true;
     }
-    public void AddPlayerScore( float score )
+    public void AddPlayerScore(float score)
     {
         PlayerScore += score;
     }
     public bool IsDead()
     {
         return PlayerScore <= 0.0f;
+    }
+
+    public bool IsVictory()
+    {
+        return PlayerScore >= 10.0f;
     }
 
     #endregion

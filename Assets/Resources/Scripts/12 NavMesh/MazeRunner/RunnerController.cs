@@ -10,11 +10,13 @@ public class RunnerController : UCSSU_Controller
     [SerializeField]
     private GameObject scoreSliderPrefab;
 
+
     #endregion
 
 
     #region Private Fields
 
+    Collider weaponCollider;
 
     #endregion
 
@@ -23,6 +25,16 @@ public class RunnerController : UCSSU_Controller
     protected override void Start()
     {
         base.Start();
+
+        weaponCollider = GetComponent<BoxCollider>();
+        if (weaponCollider == null)
+        {
+            Debug.LogWarning("<Color=Red><a>Missing</a></Color> weaponCollider reference on player Prefab.", this);
+        }
+        else
+        {
+            weaponCollider.enabled = false;
+        }
 
         if ( scoreSliderPrefab != null )
         {

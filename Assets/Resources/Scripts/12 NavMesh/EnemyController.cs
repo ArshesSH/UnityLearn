@@ -19,11 +19,12 @@ public class EnemyController : MonoBehaviour
     Animator animator;
     float timer = 0.0f;
     bool isStun = false;
+    protected Vector3 targetPos;
     #endregion
 
     
     #region MonoBehaviour Callback
-    void Start()
+    protected virtual void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         if(agent == null)
@@ -38,14 +39,14 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    void Update()
+    protected virtual void Update()
     {
         if(agent == null)
         {
             return;
         }
-
-        agent.destination = Target.transform.position;
+        FindTargetPosition();
+        agent.destination = targetPos;
         if(isStun)
         {
             StopMove();
@@ -53,7 +54,7 @@ public class EnemyController : MonoBehaviour
 
         UpdateAnimations();
     }
-    private void OnTriggerEnter( Collider other )
+    protected virtual void OnTriggerEnter( Collider other )
     {
         if ( other.gameObject.CompareTag( "Player" ) )
         {
@@ -61,19 +62,27 @@ public class EnemyController : MonoBehaviour
         }
         if ( other.gameObject.CompareTag( "Weapon" ) )
         {
-            print( "hello" );
             isStun = true;
         }
+        if (other.gameObject.CompareTag("Item"))
+        {
+            Destroy(other.gameObject);
+        }
     }
-    private void OnTriggerStay( Collider other )
+    protected virtual void OnTriggerStay( Collider other )
     {
         if ( other.gameObject.CompareTag( "Player" ) )
         {
             GameManager_MazeRunner.Instance._MazeManager.AddPlayerScore( -ConstantDamage * Time.deltaTime );
         }
     }
-
+    protected virtual void FindTargetPosition()
+    {
+        targetPos = Target.transform.position;
+    }
     #endregion
+
+
 
 
     #region Private Methods

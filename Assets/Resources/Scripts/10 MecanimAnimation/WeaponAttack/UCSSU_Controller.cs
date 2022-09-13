@@ -26,8 +26,8 @@ public class UCSSU_Controller : MonoBehaviour
 
     [Header("Weapon Object Setting")]
     [SerializeField]
-    GameObject[] weapons;
-    GameObject curWeapon;
+    protected GameObject[] weapons;
+    protected GameObject curWeapon;
     [SerializeField]
     GameObject arrowObj;
     [SerializeField]
@@ -68,7 +68,6 @@ public class UCSSU_Controller : MonoBehaviour
 
     protected virtual void Start()
     {
-
         controller = controllerObj.GetComponent<CharacterController>();
         animator = playerModel.GetComponent<Animator>();
         mainSpineInitRot = mainSpine.localRotation;
@@ -197,7 +196,10 @@ public class UCSSU_Controller : MonoBehaviour
             {
                 if (Input.GetButtonDown("Fire1"))
                 {
-                    animator.SetTrigger("Attack");
+                    if(isArmed)
+                    {
+                        animator.SetTrigger("Attack");
+                    }
                 }
             }
             break;
@@ -277,25 +279,27 @@ public class UCSSU_Controller : MonoBehaviour
 
     public void onWeaponCheck()
     {
-        if(curWeapon.activeInHierarchy)
+        if(curWeapon != null)
         {
-            curWeapon.SetActive(false);
-            curWeapon = weapons[(int)weaponState];
-        }
-        else
-        {
-            curWeapon = weapons[(int)weaponState];
-            curWeapon.SetActive(true);
+            if (curWeapon.activeInHierarchy)
+            {
+                curWeapon.SetActive(false);
+                curWeapon = weapons[(int)weaponState];
+            }
+            else
+            {
+                curWeapon = weapons[(int)weaponState];
+                curWeapon.SetActive(true);
+            }
         }
     }
 
-
-    private void OnGUI()
-    {
-        GUI.Box(new Rect(0, 0, 150, 30), weaponState.ToString());
-        GUI.Box(new Rect(0, 30, 150, 30), mainSpine.localRotation.eulerAngles.y.ToString());
-        GUI.Box(new Rect(0, 60, 150, 30), "IsAiming=" + isAiming.ToString());
-    }
+    //private void OnGUI()    
+    //{
+    //    GUI.Box(new Rect(0, 0, 150, 30), weaponState.ToString());
+    //    GUI.Box(new Rect(0, 30, 150, 30), mainSpine.localRotation.eulerAngles.y.ToString());
+    //    GUI.Box(new Rect(0, 60, 150, 30), "IsAiming=" + isAiming.ToString());
+    //}
 
 }
 

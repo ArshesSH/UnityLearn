@@ -8,22 +8,25 @@ public class MazeItem : MonoBehaviour
     public float Point = 1.0f;
     public string PlayerTagName = "Player";
     public string EnemyTagName = "Enemy";
-
+    public float RotateSpeed = 10.0f;
     #endregion
 
 
     #region Private Fields
+
+    Vector3 rotateVector;
+
     #endregion
 
 
     #region MonoBehaviour Methods
     private void Start()
     {
-	
+        rotateVector = new Vector3(0, RotateSpeed, 0);
     }
     private void Update()
     {
-	
+        transform.Rotate(rotateVector * Time.deltaTime);
     }
 
     private void OnTriggerEnter( Collider other )
