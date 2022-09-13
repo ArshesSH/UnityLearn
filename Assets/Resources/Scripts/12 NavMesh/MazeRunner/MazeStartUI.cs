@@ -6,7 +6,7 @@ public class MazeStartUI : MonoBehaviour
 {
     void Start()
     {
-        
+        Time.timeScale = 1.0f;
     }
 
     void Update()
@@ -16,6 +16,12 @@ public class MazeStartUI : MonoBehaviour
 
     public void OnStartButtonClick()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         GameManager_MazeRunner.Instance.ChangeScene("MazeRunner");
+    }
+    public void OnExitButtonClick()
+    {
+        Application.Quit();
     }
 }

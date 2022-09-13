@@ -67,6 +67,7 @@ public class EnemyController : MonoBehaviour
         if (other.gameObject.CompareTag("Item"))
         {
             Destroy(other.gameObject);
+            GameManager_MazeRunner.Instance._MazeManager.IsItemExist = false;
         }
     }
     protected virtual void OnTriggerStay( Collider other )

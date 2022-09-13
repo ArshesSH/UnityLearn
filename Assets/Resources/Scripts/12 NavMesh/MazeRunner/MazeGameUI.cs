@@ -20,12 +20,16 @@ public class MazeGameUI : MonoBehaviour
         if(GameManager_MazeRunner.Instance._MazeManager.IsVictory())
         {
             gameStateText.text = "Victory";
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 0.0f;
             PanelObj.SetActive(true);
         }
         if (GameManager_MazeRunner.Instance._MazeManager.IsDead())
         {
             gameStateText.text = "You Died";
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 0.0f;
             PanelObj.SetActive(true);
         }
