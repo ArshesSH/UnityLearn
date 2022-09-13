@@ -66,8 +66,7 @@ public class UCSSU_Controller : MonoBehaviour
     bool isFire = false;
     bool isCrouching = false;
 
-
-    void Start()
+    protected void InitController()
     {
         controller = controllerObj.GetComponent<CharacterController>();
         animator = playerModel.GetComponent<Animator>();
@@ -75,7 +74,12 @@ public class UCSSU_Controller : MonoBehaviour
         curWeapon = weapons[0];
     }
 
-    void Update()
+    void Start()
+    {
+        InitController();
+    }
+
+    protected virtual void Update()
     {
         PlayerInput();
 
@@ -90,7 +94,7 @@ public class UCSSU_Controller : MonoBehaviour
         UpdateAnimation();
     }
 
-    private void LateUpdate()
+    protected virtual void LateUpdate()
     {
         AimToCamera();
     }
