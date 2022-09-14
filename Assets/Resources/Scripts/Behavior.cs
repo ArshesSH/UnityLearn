@@ -1,6 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.Linq;
 
 namespace KSH_Lib
@@ -15,18 +13,14 @@ namespace KSH_Lib
                 return stateStack.Count();
             }
         }
-
         #endregion
 
         #region Private Fields
-
         List<Behavior<T>> stateStack = new List<Behavior<T>>();
-
         #endregion
 
 
         #region Public Methods
-            
         public virtual void Update( in T actor, ref Behavior<T> state )
         {
             Behavior<T> newState = DoBehavior( actor );
@@ -38,7 +32,14 @@ namespace KSH_Lib
         }
 
         public virtual void Activate( in T actor ) { }
-        public virtual Behavior<T> DoBehavior( in T actor ) { return null; }
+        public virtual Behavior<T> DoBehavior( in T actor )
+        {
+            if(HasSuccessors())
+            {
+                return PassState();
+            }
+            return null;
+        }
         public void SetSuccessorStates(in List<Behavior<T>> successors)
         {
             stateStack = successors;
@@ -62,7 +63,6 @@ namespace KSH_Lib
             ps.SetSuccessorStates( stateStack );
             return ps;
         }
-
         #endregion
     }
 }

@@ -11,7 +11,7 @@ public class TestController : MonoBehaviour
 
     #region Private Fields
 
-    Behavior<TestController> behavior;
+    Behavior<TestController> behavior = new Behavior<TestController>();
 
     #endregion
 
@@ -19,7 +19,7 @@ public class TestController : MonoBehaviour
     #region MonoBehaviour Callbacks
     private void Start()
     {
-        behavior = new TestBvA();
+        behavior.PushSuccessorState( new TestBvA() );
     }
     private void Update()
     {
