@@ -94,7 +94,7 @@ public class UCSSU_Controller : MonoBehaviour
         AimToCamera();
     }
 
-    void SetDirection()
+    protected virtual void SetDirection()
     {
         camForward = camObj.transform.forward;
         camProjToPlane = Vector3.ProjectOnPlane(camForward, Vector3.up);
