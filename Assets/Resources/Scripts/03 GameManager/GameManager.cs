@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad( this.gameObject );
     }
 
+    public string nextSceneName;
+
     public void ChangeScene(string sceneName)
     {
         SceneManager.LoadScene( sceneName );
