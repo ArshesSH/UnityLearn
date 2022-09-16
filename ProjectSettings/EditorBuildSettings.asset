@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/MazeRunner/MazeRunner.unity
     guid: f770e9b585b138d4189680150fe5373f
   - enabled: 0
-    path: Assets/Resources/Scenes/00 Start.unity
+    path: Assets/Resources/Scenes/Study/00 Start.unity
     guid: 963d410d04f52b9499677edfde6b659d
   - enabled: 0
     path: Assets/Resources/Scenes/RacingGame/01-0 Start.unity
@@ -33,12 +33,12 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/2DGame/09_1 RockmanMain.unity
     guid: 0fbd56cd93358c54a9ea23b6146bf4d6
   - enabled: 0
-    path: Assets/Resources/Scenes/01 MoveAndRotation.unity
+    path: Assets/Resources/Scenes/Study/01 MoveAndRotation.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
-    path: Assets/Resources/Scenes/03 Game.unity
+    path: Assets/Resources/Scenes/Study/03 Game.unity
     guid: eb2f6a685920df0409424ad02b97a7ce
   - enabled: 0
-    path: Assets/Resources/Scenes/99 End.unity
+    path: Assets/Resources/Scenes/Study/99 End.unity
     guid: 060d885e88a7742489d737ab90b331d1
   m_configObjects: {}
