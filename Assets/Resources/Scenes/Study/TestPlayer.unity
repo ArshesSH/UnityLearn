@@ -436,12 +436,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camTarget: {fileID: 1759922627}
-  mouseSpeed: 1.5
+  mouseSpeed: 3
   mouseAccelerationTime: 0.15
   zoomSpeed: 20
   zoomAccelerationTime: 0.15
-  minAngleX: 180
-  maxAngleX: 340
   minAngleY: -40
   maxAngleY: 60
   InvertX: 0
@@ -493,15 +491,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6043bde05a7fc4cba197d06915c1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damping: {x: 0.1, y: 0.5, z: 5}
+  Damping: {x: 0.1, y: 0.5, z: 1}
   ShoulderOffset: {x: 0.5, y: -0.4, z: 0}
   VerticalArmLength: 0.4
   CameraSide: 0.5
   CameraDistance: 2
   CameraCollisionFilter:
     serializedVersion: 2
-    m_Bits: 0
-  IgnoreTag: 
+    m_Bits: 2147483647
+  IgnoreTag: Player
   CameraRadius: 0.2
   DampingIntoCollision: 0
   DampingFromCollision: 2
@@ -834,6 +832,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468329735442820105, guid: 1ab45c19d808bfd46b82f9a50fe54100,
+        type: 3}
+      propertyPath: m_RotationOffset.x
+      value: -46.360138
       objectReference: {fileID: 0}
     - target: {fileID: 8468329735533057078, guid: 1ab45c19d808bfd46b82f9a50fe54100,
         type: 3}

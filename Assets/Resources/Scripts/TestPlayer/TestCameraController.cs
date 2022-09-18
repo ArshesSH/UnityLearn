@@ -22,10 +22,6 @@ public class TestCameraController : MonoBehaviour
 
     [Header( "Limit Setting" )]
     [SerializeField]
-    float minAngleX = 180;
-    [SerializeField]
-    float maxAngleX = 340;
-    [SerializeField]
     float minAngleY = -40.0f;
     [SerializeField]
     float maxAngleY = 60.0f;
@@ -48,14 +44,14 @@ public class TestCameraController : MonoBehaviour
     float horizontal;
     float wheelValRaw;
     float wheelVal;
-    Vector3 angle;
+    Vector3 angles;
     #endregion
 
 
     #region MonoBehaviour Callbacks
     private void Start()
     {
-        angle = camTarget.transform.localEulerAngles;
+        angles = camTarget.transform.localEulerAngles;
     }
     private void Update()
     {
@@ -76,23 +72,37 @@ public class TestCameraController : MonoBehaviour
         yAxis = (InvertY ? -Input.GetAxis( "Mouse Y" ) : Input.GetAxis( "Mouse Y" )) * mouseSpeed;
         wheelValRaw = (InvertZoom ? -Input.GetAxis( "Mouse ScrollWheel" ) : Input.GetAxis( "Mouse ScrollWheel" )) * zoomSpeed;
 
-        horizontal = Mathf.SmoothStep( horizontal, xAxis, mouseAccelerationTime );
-        vertical = Mathf.SmoothStep( vertical, yAxis, mouseAccelerationTime );
-        wheelVal = Mathf.SmoothStep( wheelVal, wheelValRaw, zoomAccelerationTime );
+        horizontal = Mathf.SmoothStep(horizontal, xAxis, mouseAccelerationTime);
+        vertical = Mathf.SmoothStep(vertical, yAxis, mouseAccelerationTime);
+        wheelVal = Mathf.SmoothStep(wheelVal, wheelValRaw, zoomAccelerationTime);
     }
     void RotateCamera()
     {
-        camTarget.transform.rotation = Quaternion.Lerp( camTarget.transform.rotation,
-            camTarget.transform.rotation * Quaternion.AngleAxis( horizontal * mouseSpeed, Vector3.up ), mouseAccelerationTime );
+        camTarget.transform.rotation = Quaternion.Lerp(camTarget.transform.rotation,
+            camTarget.transform.rotation * Quaternion.AngleAxis(horizontal * mouseSpeed, Vector3.up), mouseAccelerationTime);
+
+        angles = camTarget.transform.localEulerAngles;
+        var angle = angles.x;
+
+        camTarget.transform.rotation = Quaternion.Euler()
+
+        //camTarget.transform.rotation = Quaternion.Lerp(camTarget.transform.rotation,
+        //    camTarget.transform.rotation * Quaternion.AngleAxis(vertical * mouseSpeed, Vector3.right), mouseAccelerationTime);
+
         //curVerticalAngle += vertical;
-        //if ( curVerticalAngle <= MaxAngleY && curVerticalAngle >= MinAngleY )
+        //if (curVerticalAngle <= MaxAngleY && curVerticalAngle >= MinAngleY)
         //{
-        //    transform.RotateAround( Target.transform.position, transform.right, vertical );
+        //    transform.RotateAround(Target.transform.position, transform.right, vertical);
         //}
         //else
         //{
         //    curVerticalAngle -= vertical;
         //}
+    }
+
+    private void OnGUI()
+    {
+        GUI.Box(new Rect(0, 0, 150, 30), angles.x.ToString());
     }
     #endregion
 }
