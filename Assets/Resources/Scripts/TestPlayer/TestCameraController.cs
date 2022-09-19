@@ -78,13 +78,15 @@ public class TestCameraController : MonoBehaviour
     }
     void RotateCamera()
     {
-        camTarget.transform.rotation = Quaternion.Lerp(camTarget.transform.rotation,
-            camTarget.transform.rotation * Quaternion.AngleAxis(horizontal * mouseSpeed, Vector3.up), mouseAccelerationTime);
+        //camTarget.transform.rotation = Quaternion.Lerp(camTarget.transform.rotation,
+        //    camTarget.transform.rotation * Quaternion.AngleAxis(horizontal * mouseSpeed, Vector3.up), mouseAccelerationTime);
+
+        camTarget.transform.Rotate( Vector3.up, horizontal * mouseSpeed );
+        camTarget.transform.Rotate( Vector3.right, vertical * mouseSpeed );
 
         angles = camTarget.transform.localEulerAngles;
         var angle = angles.x;
 
-        camTarget.transform.rotation = Quaternion.Euler()
 
         //camTarget.transform.rotation = Quaternion.Lerp(camTarget.transform.rotation,
         //    camTarget.transform.rotation * Quaternion.AngleAxis(vertical * mouseSpeed, Vector3.right), mouseAccelerationTime);
