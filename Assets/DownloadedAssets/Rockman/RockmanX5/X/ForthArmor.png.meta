@@ -1,0 +1,5555 @@
+fileFormatVersion: 2
+guid: d30dd910e6f24754b82fc9d574dee21a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 4Trans 1_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1328
+        width: 6
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af9c04c247244f4fa6cb1cd22dbc720
+      internalID: 296498656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1328
+        width: 21
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57bcf901d60a7b45bc8a65efc17f2e1
+      internalID: 274673331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1328
+        width: 40
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6816f8259b9a8499d7d67f23abcaac
+      internalID: -1074586470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1318
+        width: 60
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1923077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a47b036d86d3a0449b57b2134119da8
+      internalID: 70644496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_4
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1314
+        width: 64
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0.23333333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f995857b7dfed21419ef6e4618ec99c0
+      internalID: 81826976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_5
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1312
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.265625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488af773568635c4a894e148f481d6f6
+      internalID: -1905019036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_6
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1328
+        width: 37
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff647227b40a304a9abf6921f7e0583
+      internalID: -581356299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_7
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1318
+        width: 54
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.19173077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44cb8ec372c92f40b0f71be3170887c
+      internalID: 1710996004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_8
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1325
+        width: 41
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5, y: 0.053658538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cbd3f29bf7e4904992fbe8ab60d97ee
+      internalID: 1411019290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_9
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1328
+        width: 34
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc69c74073e26524dbf9e81a5be065f4
+      internalID: -395338128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_10
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1328
+        width: 34
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b6a69bfbe52a648a5b7038e3ea983a
+      internalID: 1274508937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_11
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1328
+        width: 32
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb873f0d83b3af4982a0448542569e6
+      internalID: 1770607518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_12
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1328
+        width: 22
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8762fe951c5607468a05e7ab1a7425d
+      internalID: -1856060573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_13
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1328
+        width: 24
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39916c00c2c37394085e298c1a1844a9
+      internalID: 1391672242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_14
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1328
+        width: 68
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b46e3894c9f7648bac2507830faa77
+      internalID: 768547552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_15
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 1328
+        width: 67
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58d7e3758622b542ab984383d73d43d
+      internalID: 1940668370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_16
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 1328
+        width: 37
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c017bd085bfab5549b09d2bdd0dcaf60
+      internalID: -1969337807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_17
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1252
+        width: 35
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766d06d01dfbd2a44a8f319b4cc61456
+      internalID: -1381536310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_18
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1252
+        width: 35
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef309587118b5704e9b0031ecdcaedb7
+      internalID: -1728786483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_19
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1252
+        width: 35
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981a8d143847f4c45bd3357a0d7958cc
+      internalID: -1014536673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_20
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1252
+        width: 35
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65012ec92aa7694bb8613297246b27c
+      internalID: -1334094270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1252
+        width: 35
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e603cbeabbfb9b46a49afd58f589ccf
+      internalID: 233396956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_22
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1252
+        width: 35
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1c532e3ee70aa47b6371d610ca6140
+      internalID: 1312771522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_23
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1252
+        width: 35
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20170b3d8b75d9747accbd62b9661d6d
+      internalID: -1793641502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_24
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1252
+        width: 35
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e4090946a2a9748957186dbcd6ae5c
+      internalID: 1394646798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_25
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1252
+        width: 35
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ea641965a19c94e8bb9674f0dd9736
+      internalID: 1023384022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_26
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1252
+        width: 35
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0905b351579bf2749ad80d9f6f40e9e4
+      internalID: -1259303714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_27
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 1252
+        width: 33
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08587ac7c89c2c54abd0c1646cf0d560
+      internalID: -779062232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_28
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1252
+        width: 33
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47cfa16981f13e43876d10fba73c7ac
+      internalID: 1904481964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_29
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 1252
+        width: 33
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1304d47415e5d342b6cb2558e777ed4
+      internalID: 661633853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_30
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1252
+        width: 33
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4863e3cc62712a547a8506de53ba3578
+      internalID: -1720561700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_31
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1252
+        width: 33
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53153d1d21e550a4aa5d44b78c0ade34
+      internalID: 1719876929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_32
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1252
+        width: 33
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5d40c715d7c4e4995e7e71f635befd
+      internalID: 2022779251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_33
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1164
+        width: 42
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048ad733249159d4585a12877062a93e
+      internalID: -384526188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_34
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1164
+        width: 41
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6af5959e0362e4db73baadd0446ab3
+      internalID: -231590753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_35
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1164
+        width: 42
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7cda53d53748049aed750b690d5920
+      internalID: -1235398101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_36
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1164
+        width: 39
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5140ea062fb1ec74e8b3de50233d622b
+      internalID: 1610767303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_37
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1164
+        width: 35
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c990e30ff7d7474382acce533100c05
+      internalID: -1489790981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_38
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 1164
+        width: 42
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfde2d9143d32c4478c0f658c67b496e
+      internalID: 1028425306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_39
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1164
+        width: 41
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9928c0f96bf66934c99c83487991dcd2
+      internalID: -917704488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_40
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1164
+        width: 41
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e7fd164b07ee042965e94d89a42378
+      internalID: -1849573058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_41
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1164
+        width: 38
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadd8c9c730685047ae71bd78aa103cf
+      internalID: 437101974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_42
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1164
+        width: 33
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4e0900cddbb9543b8796263664e91e
+      internalID: 931135721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_43
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1164
+        width: 39
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab6520217c638846a8976260497d81c
+      internalID: -191903166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_44
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 1164
+        width: 35
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f00a06d94f53548843e99f6fd95abd
+      internalID: 2034600434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_45
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1103
+        width: 33
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25193d73cea18ad419c742f7a85e3f2f
+      internalID: 909699609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_46
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1103
+        width: 31
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c469c460c5306b046a4d7286f17aa29d
+      internalID: -461687823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_47
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1104
+        width: 32
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c581333141a99046822ddb75fbfed86
+      internalID: 2069452455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_48
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1105
+        width: 40
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fc005e77598344fb808e725ca6b40a
+      internalID: 743444795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_49
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1105
+        width: 48
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f33eb43edb2c34c8d89faaa5a2e965
+      internalID: 1599596589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_50
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1104
+        width: 48
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc5ac449878b014a9a51d87dd8984dc
+      internalID: -492999521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_51
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1104
+        width: 39
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46febe3cf6de9241a73219c6a6c46c1
+      internalID: -849649896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_52
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1104
+        width: 30
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0756be679cdda164b813e8cd93a8ce4d
+      internalID: -1660165009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_53
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1104
+        width: 27
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7fdd1ea8dcfa654081c7c9dd213f970
+      internalID: -1736389372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_54
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1105
+        width: 35
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7203cde73a90957468d594f89107eb5d
+      internalID: 189070719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_55
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1104
+        width: 40
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff9e3798d5018f4388450fd0f6d553e
+      internalID: 1272292517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_56
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1104
+        width: 42
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1ada63fd3c8ff4c8e256ba3a270165
+      internalID: 494303409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_57
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1103
+        width: 42
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea535805cce6a854eb6ab7efe40dbdb4
+      internalID: 658547634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_58
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1103
+        width: 38
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccf9e52c6582b3499e54760605fc630
+      internalID: 865050218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_59
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1103
+        width: 32
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2880c193e1b6446af197f500c0ecd6
+      internalID: 1262008161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_60
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1103
+        width: 27
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869e79c658b1b4047b46d2f1732202fc
+      internalID: -1347294735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_61
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1034
+        width: 47
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb98e85ddee0144b84dfba0595515b3
+      internalID: 1154720199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_62
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1034
+        width: 46
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a646e6897ffe8f40b06a6936854610a
+      internalID: 1717428143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_63
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1035
+        width: 47
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d40fbd35c000154aab50b5f0a538e0c
+      internalID: 1298970860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_64
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1036
+        width: 52
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973df43c2b15a6a41a2492a73f76d36f
+      internalID: 1678307441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_65
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1036
+        width: 56
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102384b7f5b693c4b948afd5ba57b418
+      internalID: 1237716310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_66
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1035
+        width: 55
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee9a876bf91f544781e97bb2ebd9bc3
+      internalID: -260491609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_67
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1035
+        width: 50
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c9d31d4b11cb444a66891ab176bdf7
+      internalID: 889463494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_68
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1035
+        width: 45
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7530ba4b47e1d745bcafb0f9f3721b5
+      internalID: -2123675164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_69
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1035
+        width: 41
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e332c566d237c84888495b83a113e0b
+      internalID: -1953431676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_70
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1036
+        width: 48
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb9e7b14e8f16a44aa27c958d198f9e
+      internalID: -61002517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_71
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1037
+        width: 51
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0a8bd2ad2447744b45fcd0d01b5cc2
+      internalID: 929260944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_72
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1035
+        width: 55
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f10534ba9210144eb8d014bfa6a242b
+      internalID: 1780103673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_73
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1034
+        width: 54
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf69e6b248bf9949a5ff6d7a2d4f286
+      internalID: 1098758553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_74
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1034
+        width: 52
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6aa70ad0626fa24f9b6af4c3d259a6d
+      internalID: 1486113809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_75
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1034
+        width: 46
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9130861fdbfc1418e8f1f07322c353
+      internalID: 1356642019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_76
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1034
+        width: 43
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c308931edf288c749a9067ca15e9134d
+      internalID: -377097643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_77
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 967
+        width: 34
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a33a7a3080a90e4d9c9514a1204e122
+      internalID: -1331139804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_78
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 966
+        width: 47
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f13ea28a4c82b4a84d428814194cb7
+      internalID: 1954452847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_79
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 966
+        width: 53
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37040c48b1bd45e42af4ab3e6cd68d81
+      internalID: 108046752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_80
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 966
+        width: 53
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1de84e6324057640a239d6e40e193b6
+      internalID: -659177068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_81
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 966
+        width: 57
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7057b2769fc50f941adeae30889b0074
+      internalID: -1618462121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_82
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 966
+        width: 38
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f72c250084e8c42a3656f7c052bd13
+      internalID: 501851703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_83
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 966
+        width: 30
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbd912e4bfca5a4988a255ec4e87d13
+      internalID: -1995405843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_84
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 966
+        width: 41
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f032f5c9736e24bba2c6aac241f93c
+      internalID: -1239020117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_85
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 966
+        width: 35
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a344d20b8dd08fa4e8861968444d9d08
+      internalID: 136645624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_86
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 966
+        width: 57
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7869d37868c582b4da9606b9a93171a4
+      internalID: 2137473182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_87
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 967
+        width: 47
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05a1b0228a5e97429cc41b5ef24a08a
+      internalID: 913023226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_88
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 966
+        width: 58
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58c1d3153831154789c6f1760ff2a25
+      internalID: -686034468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_89
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 966
+        width: 64
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f23d9b74eba7824f86cec419c6b2373
+      internalID: 2123623342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_90
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 966
+        width: 64
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f715874b0386b4d8839a00006ac271
+      internalID: 1378742699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_91
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 966
+        width: 68
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47160ef045fd1e5489dc275045619b1d
+      internalID: 1002995996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_92
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 966
+        width: 50
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1b6ebfade69b24bb2fd2561d4d2ca0
+      internalID: -1444831816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_93
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 966
+        width: 47
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78831ee9473b2c445abb725fee9de9ff
+      internalID: -1999749024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_94
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 966
+        width: 46
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687aea0cb9ecacd46aacbe3c41afc5c5
+      internalID: 406612895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_95
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 966
+        width: 50
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712ff60f121b86746abbc6c7f5213a9c
+      internalID: 853078283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_96
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 869
+        width: 27
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da700ca3f487604429d3ee6249dda39f
+      internalID: -289218632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_97
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 873
+        width: 24
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d463351a5ec32489992dcdb46cea45
+      internalID: 114357425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_98
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 871
+        width: 26
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeed6d342213cf24499409c51c1c263c
+      internalID: 1833940101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_99
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 871
+        width: 27
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec8983536b43d84e8c5d2dc7f40bfaa
+      internalID: -35110986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_100
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 880
+        width: 27
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d790c54fb56f6a4fbde9f924e2f2918
+      internalID: -113735589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_101
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 882
+        width: 34
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c9e1ee768d67346aa4aefcfdde69fd
+      internalID: -641611860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_102
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 872
+        width: 32
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbd3a92a61e6354f8a9e1392ace944e
+      internalID: -1401528708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_103
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 869
+        width: 29
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab06ff35ab2ccdd479b5d7348f65cbba
+      internalID: -164421173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_104
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 865
+        width: 31
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61185a891069ed469ed72a5c710d4f4
+      internalID: -692443662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_105
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 869
+        width: 30
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ce25d44030af7479f64755a04ab7ff
+      internalID: 1968091068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_106
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 871
+        width: 33
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5cc93561670df478dd9cbfb64c11c8
+      internalID: 18584426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_107
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 869
+        width: 38
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8840d9b861e19d14db8522812f5c1bab
+      internalID: -648865811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_108
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 873
+        width: 37
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dfa82537c1006f42b91240fbd0b382c
+      internalID: 1941539859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_109
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 871
+        width: 39
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6dd315b08841e43ac5110546ec66f4
+      internalID: -1138005107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_110
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 871
+        width: 40
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5881d0d7ab07e5f49b7463c1738c7c59
+      internalID: -105903111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_111
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 880
+        width: 39
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff62e391af65c44bab28209b5b31928
+      internalID: -811872853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_112
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 882
+        width: 42
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71aa35c458abd744eaeff46703228c69
+      internalID: -1569696088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_113
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 872
+        width: 41
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ca16915de933d44887542685a54298
+      internalID: -1945134441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_114
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 869
+        width: 40
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c1a9b805a71e34ab2c91382978a95a
+      internalID: 1461998849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_115
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 865
+        width: 40
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c371a30c65a2841813387f540e5fbb
+      internalID: 1508052188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_116
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 869
+        width: 41
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e47a6e7c9ae3f489bbec15efd50c83
+      internalID: 1118446664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_117
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 871
+        width: 45
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d5a2a18198fda48960c36cbab324ea
+      internalID: -730734958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_118
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 773
+        width: 32
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6aa39e7809dc6f459f33d47497bacba
+      internalID: -2007298903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_119
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 769
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e1caf32ce88b24d8e1180990ac755f
+      internalID: 891009526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_120
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 776
+        width: 34
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01c1848c101c4e4dbf0483266d61b08
+      internalID: -1665498625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_121
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 769
+        width: 32
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c02778f492dae34a8beabd08cba3946
+      internalID: -1173530997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_122
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 773
+        width: 32
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a23085c5e68534a8516f02ae0168da
+      internalID: -621687586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_123
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 779
+        width: 31
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781096900134e0246b5591aadd78f0b9
+      internalID: -2088182280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_124
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 777
+        width: 28
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c85a9a010a4ea4ea687e79cbb1df7d
+      internalID: 1724626569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_125
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 773
+        width: 40
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87f83cc71b793d4c9a6bce579a56e23
+      internalID: -2088200514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_126
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 769
+        width: 45
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf09e292de0e0b74faa49fdb107d7ef6
+      internalID: 229819584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_127
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 776
+        width: 46
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32215cd7e233d6842a989bf66ad208cf
+      internalID: -798284499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_128
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 769
+        width: 43
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f51ddfe43121b4e93ae8f54e19fb71
+      internalID: 2028172456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_129
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 773
+        width: 40
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6472c36c748624083ed6b9b8477f8c
+      internalID: -1112224443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_130
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 779
+        width: 40
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054eebdcbe9d5ea48b7a716735d82296
+      internalID: 426231560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_131
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 777
+        width: 39
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e0bd6edad890544b7aa3f1a8b24bb8
+      internalID: 457880547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_132
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 678
+        width: 28
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fec627aa15a074998a44abc2fd9059
+      internalID: -478844720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_133
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 672
+        width: 24
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a8003dd03ca534387ed74c20d879b9
+      internalID: 1540368914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_134
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 675
+        width: 31
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b676443f3091fdd45b9cade814d05430
+      internalID: -1997070988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_135
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 678
+        width: 34
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7273f33661c8d0047a8bf193345fc983
+      internalID: -1502152555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_136
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 673
+        width: 28
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082c3690e7e6f4443938a6c55e7654b3
+      internalID: 756508308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_137
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 672
+        width: 24
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ffea11e8978f384da2d00337a71765b
+      internalID: -436170806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_138
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 675
+        width: 31
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b608109628b1449909ca318c4053d5
+      internalID: 1983767656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_139
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 678
+        width: 34
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ea04f844a217b448dd6123c45fa7cb
+      internalID: -1518477921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_140
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 673
+        width: 28
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69a922a5044103429eac54def3f75b8
+      internalID: -1621472417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_141
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 673
+        width: 34
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77966da09659d9943b6094201853e9b3
+      internalID: 870429236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_142
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 693
+        width: 31
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e85fa8c4a59254fac18e09f275e0e3
+      internalID: 368734001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_143
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 700
+        width: 32
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0921e6483d8ede443a57624fcd732a80
+      internalID: 1566130792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_144
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 672
+        width: 37
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa96ad9e497bde64ab0b46143ff7cf35
+      internalID: 1515532231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_145
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 671
+        width: 35
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e15f0d558c153d429bd5c30b2641c14
+      internalID: -677936600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_146
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 672
+        width: 37
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244c67ef4c00af849ba09445e6d0e37f
+      internalID: -1986077603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_147
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 585
+        width: 22
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ded2ae088ba7c746816b421586f8438
+      internalID: 734025012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_148
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 585
+        width: 24
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f456b7bb5eec242a218264fc94cc3f
+      internalID: 1624879273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_149
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 583
+        width: 39
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6e81146da59e746bee56f3bebc14d0
+      internalID: 1004387725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_150
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 577
+        width: 34
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8312af51eeb5d1b4da0813a58f7ed76b
+      internalID: 895814543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_151
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 577
+        width: 41
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091ee0d26a8f20b42828fe2d5fad170b
+      internalID: 1934595897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_152
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 576
+        width: 53
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a977f8556dff84ea31252f1e38f184
+      internalID: -1321752528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_153
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 576
+        width: 37
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544b01d5d20175f47b45a1128ef487e8
+      internalID: -1192251033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_154
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 576
+        width: 37
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebcfbf1d238da3445b0e2e37767781da
+      internalID: 1098576282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_155
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 571
+        width: 25
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bcc3fffb4e21947afcbc5400814950
+      internalID: -1645729469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_156
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 577
+        width: 41
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0e63b67c82db94fbd93c42e164a6d1
+      internalID: -762049313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_157
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 578
+        width: 34
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876944c75af0fcc4eb66df7a8480e870
+      internalID: 695535795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_158
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 577
+        width: 29
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e549508dd62bb9a49ad52a3738f3e728
+      internalID: 1240132429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_159
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 580
+        width: 29
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b103ecc8e5cfef45b1e75df5ae687bf
+      internalID: 525748236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_160
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 585
+        width: 23
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f262dfa0f51124e870b65ecc428f46
+      internalID: -1611210052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_161
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 581
+        width: 22
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86dda92b4540364783003e9de234a3d
+      internalID: 1277881899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_162
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 468
+        width: 29
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e085e45b124984ab2166e8dcc9e34f
+      internalID: -913818296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_163
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 470
+        width: 41
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc0cd11ea93af249a324281f7cf3069
+      internalID: -491094645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_164
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 468
+        width: 32
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a921ee7e29f9f854385e2958c3f73f17
+      internalID: -445517221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_165
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 468
+        width: 31
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23653c7998738849b0c674d0b259fdb
+      internalID: 1307443650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_166
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 460
+        width: 32
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d382340a85fb0e419f0eb7533948663
+      internalID: -1352660692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_167
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 466
+        width: 26
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d1f30e350195343a60722810e99925
+      internalID: -341851732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_168
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 466
+        width: 30
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0a6713906273a4da8e5bdc36ba4d04
+      internalID: 602133792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_169
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 468
+        width: 47
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fdb91304ff292746a20ed6fc2541947
+      internalID: 1578035137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_170
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 468
+        width: 43
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb58ed36fadbf644b0d387c7189b439
+      internalID: 1495800870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_171
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 460
+        width: 40
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc28d1f2f2ee7048ad937fa34b35ced
+      internalID: -1449625308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_172
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 466
+        width: 34
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbc4b210ef20e94a80e8a79102b876c
+      internalID: 822894550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_173
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 466
+        width: 33
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6fc72bd47c54146a94eaa54382fc89
+      internalID: 1285210090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_174
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 386
+        width: 33
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d43d7cd30790104ebb9c7a3c684f211
+      internalID: -514815726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_175
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 381
+        width: 35
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457f5f0c4cef3aa44966be67a8d4ed43
+      internalID: 1653969806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_176
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 381
+        width: 35
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab8b0ec2a1d4ea47a122caf7878868e
+      internalID: -2007520667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_177
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 386
+        width: 38
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5fa5a2aa61d74b4a87c290d46403699
+      internalID: 56982414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_178
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 399
+        width: 62
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a354305ae6407954d8d7ed81ae6ca15b
+      internalID: 192421511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_179
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 395
+        width: 85
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bd1d78b1023ae4b81d9673c4f70b23
+      internalID: -980304693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_180
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 385
+        width: 108
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320178755306f404f87a2abeaea84f09
+      internalID: 521902827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_182
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 385
+        width: 117
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebcfcd353eccc6f4fa7427dbeaacaaa4
+      internalID: 296952184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_190
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 302
+        width: 36
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957fc4ea8a4613b4cbea3fa1f90ba7f1
+      internalID: -2027256210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_191
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 302
+        width: 34
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0723bed78cc10a42aecb1a4d98a8a8b
+      internalID: 859263182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_192
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 302
+        width: 36
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c193939ef6bc22e4782707f1814f5bd7
+      internalID: 339229368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_194
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 302
+        width: 36
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77ca77cd6f29464e89250286eabc569
+      internalID: 184064033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_195
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 302
+        width: 36
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778e60050f4313a4483b2e325e2827e7
+      internalID: 1388280474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_196
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 302
+        width: 36
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d79c2cbaedd7346bfa6d67b59bb63a
+      internalID: 1745452647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_197
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 302
+        width: 36
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf9c96d33c33ee47a01e71cd9f83d51
+      internalID: 2123355730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_198
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 299
+        width: 44
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db4b197cac67d54687db8a583055bdc
+      internalID: 88171536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_199
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 298
+        width: 46
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba066f1700ce6644f9e9049a7028eb18
+      internalID: -403609269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_202
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 294
+        width: 51
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d2f2aa56c64e4428b94f2a472bf4f0
+      internalID: 83202115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_203
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 307
+        width: 35
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48f7fccd7ed5b343b797465da03ee27
+      internalID: -1489207940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_205
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 302
+        width: 34
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6225ff8059ecd4e9a858acea840656
+      internalID: -154929402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_206
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 301
+        width: 30
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3a735684558d7458cd7fdf250a6001
+      internalID: -1537565014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_207
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 296
+        width: 43
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c766ce6bef7496d448ab02e78b8b4f1e
+      internalID: 591293326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_213
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 200
+        width: 57
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa77c9d0cb3e144cacec9f5c1e82fd6
+      internalID: -1260900286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_215
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 194
+        width: 6
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a99a6e338d99a14992919bb308ce8f6
+      internalID: -148321207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_221
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 197
+        width: 58
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae8ecf4257949949a8fa93d2c68ff48
+      internalID: 1902609799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_229
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 194
+        width: 38
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c171bd8b4a764e74a81278f68dcdb6b3
+      internalID: -2133149214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_233
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 194
+        width: 35
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c00936a4a709343979194451bbbacc
+      internalID: -1995318292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_234
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 194
+        width: 34
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcacc00ced8b17f479a7bca602d8261e
+      internalID: -720774644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_235
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 194
+        width: 35
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101472daed12fce4ebaff604a1a8b129
+      internalID: -929621777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_236
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 191
+        width: 46
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195393fc292b5924cb9523071545392a
+      internalID: -1692742174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_241
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 194
+        width: 33
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407525343f4a6d349898a9cdb62508a9
+      internalID: 502162817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_245
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 196
+        width: 46
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b756787f239ff84e986db115919d95c
+      internalID: 1425135078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_250
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 108
+        width: 38
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5745fb7ee9958d4aa5f98c7ee6edcfa
+      internalID: 172426147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_251
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 110
+        width: 42
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ac3f102163465459690d24100feea9
+      internalID: 1316529859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_252
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 108
+        width: 49
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30607ba6c00500c458fded7f843a015f
+      internalID: -659197718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_253
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 110
+        width: 52
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d243f8a14b97dbe4195a946d10668c8b
+      internalID: 2118317481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_254
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 110
+        width: 51
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28078f7a233d6dc44b454b2e3041d0b0
+      internalID: 1920905999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_255
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 110
+        width: 49
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d0bfed1eeb13043ba1f91abcc58baf
+      internalID: 1419235504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_256
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 110
+        width: 47
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6122c308ea87f6d4e9404436db764236
+      internalID: -685249237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_257
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 110
+        width: 40
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96de2ae72d20721468fad47abc17de52
+      internalID: -339643918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_258
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 110
+        width: 48
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b4885de24b7384a92d8451a2963e9b
+      internalID: 736163783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_259
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 110
+        width: 45
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f5d263634f0544dbd359dcfdf15c4d
+      internalID: -58307261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_268
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 37
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9869a097a908c73418d168163c5d723d
+      internalID: 167588985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_269
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 3
+        width: 46
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54fe1c0cd47c878478eca43d8fc6724f
+      internalID: -195867161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_270
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 3
+        width: 38
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae323a94f20dc646adf37ff12f243a7
+      internalID: -946361238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_271
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 3
+        width: 47
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366a6a8893a2f1346b57950878db2e9b
+      internalID: -1581492393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_272
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1
+        width: 30
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089aa665af4205047810aedfb2c09ec3
+      internalID: -1972758118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_273
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1
+        width: 30
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca11026dcd76cb4ab298f2292cd23c9
+      internalID: 1058554331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_274
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1
+        width: 39
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f354241304ccc46acb966226bf4e9a
+      internalID: 1792141291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_275
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1
+        width: 30
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d5154461c0ff94f9011b0ff309c464
+      internalID: -1596326823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_276
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1
+        width: 39
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7720223db5d595146acf8b12bc843493
+      internalID: 605171829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_277
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1
+        width: 30
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8e233c898f05b43a0ad4fb2432e4f1
+      internalID: -1562539404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_278
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1
+        width: 30
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc4c52d7da33344585fe7ea83d7ab2c
+      internalID: 2144649886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_279
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1
+        width: 39
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977a28229867e8d45b27f7c9d7e52edf
+      internalID: 639601672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_280
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1
+        width: 30
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78da437513e87604dadcc77816e2af17
+      internalID: 1078348898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_281
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1
+        width: 30
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a9e89dbab01ee149aff8f627dbcfbfc
+      internalID: 1504387431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_282
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1
+        width: 39
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cf7598816219a448656506e2b407bc
+      internalID: -1147212689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_283
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1
+        width: 30
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b9ea0dd6d59644db2ead508d15dfd9
+      internalID: 1994045397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_284
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 1
+        width: 30
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c70f6a9c5694448b66cebb482cc4d0
+      internalID: -259453028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_285
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1
+        width: 39
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e22185ad3bc5b54395a51be1e73340d
+      internalID: -598120125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_286
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 60
+        width: 5
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f536cc9666d314db7ad4e5b253aca2
+      internalID: 2123219932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_287
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 58
+        width: 10
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7be22b3541fd304799ad5db96422ea1
+      internalID: 1817249541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_288
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 62
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed66ec98389220241afe1e7bfd3c9edd
+      internalID: -1715915905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_289
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 39
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d92ce7cc7c41b48a38c0dbe6ada2ab
+      internalID: 218865796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_290
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 37
+        width: 24
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8d365727ddc9a46b787d28b7e3c249
+      internalID: 1996410708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_291
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 13
+        width: 7
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3679f68be29b1d94f86f5c6bbdf01d21
+      internalID: -1891726327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_292
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 23
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c90233fa9c4bc241a8d516208d53380
+      internalID: -273405237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_293
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 7
+        width: 11
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28dbc9109156b6b4abc590ea76a21b41
+      internalID: 1331040030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_294
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 22
+        width: 10
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d008934dab784c4d8d3b1409e7f05eb
+      internalID: -1533879878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Trans 1_295
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 9
+        width: 7
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: becc9be188ef1e340a5920db13e9f9de
+      internalID: -1675168914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      4Trans 1_3: 70644496
+      4Trans 1_129: -1112224443
+      4Trans 1_116: 1118446664
+      4Trans 1_234: -720774644
+      4Trans 1_146: -1986077603
+      4Trans 1_216: -2112803942
+      4Trans 1_268: 167588985
+      4Trans 1_126: 229819584
+      4Trans 1_280: 1078348898
+      4Trans 1_212: -952966470
+      4Trans 1_236: -1692742174
+      4Trans 1_46: -461687823
+      4Trans 1_294: -1533879878
+      4Trans 1_278: 2144649886
+      4Trans 1_169: 1578035137
+      4Trans 1_249: -1387870671
+      4Trans 1_291: -1891726327
+      4Trans 1_74: 1486113809
+      4Trans 1_183: -714142152
+      4Trans 1_211: -1375602977
+      4Trans 1_264: 2096701724
+      4Trans 1_110: -105903111
+      4Trans 1_176: -2007520667
+      4Trans 1_21: 233396956
+      4Trans 1_180: 521902827
+      4Trans 1_202: 83202115
+      4Trans 1_63: 1298970860
+      4Trans 1_271: -1581492393
+      4Trans 1_16: -1969337807
+      4Trans 1_22: 1312771522
+      4Trans 1_186: 300968870
+      4Trans 1_194: 184064033
+      4Trans 1_265: -1361548208
+      4Trans 1_99: -35110986
+      4Trans 1_150: 895814543
+      4Trans 1_34: -231590753
+      4Trans 1_37: -1489790981
+      4Trans 1_76: -377097643
+      4Trans 1_104: -692443662
+      4Trans 1_113: -1945134441
+      4Trans 1_122: -621687586
+      4Trans 1_29: 661633853
+      4Trans 1_133: 1540368914
+      4Trans 1_270: -946361238
+      4Trans 1_95: 853078283
+      4Trans 1_279: 639601672
+      4Trans 1_15: 1940668370
+      4Trans 1_155: -1645729469
+      4Trans 1_70: -61002517
+      4Trans 1_185: -1941260441
+      4Trans 1_209: 1602789377
+      4Trans 1_139: -1518477921
+      4Trans 1_242: 2017945255
+      4Trans 1_243: -2059654748
+      4Trans 1_28: 1904481964
+      4Trans 1_292: -273405237
+      4Trans 1_144: 1515532231
+      4Trans 1_175: 1653969806
+      4Trans 1_165: 1307443650
+      4Trans 1_12: -1856060573
+      4Trans 1_0: 296498656
+      4Trans 1_47: 2069452455
+      4Trans 1_247: -1424616421
+      4Trans 1_83: -1995405843
+      4Trans 1_18: -1728786483
+      4Trans 1_40: -1849573058
+      4Trans 1_27: -779062232
+      4Trans 1_107: -648865811
+      4Trans 1_117: -730734958
+      4Trans 1_78: 1954452847
+      4Trans 1_4: 81826976
+      4Trans 1_132: -478844720
+      4Trans 1_198: 88171536
+      4Trans 1_189: 305790269
+      4Trans 1_207: 591293326
+      4Trans 1_224: 1070855993
+      4Trans 1_124: 1724626569
+      4Trans 1_42: 931135721
+      4Trans 1_295: -1675168914
+      4Trans 1_31: 1719876929
+      4Trans 1_90: 1378742699
+      4Trans 1_246: 566418612
+      4Trans 1_231: 1649375784
+      4Trans 1_147: 734025012
+      4Trans 1_281: 1504387431
+      4Trans 1_190: -2027256210
+      4Trans 1_138: 1983767656
+      4Trans 1_173: 1285210090
+      4Trans 1_114: 1461998849
+      4Trans 1_19: -1014536673
+      4Trans 1_153: -1192251033
+      4Trans 1_77: -1331139804
+      4Trans 1_151: 1934595897
+      4Trans 1_125: -2088200514
+      4Trans 1_205: -154929402
+      4Trans 1_11: 1770607518
+      4Trans 1_256: -685249237
+      4Trans 1_283: 1994045397
+      4Trans 1_17: -1381536310
+      4Trans 1_252: -659197718
+      4Trans 1_287: 1817249541
+      4Trans 1_166: -1352660692
+      4Trans 1_178: 192421511
+      4Trans 1_81: -1618462121
+      4Trans 1_73: 1098758553
+      4Trans 1_58: 865050218
+      4Trans 1_51: -849649896
+      4Trans 1_68: -2123675164
+      4Trans 1_290: 1996410708
+      4Trans 1_239: 774777492
+      4Trans 1_230: 1087324289
+      4Trans 1_277: -1562539404
+      4Trans 1_227: -986363959
+      4Trans 1_235: -929621777
+      4Trans 1_152: -1321752528
+      4Trans 1_181: 40504197
+      4Trans 1_258: 736163783
+      4Trans 1_75: 1356642019
+      4Trans 1_56: 494303409
+      4Trans 1_293: 1331040030
+      4Trans 1_200: -1696402291
+      4Trans 1_85: 136645624
+      4Trans 1_25: 1023384022
+      4Trans 1_96: -289218632
+      4Trans 1_275: -1596326823
+      4Trans 1_143: 1566130792
+      4Trans 1_203: -1489207940
+      4Trans 1_182: 296952184
+      4Trans 1_273: 1058554331
+      4Trans 1_106: 18584426
+      4Trans 1_30: -1720561700
+      4Trans 1_65: 1237716310
+      4Trans 1_97: 114357425
+      4Trans 1_66: -260491609
+      4Trans 1_154: 1098576282
+      4Trans 1_24: 1394646798
+      4Trans 1_120: -1665498625
+      4Trans 1_248: -167385683
+      4Trans 1_253: 2118317481
+      4Trans 1_245: 1425135078
+      4Trans 1_98: 1833940101
+      4Trans 1_229: -2133149214
+      4Trans 1_44: 2034600434
+      4Trans 1_23: -1793641502
+      4Trans 1_100: -113735589
+      4Trans 1_1: 274673331
+      4Trans 1_7: 1710996004
+      4Trans 1_210: 786912647
+      4Trans 1_67: 889463494
+      4Trans 1_282: -1147212689
+      4Trans 1_159: 525748236
+      4Trans 1_43: -191903166
+      4Trans 1_93: -1999749024
+      4Trans 1_259: -58307261
+      4Trans 1_162: -913818296
+      4Trans 1_2: -1074586470
+      4Trans 1_86: 2137473182
+      4Trans 1_257: -339643918
+      4Trans 1_8: 1411019290
+      4Trans 1_195: 1388280474
+      4Trans 1_161: 1277881899
+      4Trans 1_218: 136175104
+      4Trans 1_157: 695535795
+      4Trans 1_167: -341851732
+      4Trans 1_72: 1780103673
+      4Trans 1_187: 3641249
+      4Trans 1_57: 658547634
+      4Trans 1_267: -627225653
+      4Trans 1_105: 1968091068
+      4Trans 1_199: -403609269
+      4Trans 1_284: -259453028
+      4Trans 1_220: 63537031
+      4Trans 1_260: 1456529446
+      4Trans 1_274: 1792141291
+      4Trans 1_222: -974652159
+      4Trans 1_261: -874917680
+      4Trans 1_39: -917704488
+      4Trans 1_121: -1173530997
+      4Trans 1_262: 1436706191
+      4Trans 1_208: -1849542241
+      4Trans 1_123: -2088182280
+      4Trans 1_62: 1717428143
+      4Trans 1_221: 1902609799
+      4Trans 1_145: -677936600
+      4Trans 1_172: 822894550
+      4Trans 1_285: -598120125
+      4Trans 1_61: 1154720199
+      4Trans 1_33: -384526188
+      4Trans 1_115: 1508052188
+      4Trans 1_101: -641611860
+      4Trans 1_272: -1972758118
+      4Trans 1_201: 2064001604
+      4Trans 1_204: -1560618975
+      4Trans 1_168: 602133792
+      4Trans 1_238: -2119946531
+      4Trans 1_119: 891009526
+      4Trans 1_79: 108046752
+      4Trans 1_135: -1502152555
+      4Trans 1_214: 2108139135
+      4Trans 1_141: 870429236
+      4Trans 1_244: -1769184380
+      4Trans 1_196: 1745452647
+      4Trans 1_13: 1391672242
+      4Trans 1_137: -436170806
+      4Trans 1_20: -1334094270
+      4Trans 1_64: 1678307441
+      4Trans 1_111: -811872853
+      4Trans 1_206: -1537565014
+      4Trans 1_192: 339229368
+      4Trans 1_71: 929260944
+      4Trans 1_232: -544126593
+      4Trans 1_191: 859263182
+      4Trans 1_80: -659177068
+      4Trans 1_179: -980304693
+      4Trans 1_84: -1239020117
+      4Trans 1_108: 1941539859
+      4Trans 1_38: 1028425306
+      4Trans 1_52: -1660165009
+      4Trans 1_177: 56982414
+      4Trans 1_223: -501333086
+      4Trans 1_48: 743444795
+      4Trans 1_254: 1920905999
+      4Trans 1_174: -514815726
+      4Trans 1_215: -148321207
+      4Trans 1_94: 406612895
+      4Trans 1_91: 1002995996
+      4Trans 1_240: -1086696649
+      4Trans 1_89: 2123623342
+      4Trans 1_228: -292250039
+      4Trans 1_118: -2007298903
+      4Trans 1_69: -1953431676
+      4Trans 1_32: 2022779251
+      4Trans 1_296: -887859657
+      4Trans 1_226: -197042251
+      4Trans 1_109: -1138005107
+      4Trans 1_36: 1610767303
+      4Trans 1_87: 913023226
+      4Trans 1_82: 501851703
+      4Trans 1_148: 1624879273
+      4Trans 1_103: -164421173
+      4Trans 1_140: -1621472417
+      4Trans 1_170: 1495800870
+      4Trans 1_92: -1444831816
+      4Trans 1_156: -762049313
+      4Trans 1_134: -1997070988
+      4Trans 1_163: -491094645
+      4Trans 1_88: -686034468
+      4Trans 1_6: -581356299
+      4Trans 1_136: 756508308
+      4Trans 1_128: 2028172456
+      4Trans 1_54: 189070719
+      4Trans 1_237: -1293003370
+      4Trans 1_149: 1004387725
+      4Trans 1_219: -1904817577
+      4Trans 1_263: 1054626342
+      4Trans 1_131: 457880547
+      4Trans 1_171: -1449625308
+      4Trans 1_41: 437101974
+      4Trans 1_286: 2123219932
+      4Trans 1_241: 502162817
+      4Trans 1_10: 1274508937
+      4Trans 1_276: 605171829
+      4Trans 1_288: -1715915905
+      4Trans 1_269: -195867161
+      4Trans 1_213: -1260900286
+      4Trans 1_225: 130685934
+      4Trans 1_266: -818354411
+      4Trans 1_35: -1235398101
+      4Trans 1_60: -1347294735
+      4Trans 1_112: -1569696088
+      4Trans 1_158: 1240132429
+      4Trans 1_9: -395338128
+      4Trans 1_45: 909699609
+      4Trans 1_5: -1905019036
+      4Trans 1_250: 172426147
+      4Trans 1_130: 426231560
+      4Trans 1_188: 161361046
+      4Trans 1_102: -1401528708
+      4Trans 1_49: 1599596589
+      4Trans 1_233: -1995318292
+      4Trans 1_255: 1419235504
+      4Trans 1_289: 218865796
+      4Trans 1_217: 80714991
+      4Trans 1_53: -1736389372
+      4Trans 1_50: -492999521
+      4Trans 1_193: 1398825245
+      4Trans 1_14: 768547552
+      4Trans 1_26: -1259303714
+      4Trans 1_160: -1611210052
+      4Trans 1_251: 1316529859
+      4Trans 1_184: 1177250268
+      4Trans 1_127: -798284499
+      4Trans 1_142: 368734001
+      4Trans 1_197: 2123355730
+      4Trans 1_59: 1262008161
+      4Trans 1_164: -445517221
+      4Trans 1_55: 1272292517
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

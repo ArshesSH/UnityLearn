@@ -1,0 +1,1658 @@
+fileFormatVersion: 2
+guid: 1eab674dbb3a8444e995ded21bbbebba
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BusterTrans_1
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 401
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f9a3926ccdab54cb55549e4e0a43c2
+      internalID: 156715186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_2
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 400
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc731e209575ce478bc4397ebdf788f
+      internalID: 364202728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_3
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 399
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb932b007f6e2da41a3dfd8373700768
+      internalID: -357790031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_4
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 398
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8182f9c43e8e71c4a9bf597c34f58e2e
+      internalID: 1097971074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_5
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 400
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f046b278feb4a42b222a3987534b15
+      internalID: -781288224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_6
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 407
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed58f0541a72fac418c4939f220276a3
+      internalID: 1243299920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_7
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 408
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8ddeffe9842e94f80843c77645b51e
+      internalID: -1350529351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_8
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 408
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3ed39d33c95a94d9cecac346438266
+      internalID: -1375386997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_9
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 408
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64db4137f1b4e548a06689da40599b5
+      internalID: 623044634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_10
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 366
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e2637b945abcd4fbca611cc252dafc
+      internalID: -589926915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_11
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 363
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9caa250b442165041b758b9119af5ccf
+      internalID: 69235469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_13
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 386
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24ccc2b644d76a42b570b681e3945a9
+      internalID: -535645855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_14
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 380
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3312b87b482f4934392dea93c077cf79
+      internalID: 1034951960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_16
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 369
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7768d6f7eb78f134181f14938706e2d7
+      internalID: 1360004744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_17
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 366
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b36cfe5b07a56e41a08eadbf1fa539d
+      internalID: -52001324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_18
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 367
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9126960d015b814caee386a9e76913d
+      internalID: -818425318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_19
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 366
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54ed851556183e47a8564101c4c445a
+      internalID: -773592229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_20
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 370
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f9d6977e15dc74bba023cb13290665
+      internalID: -1538431502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_21
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 369
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2274f12ff6a0849a3a4396af469125
+      internalID: 1886762122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_25
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 371
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e751a25db5c049b45a4517b0fbe67808
+      internalID: -807102029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_26
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 335
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07b8410137b0da47ada79734767c68a
+      internalID: -918579452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_27
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 333
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39383d5166975f541b45e3d64d1e5a88
+      internalID: 2054737832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_29
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 328
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40b624d14dc2a54bba7bf80626217aa
+      internalID: -1795096049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_30
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 328
+        width: 55
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac8a748c680bf046b585211b01677cf
+      internalID: -966002610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_31
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 329
+        width: 58
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06676ec897144b2498b61dbd950ef8d5
+      internalID: -15704315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_32
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 327
+        width: 61
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5112347ba228544e89f3498ec4f0a5b
+      internalID: -1728598576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_33
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 272
+        width: 52
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6388a0ada4f21a643a835eb7b7d07a56
+      internalID: -495071264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_34
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 269
+        width: 57
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f61ab1684c12094fa95505415970026
+      internalID: -1154583715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_36
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 286
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78be44864c8441044a1b029404ecfc3f
+      internalID: -2039007733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_37
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 265
+        width: 42
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5e3f1d673c4244b97f96f80013562d
+      internalID: -1243935636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_39
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 225
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b79148cfe0b0e740b521458cb3de884
+      internalID: 1183660200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_49
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 231
+        width: 78
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7dd29366a295b43bca76f27280a0ce
+      internalID: -621544257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_53
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 230
+        width: 68
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5213799e11ff3044a6d7ead5e50c041
+      internalID: -176269514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_61
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 238
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf466db724be0f441acac6b30eb6db7d
+      internalID: -2085789960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_64
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 222
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4c8a63185809a43b5e2acf869308cb
+      internalID: -1508416055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_70
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 223
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e909ff668e6c79439abdb57ef9e53b8
+      internalID: 1763693490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_71
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 225
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82ea089d67917449a1070433f42edec
+      internalID: 633865216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_72
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 226
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4011b73a4d53c5442863d87e5dd81ab8
+      internalID: -1275024209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_82
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 192
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15aebce6ea31e9f4dac2dba3ddfbb507
+      internalID: 1372406959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_83
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 190
+        width: 37
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383901d014a45764a9fab58a363f4fa5
+      internalID: -1140105401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_84
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 191
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0355345dcdc55464b8eabc4c386c9180
+      internalID: 1955865288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_85
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 189
+        width: 32
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a03e293e220214c8f0a14e1c916ca7
+      internalID: 1941828658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_101
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 206
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519b028331fa9f5488dab58f6804edae
+      internalID: 1304586604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_102
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 155
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374f94fbb69b054468d8b20f3ce74062
+      internalID: 1760051649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_104
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 141
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95ace9b3de604f42a3eaf353576cd65
+      internalID: -1272271115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_107
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 160
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f06550593e837648876a8442fd707e9
+      internalID: -191146865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_108
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 157
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7760e5e55217e41bb8af617f811714
+      internalID: 534157330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_109
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 149
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9846b3f30c1857d43a90350eacc1320c
+      internalID: 1448194848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_110
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 58
+        width: 70
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0b6f036931d4a4eb9ac109c4b3bbe0
+      internalID: -511978130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_119
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 76
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5f43fb28dcc5c43b36e4801093a339
+      internalID: -204068711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_120
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 73
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87cabda9b13aa54a9726f6e4b09649c
+      internalID: -863910596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_121
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 96
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff03a7581d91d349b9c92c370670b11
+      internalID: -446156958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_122
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 58
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4636beee3c7c44d849529b973d3d77
+      internalID: 1629625536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_123
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 95
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fffb08471776f74a8a68539476e929b
+      internalID: 65295578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_124
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 58
+        width: 70
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423dd33b9156a7d4f957ffe3ca6bf6b2
+      internalID: 1247259986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_125
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 58
+        width: 71
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181ba5bec68251c488cfd12e2d9c1583
+      internalID: -887151629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_126
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 80
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62254dbcd306fea498ab145a4984ab09
+      internalID: 930888498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_127
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 78
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88cab2cc85e648d46af66adf5e2f2587
+      internalID: -833197381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_128
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 74
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76058259188902041af9d7c98c908145
+      internalID: 1443362431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_129
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 73
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6855514e92eef4bac03ed046d1ff3f
+      internalID: -68837014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_130
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 5
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a178c0b218a914591e21d61b8274a9
+      internalID: 1888880708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_131
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 5
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ebec3ff3907b9c40b7b02a7b39d4157
+      internalID: -1300155816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_132
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 9
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947e12fa3d16d434cbcdb2291b489ebd
+      internalID: 174029915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_133
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 4
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1763e9932c053347b69e00efe6142f5
+      internalID: -2066754127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_135
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 6
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4905aa71ef213ef448b4df5c44d6c966
+      internalID: -773006214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BusterTrans_136
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 4
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8134f02e8d1be4586e98d43d177cee
+      internalID: 1186923816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BusterTrans_21: 1886762122
+      BusterTrans_129: -68837014
+      BusterTrans_4: 1097971074
+      BusterTrans_95: 915521942
+      BusterTrans_5: -781288224
+      BusterTrans_98: -1515802819
+      BusterTrans_109: 1448194848
+      BusterTrans_97: 2009999301
+      BusterTrans_52: 1780037586
+      BusterTrans_57: 801646001
+      BusterTrans_45: 1520338245
+      BusterTrans_81: -877652476
+      BusterTrans_114: -1873469802
+      BusterTrans_115: -1294764856
+      BusterTrans_10: -589926915
+      BusterTrans_36: -2039007733
+      BusterTrans_2: 364202728
+      BusterTrans_124: 1247259986
+      BusterTrans_71: 633865216
+      BusterTrans_11: 69235469
+      BusterTrans_118: 1605370490
+      BusterTrans_112: 1111080881
+      BusterTrans_125: -887151629
+      BusterTrans_23: -312510004
+      BusterTrans_123: 65295578
+      BusterTrans_65: 261063655
+      BusterTrans_66: -1863512997
+      BusterTrans_79: 337560863
+      BusterTrans_1: 156715186
+      BusterTrans_111: -688388075
+      BusterTrans_39: 1183660200
+      BusterTrans_76: 1658746850
+      BusterTrans_135: -773006214
+      BusterTrans_116: 1919716399
+      BusterTrans_24: 902199094
+      BusterTrans_70: 1763693490
+      BusterTrans_132: 174029915
+      BusterTrans_136: 1186923816
+      BusterTrans_6: 1243299920
+      BusterTrans_96: 1992776427
+      BusterTrans_42: 1943828530
+      BusterTrans_35: 1757689541
+      BusterTrans_34: -1154583715
+      BusterTrans_37: -1243935636
+      BusterTrans_94: -1466929872
+      BusterTrans_44: 951443406
+      BusterTrans_19: -773592229
+      BusterTrans_106: 1460602044
+      BusterTrans_99: -1283092400
+      BusterTrans_102: 1760051649
+      BusterTrans_30: -966002610
+      BusterTrans_49: -621544257
+      BusterTrans_43: -195682510
+      BusterTrans_56: -697884087
+      BusterTrans_63: -733190073
+      BusterTrans_47: -221450802
+      BusterTrans_75: -1434088901
+      BusterTrans_127: -833197381
+      BusterTrans_50: 531745006
+      BusterTrans_22: 934022838
+      BusterTrans_58: 408767970
+      BusterTrans_103: 1021496438
+      BusterTrans_104: -1272271115
+      BusterTrans_74: -931121247
+      BusterTrans_48: 1679387928
+      BusterTrans_82: 1372406959
+      BusterTrans_90: 712905135
+      BusterTrans_27: 2054737832
+      BusterTrans_28: -1837991725
+      BusterTrans_130: 1888880708
+      BusterTrans_87: -1820142205
+      BusterTrans_16: 1360004744
+      BusterTrans_7: -1350529351
+      BusterTrans_110: -511978130
+      BusterTrans_67: 1057349312
+      BusterTrans_18: -818425318
+      BusterTrans_68: 348095617
+      BusterTrans_133: -2066754127
+      BusterTrans_9: 623044634
+      BusterTrans_122: 1629625536
+      BusterTrans_108: 534157330
+      BusterTrans_88: -2026182144
+      BusterTrans_60: 2112278487
+      BusterTrans_73: 170874508
+      BusterTrans_85: 1941828658
+      BusterTrans_64: -1508416055
+      BusterTrans_86: -827179109
+      BusterTrans_119: -204068711
+      BusterTrans_14: 1034951960
+      BusterTrans_32: -1728598576
+      BusterTrans_3: -357790031
+      BusterTrans_55: -1033582664
+      BusterTrans_78: 2069177022
+      BusterTrans_54: 904232420
+      BusterTrans_128: 1443362431
+      BusterTrans_72: -1275024209
+      BusterTrans_101: 1304586604
+      BusterTrans_13: -535645855
+      BusterTrans_8: -1375386997
+      BusterTrans_69: -1619420620
+      BusterTrans_107: -191146865
+      BusterTrans_51: -875349655
+      BusterTrans_12: -618097572
+      BusterTrans_17: -52001324
+      BusterTrans_61: -2085789960
+      BusterTrans_92: -2115233058
+      BusterTrans_53: -176269514
+      BusterTrans_117: 2006300052
+      BusterTrans_126: 930888498
+      BusterTrans_38: 338724840
+      BusterTrans_15: -2140685371
+      BusterTrans_41: -1279536671
+      BusterTrans_89: 1359462392
+      BusterTrans_121: -446156958
+      BusterTrans_105: -893673565
+      BusterTrans_100: 2132042774
+      BusterTrans_29: -1795096049
+      BusterTrans_80: -91852567
+      BusterTrans_91: -1763237980
+      BusterTrans_134: -1822959301
+      BusterTrans_0: 1087275691
+      BusterTrans_33: -495071264
+      BusterTrans_20: -1538431502
+      BusterTrans_120: -863910596
+      BusterTrans_113: -1054714084
+      BusterTrans_77: 147416893
+      BusterTrans_62: 1099454580
+      BusterTrans_83: -1140105401
+      BusterTrans_131: -1300155816
+      BusterTrans_84: 1955865288
+      BusterTrans_93: -1181741957
+      BusterTrans_137: -772943852
+      BusterTrans_26: -918579452
+      BusterTrans_59: -1635456609
+      BusterTrans_25: -807102029
+      BusterTrans_31: -15704315
+      BusterTrans_46: -1923338984
+      BusterTrans_40: 818613164
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

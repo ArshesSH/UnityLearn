@@ -3,7 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Obstacle
+  - Car
+  - StartFlag
+  - MidFlag
+  - FireAttack
+  - Weapon
+  - Character
+  - Tower
+  - Enemy
+  - PlayerBullet
+  - EnemyBullet
+  - SoundTrigger
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -11,9 +24,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Test
+  - Minimap
+  - Wall
   - 
   - 
   - 
@@ -40,4 +53,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2483924317
+    locked: 0
+  - name: Item
+    uniqueID: 1897689083
+    locked: 0
+  - name: Enemy
+    uniqueID: 445377337
+    locked: 0
+  - name: Player
+    uniqueID: 3227994197
+    locked: 0
+  - name: Bullet
+    uniqueID: 9641927
+    locked: 0
+  - name: Effect
+    uniqueID: 3060193767
     locked: 0

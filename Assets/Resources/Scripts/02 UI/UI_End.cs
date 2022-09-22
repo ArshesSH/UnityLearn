@@ -8,6 +8,7 @@ public class UI_End : MonoBehaviour
     {
         if ( GUI.Button( new Rect( 400.0f, 250.0f, 150.0f, 30.0f ), "Game End" ) )
         {
+            GameManager.Instance.ChangeScene( "00 Start" );
         }
     }
 }

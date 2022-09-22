@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: eac567e1c67f0694aa4719a39f070bec
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ExplosionTrans_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 213
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b8904d2ee903a488a3beee5f96f2de
+      internalID: 1605131374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 212
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af1fbc2cbc9dba41a598693271d7c97
+      internalID: 1676617918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_2
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 216
+        width: 49
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb073d66d4f67e4c9f618b40db26d89
+      internalID: -1497354894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_3
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 216
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efc5cc8e042f3d4094a4525d2e23ab5
+      internalID: 880747136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_4
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 216
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23b1bd953ecded4dbdd89c03de35d7e
+      internalID: -1957805279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_5
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 216
+        width: 58
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d16d903f3018af45b0ac277ca4de2f4
+      internalID: 1737109678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_6
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 216
+        width: 60
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c20fa2ddc480b345bcdad3ec34bd28d
+      internalID: 2011677557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_7
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 215
+        width: 61
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e35105eee0da334ab9fa92ddbc95a1b
+      internalID: -1395998559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_8
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 216
+        width: 59
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485c86d9fc796b347a75d530eb917165
+      internalID: -507537018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_13
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 152
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962effdcadc3671438817451a4464cbf
+      internalID: 53405834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_14
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 152
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a483b7915d30024f9921a784842ad56
+      internalID: 1665384244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_9
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 152
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcdc6c73de69a948a148a68c37fe551
+      internalID: -1898167074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 151
+        width: 49
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811d82f9408a93349812794be380e1aa
+      internalID: 1163943039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_11
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 150
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979e2984271a88c4682771ba5337b82b
+      internalID: -1607617348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_12
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 150
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138b80e781c36e747a76416769f8af6a
+      internalID: -340188328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_15
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 152
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d5346e4cdeb514ebdc81ddea12c894
+      internalID: -1944575444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_16
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 152
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e63f34552b210245bd9b90dc968feac
+      internalID: -364697121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_17
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 80
+        width: 49
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8e8be252aa4bc4b8bae8156702c5ec
+      internalID: 358419006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_18
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a3cf30ec9b7e742a0b1bb577324c79
+      internalID: 2078152916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_19
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 80
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b47111d4acbee48816c9517f2917fd
+      internalID: -17027865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_20
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 80
+        width: 58
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb31639814dccc48bb7c7c98cdd2db6
+      internalID: 1179114563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_21
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 80
+        width: 60
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42744f3b6112dfb4eb41d116475efeca
+      internalID: -426368160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_22
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 79
+        width: 61
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5faae6a2076904bb2e99049ab8ab06
+      internalID: -844883793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_23
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 79
+        width: 76
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18dfe459aab0ec442b25cdd6873c54e1
+      internalID: -1401181107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_28
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 15
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49e6bea5e5962544bd041d32fcdd0b1
+      internalID: -486188256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_29
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 15
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa6788c406184e4cae793d1534551dd
+      internalID: -561988940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_24
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 15
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fbc18b47736c846b22aed32da283ea
+      internalID: -1253348560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_25
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 14
+        width: 49
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ddf961220b51641a7166a8b0123956
+      internalID: 637602370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_26
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 13
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42fba215e4026c4aa2d871447fb12d2
+      internalID: -429691543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_27
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 14
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb7114deab8136438938269e04a69c1
+      internalID: -1808387966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_30
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 15
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3cfb30f3655244782ac1237fc77504
+      internalID: 795180387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionTrans_31
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 15
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d572af007f4004d8c7e41a37ab957a
+      internalID: 779516718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1d40016980fd8994f94abb6704d5da75
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ExplosionTrans_36: 1511477825
+      ExplosionTrans_15: -1944575444
+      ExplosionTrans_0: 1605131374
+      ExplosionTrans_66: -292472985
+      ExplosionTrans_21: -426368160
+      ExplosionTrans_31: 779516718
+      ExplosionTrans_79: -951084117
+      ExplosionTrans_10: 1163943039
+      ExplosionTrans_2: -1497354894
+      ExplosionTrans_26: -429691543
+      ExplosionTrans_7: -1395998559
+      ExplosionTrans_54: -1256250047
+      ExplosionTrans_13: 53405834
+      ExplosionTrans_11: -1607617348
+      ExplosionTrans_57: 989407954
+      ExplosionTrans_29: -561988940
+      ExplosionTrans_39: 490848365
+      ExplosionTrans_32: 355023945
+      ExplosionTrans_76: -798996029
+      ExplosionTrans_77: 1119493804
+      ExplosionTrans_1: 1676617918
+      ExplosionTrans_49: 631355459
+      ExplosionTrans_18: 2078152916
+      ExplosionTrans_71: 1761474747
+      ExplosionTrans_33: -305976085
+      ExplosionTrans_52: 665239885
+      ExplosionTrans_70: -495090486
+      ExplosionTrans_30: 795180387
+      ExplosionTrans_68: -1411961647
+      ExplosionTrans_23: -1401181107
+      ExplosionTrans_75: -144380111
+      ExplosionTrans_24: -1253348560
+      ExplosionTrans_25: 637602370
+      ExplosionTrans_53: -2103757406
+      ExplosionTrans_65: 1997462469
+      ExplosionTrans_6: 2011677557
+      ExplosionTrans_73: -1552182198
+      ExplosionTrans_61: -1083459643
+      ExplosionTrans_27: -1808387966
+      ExplosionTrans_14: 1665384244
+      ExplosionTrans_37: 911192219
+      ExplosionTrans_3: 880747136
+      ExplosionTrans_64: -1608240371
+      ExplosionTrans_17: 358419006
+      ExplosionTrans_51: 856999696
+      ExplosionTrans_20: 1179114563
+      ExplosionTrans_5: 1737109678
+      ExplosionTrans_78: 842582959
+      ExplosionTrans_67: 181746170
+      ExplosionTrans_41: 1315949179
+      ExplosionTrans_63: 1215838607
+      ExplosionTrans_12: -340188328
+      ExplosionTrans_40: 744612636
+      ExplosionTrans_22: -844883793
+      ExplosionTrans_16: -364697121
+      ExplosionTrans_28: -486188256
+      ExplosionTrans_50: -897491900
+      ExplosionTrans_8: -507537018
+      ExplosionTrans_4: -1957805279
+      ExplosionTrans_9: -1898167074
+      ExplosionTrans_38: -440373434
+      ExplosionTrans_72: 85220357
+      ExplosionTrans_80: -348770242
+      ExplosionTrans_69: -1630523898
+      ExplosionTrans_19: -17027865
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

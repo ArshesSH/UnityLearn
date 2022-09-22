@@ -31,5 +31,6 @@ public class Move : MonoBehaviour
             float vel = speed * Time.deltaTime;
             transform.position -= transform.forward * vel;
         }
+        
     }
 }
