@@ -6,45 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Resources/Scenes/MazeRunner/MazeRunnerStartScene.unity
-    guid: b35fad7225fedf544929fd0a9ccc252e
+    path: Assets/Resources/Scenes/UnityAI_CookBook/04 NavMesh/NavMeshAreas.unity
+    guid: cb3a35f7418404b4094b46df9e534387
   - enabled: 1
-    path: Assets/Resources/Scenes/MazeRunner/MazeRunner.unity
-    guid: f770e9b585b138d4189680150fe5373f
+    path: Assets/Resources/Scenes/UnityAI_CookBook/04 NavMesh/DynamicNavMesh.unity
+    guid: 5ee2e0327006f6748be17b93d6579f06
   - enabled: 1
-    path: Assets/Resources/Scenes/Study/15 LoadingScene/15_0 GameTitle.unity
-    guid: 15082b28e71e5e144adba95c0370889f
+    path: Assets/Resources/Scenes/UnityAI_CookBook/04 NavMesh/NavMeshLink.unity
+    guid: d7f562e9785874942bdb55aec4145b68
   - enabled: 1
-    path: Assets/Resources/Scenes/Study/15 LoadingScene/15_1 Loading.unity
-    guid: 1b384f607a6bc1b48b8bef7df70f7be3
+    path: Assets/Resources/Scenes/UnityAI_CookBook/04 NavMesh/NvMeshObstacles.unity
+    guid: 3481e57f758ade24ead95a305fc17c32
   - enabled: 1
-    path: Assets/Resources/Scenes/Study/00 Start.unity
-    guid: 963d410d04f52b9499677edfde6b659d
-  - enabled: 1
-    path: Assets/Resources/Scenes/RacingGame/01-0 Start.unity
-    guid: 17c77b477c31bef4f969c3ddfdb35a4b
-  - enabled: 1
-    path: Assets/Resources/Scenes/RacingGame/01-1 Race.unity
-    guid: 7b34827fc8489794d9edc65b37c1312c
-  - enabled: 1
-    path: Assets/Resources/Scenes/SpartaDefence/08_0 SpartaStart.unity
-    guid: 2ccd51e100eec9b49b5587831e21bac8
-  - enabled: 1
-    path: Assets/Resources/Scenes/SpartaDefence/08_1 SpartaMain.unity
-    guid: db46e0569fccbc9468b7f3bec6ccd575
-  - enabled: 1
-    path: Assets/Resources/Scenes/2DGame/09_0 RockmanStart.unity
-    guid: 28b7c71ee302cec4ea0a22b0e803bd53
-  - enabled: 1
-    path: Assets/Resources/Scenes/2DGame/09_1 RockmanMain.unity
-    guid: 0fbd56cd93358c54a9ea23b6146bf4d6
-  - enabled: 1
-    path: Assets/Resources/Scenes/Study/01 MoveAndRotation.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-    path: Assets/Resources/Scenes/Study/03 Game.unity
-    guid: eb2f6a685920df0409424ad02b97a7ce
-  - enabled: 1
-    path: Assets/Resources/Scenes/Study/99 End.unity
-    guid: 060d885e88a7742489d737ab90b331d1
+    path: Assets/Resources/Scenes/UnityAI_CookBook/04 NavMesh/NvMeshPatrol.unity
+    guid: eca9e4d99e894d64dbe325a078cdc466
   m_configObjects: {}

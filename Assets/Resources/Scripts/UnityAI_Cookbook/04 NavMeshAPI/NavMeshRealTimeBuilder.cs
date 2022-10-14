@@ -10,20 +10,17 @@ namespace NavMeshAPI
 	[DefaultExecutionOrder( -102 )]
 	public class NavMeshRealTimeBuilder : MonoBehaviour
 	{
-		/*--- Public Fields ---*/
 		public Transform Agent;
 		public Vector3 BoxSize = new Vector3( 50.0f, 20.0f, 50.0f );
 		[Range( 0.01f, 1.0f )]
 		public float SizeChange = 0.1f;
 
-
-		/*--- Private Fields ---*/
 		NavMeshData navMesh;
 		AsyncOperation async;
 		NavMeshDataInstance navMeshInstance;
 		List<NavMeshBuildSource> buildSources = new List<NavMeshBuildSource>();
 
-        /*--- MonoBehaviour Callbacks ---*/
+
         private void Awake()
         {
 			if (Agent == null)
@@ -31,7 +28,6 @@ namespace NavMeshAPI
 				Agent = transform;
             }
         }
-
         private IEnumerator Start()
 		{
 			while ( true )
@@ -40,7 +36,6 @@ namespace NavMeshAPI
 				yield return async;
 			}
 		}
-
         private void OnEnable()
         {
 			navMesh = new NavMeshData();
@@ -57,10 +52,6 @@ namespace NavMeshAPI
         }
 
 
-        /*--- Public Methods ---*/
-
-
-        /*--- Private Methods ---*/
         static Vector3 Quantize(Vector3 a, Vector3 q)
         {
 			float x = q.x * Mathf.Floor( a.x / q.x );

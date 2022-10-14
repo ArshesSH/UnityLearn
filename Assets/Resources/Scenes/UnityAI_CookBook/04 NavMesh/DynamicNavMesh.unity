@@ -280,7 +280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Agent: {fileID: 449870107}
   BoxSize: {x: 50, y: 20, z: 50}
-  SizeChange: 1
+  SizeChange: 0.1
 --- !u!1 &137038668
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +733,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4176456134577373857, guid: de71d46f144d1ef4f850bad0c6a7c758,
+        type: 3}
+      propertyPath: m_RotationAtRest.y
+      value: 46.57862
+      objectReference: {fileID: 0}
     - target: {fileID: 4176456135125831078, guid: de71d46f144d1ef4f850bad0c6a7c758,
         type: 3}
       propertyPath: m_TranslationOffsets.Array.data[0].x
@@ -747,6 +752,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TranslationOffsets.Array.data[0].z
       value: 0.09893799
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176456135144578958, guid: de71d46f144d1ef4f850bad0c6a7c758,
+        type: 3}
+      propertyPath: m_RotationAtRest.x
+      value: 40.975
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176456135144578958, guid: de71d46f144d1ef4f850bad0c6a7c758,
+        type: 3}
+      propertyPath: m_RotationOffset.x
+      value: -42.03692
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176456135900590685, guid: de71d46f144d1ef4f850bad0c6a7c758,
+        type: 3}
+      propertyPath: m_RotationAtRest.x
+      value: 52.302597
       objectReference: {fileID: 0}
     - target: {fileID: 4176456136160660681, guid: de71d46f144d1ef4f850bad0c6a7c758,
         type: 3}

@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 using UnityEngine.AI;
 
 namespace NavMeshAPI
 {
 	public class NavMeshBuilder : MonoBehaviour
 	{
-		/*--- Public Fields ---*/
 		public NavMeshSurface[] surfaces;
 
 
-		/*--- Public Methods ---*/
 		public void Build()
         {
 			foreach(var surface in surfaces)

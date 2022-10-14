@@ -6,17 +6,13 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class NavMeshPatrol : MonoBehaviour
 {
-	/*--- Public Fields ---*/
 	public float PointDistance = 0.5f;
 	public Transform[] PatrolPoints;
 
-
-	/*--- Private Fields ---*/
 	int curPoint = 0;
 	NavMeshAgent agent;
 
 
-	/*--- MonoBehaviour Callbacks ---*/
 	void Start()
 	{
 		agent = GetComponent<NavMeshAgent>();
@@ -32,17 +28,12 @@ public class NavMeshPatrol : MonoBehaviour
 			GoToPoint( CalculateNextPoint() );
         }
 	}
-
     private void OnGUI()
     {
 		GUI.Box( new Rect( 0, 0, 150, 30 ), curPoint.ToString() );
     }
 
 
-    /*--- Public Methods ---*/
-
-
-    /*--- Private Methods ---*/
     int FindClosestPoint()
     {
 		int index = -1;
@@ -61,7 +52,6 @@ public class NavMeshPatrol : MonoBehaviour
 				distance = d;
             }
         }
-
 		return index;
     }
 	void GoToPoint(int next)

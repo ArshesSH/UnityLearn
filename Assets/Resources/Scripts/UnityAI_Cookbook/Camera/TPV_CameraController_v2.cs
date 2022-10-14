@@ -11,15 +11,15 @@ namespace KSH_Lib
         /*--- Inspector ---*/
         [Header ( "Camera Speed Setting" )]
         [SerializeField]
-        float zoomSpeed = 0.001f;
+        protected float zoomSpeed = 0.001f;
         [SerializeField]
-        float zoomAccel = 0.15f;
+        protected float zoomAccel = 0.15f;
         
         [Header ("Limit Setting")]
         [SerializeField]
-        float minZoomLength = 2.0f;
+        protected float minZoomLength = 2.0f;
         [SerializeField]
-        float maxZoomLength = 5.0f;
+        protected float maxZoomLength = 5.0f;
 
         [Header("Invert Setting")]
         [SerializeField]
@@ -28,8 +28,8 @@ namespace KSH_Lib
 
         /*--- Private Field ---*/
         Cinemachine3rdPersonFollow cm3rdPersonFollow;
-        float zoomValRaw;
-        float zoomVal;
+        protected float zoomValRaw;
+        protected float zoomVal;
 
 
         /*--- Monobehaviour Callbacks ---*/
